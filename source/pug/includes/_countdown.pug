@@ -1,0 +1,90 @@
+mixin counter
+    .countdown_container
+        .countdown_digit
+            .countdown_digit_num.countdown_digit_num--days
+                | 12
+            .countdown_digit_label
+                | Days
+        .countdown_sep
+            | :
+        .countdown_digit
+            .countdown_digit_num.countdown_digit_num--hours
+                | 03
+            .countdown_digit_label
+                | Days
+        .countdown_sep
+            | :
+        .countdown_digit
+            .countdown_digit_num.countdown_digit_num--minutes
+                | 11
+            .countdown_digit_label
+                | Minutes
+        .countdown_sep
+            | :
+        .countdown_digit
+            .countdown_digit_num.countdown_digit_num--seconds
+                | 49
+            .countdown_digit_label
+                    | Seconds
+
+mixin countdown_cap
+    .countdown_cap
+        .countdown_cap_raised
+            span Raised
+            b $1 384 000
+        .countdown_cap_milestone.countdown_cap_milestone--half
+            .countdown_cap_milestone_label
+                | Soft Cap 1.5M
+            .countdown_cap_milestone_perc
+                | +25%
+        .countdown_cap_milestone.countdown_cap_milestone--five
+            .countdown_cap_milestone_label
+                | 5M
+            .countdown_cap_milestone_perc
+                | +10%
+        .countdown_cap_milestone.countdown_cap_milestone--seven
+            .countdown_cap_milestone_label
+                | 7M
+            .countdown_cap_milestone_perc
+                | +5%
+        .countdown_cap_label
+            b 12M
+            br
+            | Hard Cap
+
+mixin countdown_course
+    .countdown_course
+        b 1 LVL = 1 USD
+        span BTC, ETH, LTC, USD, VISA
+        .countdown_course_note
+            | Unsold tokens will be destroyed
+
+mixin countdown(mod, header)
+    .countdown(class=mod ? "countdown--" + mod : "")
+        if header
+            h4.countdown_header
+                =header
+        if mod == 'main'
+            .countdown_top
+                h3.countdown_title
+                    | Presale starts in
+                .countdown_raised
+                    | Private Sale Ended!
+                    | 
+                    span Raised 584 000
+            .countdown_content
+                +counter
+        else
+            +counter
+
+        if mod == 'pre_ico'
+            .countdown_hr
+            +countdown_cap
+            h3 Buy Tokens with Bonus +25%
+            a.button.primary.short.spaced(href="#")
+                | BUY TOKENS
+            .countdown_hr
+            +countdown_course
+            a.button.hollow.short.icon(href="#ico" data-smooth-scroll)
+                | Token Sale Details
+                i.icon.icon--arrow

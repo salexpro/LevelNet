@@ -1,0 +1,57 @@
+mixin ico_offer(label)
+    figure.ico_box_offer
+        .ico_box_offer_icon
+            i.icon.icon--check_gray
+        figcaption
+            !=label
+mixin ico_hexagon(color, percent, cap)
+    .ico_box_hex
+        .ico_box_hex_percent(class="ico_box_hex_percent--" + color)
+            span
+                | +#{percent}
+            | %
+        .ico_box_hex_cap
+            =cap
+section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "")
+    .row.column
+        .box.ico_box
+            .ico_box_top
+                if page == 'pre_ico'
+                    h2 PUBLIC PRE-SALE is live
+                    h3 01.03.2018  —  31.03.2018
+                    +countdown('white')
+                    +countdown_course
+                    +countdown_cap
+                    .ico_box_stat
+                        .ico_box_stat_item
+                            b 1 223,52
+                            | ETH RECEIVED
+                        .ico_box_stat_item
+                            b 125,52
+                            | BTC RECEIVED
+                        .ico_box_stat_item
+                            b 2301
+                            | BACKERS
+                else
+                    h2 Join the Cutting Edge Cyber Security
+                    .ico_box_descr
+                        | Private Sale Ended!
+                        | 
+                        b Raised 584 000
+            .box_pattern.pattern.ico_box_content
+                if page != 'pre_ico'
+                    +countdown('white', 'Presale starts in')
+                h3 Token Owners gain an exclusive access to LevelNet
+                .ico_box_offers
+                    +ico_offer('High-end Cyber Security<br>for your private Data')
+                    +ico_offer('Use of intellectual property rights')
+                    +ico_offer('Full access to LevelNet services,<br>ecosystem, and all its products')
+                    +ico_offer('Exchange tokens for crypto shares<br>in the second phase of the project')
+            .ico_box_footer
+                h4 Join LevelNet Whitelist not to miss token sale bonus!
+                .ico_box_hexagons
+                    +ico_hexagon('primary', 10, '0 - $1.5m')
+                    +ico_hexagon('tertiary', 5, '$1.5m - $5m')
+                    +ico_hexagon('secondary', 3, '$5m - $7m')
+                button.button.short.small.spaced.primary(data-open="join")
+                    | JOIN WHITELIST

@@ -1,0 +1,33 @@
+mixin social(min, clas)
+    ul.menu.social(class=clas ? "social--" + clas : "")
+        li
+            a(href="#")
+                i.icon.icon--telegram
+        li
+            a(href="#")
+                i.icon.icon--reddit
+        li
+            a(href="#")
+                i.icon.icon--bitcointalk
+        if !min
+            li
+                a(href="#")
+                    i.icon.icon--facebook
+            li
+                a(href="#")
+                    i.icon.icon--twitter
+            li
+                a(href="#")
+                    i.icon.icon--linkedin
+            li
+                a(href="#")
+                    i.icon.icon--instagram
+            li
+                a(href="#")
+                    i.icon.icon--medium
+            li
+                a(href="#")
+                    i.icon.icon--youtube
+            li
+                a(href="#")
+                    i.icon.icon--github

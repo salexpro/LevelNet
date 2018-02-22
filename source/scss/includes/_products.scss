@@ -1,0 +1,30 @@
+.products{
+    padding: 30px 0;
+    &_table{
+        margin-top: 66px;
+        text-align: center;
+        th{
+            padding: 20px;
+            border: 1px solid $light-black;
+            border-top: 0;
+            &:first-child{
+                border-left: 0;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+        td{
+            padding: 24px 32px;
+            border: 1px solid $light-black;
+            &:first-child{
+                border-left: 0;
+                color: $dark-gray;
+                text-align: left;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}

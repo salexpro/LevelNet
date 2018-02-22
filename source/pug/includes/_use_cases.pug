@@ -1,0 +1,27 @@
+mixin case(icon, label, note)
+    .column
+        figure.use_cases_case
+            .use_cases_case_top
+                .use_cases_case_icon
+                    img(src="../img/icons/" + icon + ".svg", alt=icon)
+                if note
+                    .use_cases_case_note
+                        =note
+            figcaption.use_cases_case_label
+                !=label
+section#use_cases.pattern.use_cases(data-magellan-target="use_cases")
+    .row.align-center
+        .column.large-10
+            h2 Use Cases for Private Customers:
+            h3 LevelNet End-Point Security
+    .row.align-center.use_cases_videos
+        .column.large-5
+            .responsive-embed.widescreen.use_cases_video
+                iframe(width='560', height='315', src='https://www.youtube.com/embed/_Th1GTJmL2Y?rel=0&controls=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+        .column.large-5
+            .responsive-embed.widescreen.use_cases_video
+                iframe(width='560', height='315', src='https://www.youtube.com/embed/_Th1GTJmL2Y?rel=0&controls=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+    .row.use_cases_cases
+        +case('computer', 'LevelNet Endpoint Security App<br>with no other Antivirus Software')
+        +case('security', 'LevelNet Endpoint Security App<br>with other Antivirus Software', 'Unable to detect a threat')
+        +case('global', 'LevelNet Endpoint Security App<br>with other Antivirus Software', 'Able to detect a threat')

@@ -1,0 +1,39 @@
+.sidebar_nav{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 42px;
+    z-index: 2;
+    &_item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &_hex {
+        @include hexagon(13, transparent, 2, $dark-gray, null);
+    }
+    a{
+        padding: 8px 10px;
+        margin: 1px 8px 1px 0;
+        background-color: rgba(28, 26, 28, 0.75);
+        letter-spacing: 0.56px;
+        font-size: 14px;
+        color: $dark-gray;
+        transition: 300ms;
+        border-radius: $global-radius;
+        &:hover, &:focus{
+            color: $medium-gray;
+        }
+        &.is_active{
+            color: $medium-gray;
+            + .sidebar_nav_hex {
+                border-color: transparent;
+                background-color: $secondary-color;
+                &::before,
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

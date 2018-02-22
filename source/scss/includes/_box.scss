@@ -1,0 +1,30 @@
+.box{
+    background-color: #f8f9fa;
+    border-radius: $global-radius;
+    padding: 60px 95px;
+    color: $light-black;
+    &--about{
+        padding-top: 85px;
+        padding-bottom: 0;
+    }
+    > h2, > h3{
+        color: $medium-black;
+    }
+    &_pattern{
+        border-top: 1px solid #dee2e6;
+        margin: 0 -95px;
+        padding: 0 95px;
+        z-index: 1;
+        &:not(:last-child){
+            border-bottom: 1px solid #dee2e6;
+        }
+        &--left{
+            &::before{
+                display: none;
+            }
+            &::after{
+                width: 61%;
+            }
+        }
+    }
+}

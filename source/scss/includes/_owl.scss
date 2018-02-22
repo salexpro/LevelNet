@@ -1,0 +1,30 @@
+.owl{
+    &-stage{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        box-shadow: 1px 0 0 0 $medium-gray;
+        margin: 40px 0;
+        flex: 0 0 280px;
+        &:last-child{
+            box-shadow: none;
+        }
+    }
+    &-next{
+        @include hexagon(44, $medium-black, 2, $dark-gray, null);
+        position: absolute;
+        top: calc(50% - 12px);
+        left: calc(100% + 36px);
+        transition: 300ms;
+        &.disabled{
+            opacity: .3;
+        }
+    }
+    &-prev {
+        @extend .owl-next;
+        left: auto;
+        right: calc(100% + 36px);
+        transform: scale(-1, 1);
+    }
+}

@@ -1,0 +1,46 @@
+.faq{
+    padding: 85px 0 10px;
+    &_inner{
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    &_item{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        transition: 300ms;
+        margin-left: 6px;
+        &[aria-expanded="true"] {
+            .faq_item {
+                &_icon {
+                    border-color: $dark-gray;
+                    &::before,
+                    &::after {
+                        border-color: $dark-gray;
+                    }
+                }
+            }
+        }
+        &_icon{
+            @include hexagon(66, #1c1a1c, 2, #343a40, null);
+            color: $medium-gray;
+            font-size: 32px;
+            font-weight: 700;
+            margin-right: 24px;
+            transition: 300ms;
+            &::before,
+            &::after {
+                transition: 300ms;
+            }
+        }
+        &_question{
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+        &_answer{
+            margin-left: 96px;
+            padding-bottom: 8px;
+            line-height: 1.47;
+        }
+    }
+}

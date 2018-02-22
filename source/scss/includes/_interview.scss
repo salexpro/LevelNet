@@ -1,0 +1,10 @@
+.interview{
+    padding: 90px 0 90px;
+    &::before{
+        width: 100%;
+        background: #292729;
+    }
+    .form{
+        margin-top: 22px;
+    }
+}

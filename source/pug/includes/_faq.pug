@@ -1,0 +1,23 @@
+mixin faq_item(quest, answ)
+    .accordion-item(data-accordion-item)
+        a.faq_item(href="#")
+            span.faq_item_icon
+                span ?
+            span.faq_item_question
+                =quest
+        .accordion-content.faq_item_answer(data-tab-content)
+            =answ
+
+section#faq.faq
+    .row
+        h2.column.large-offset-1 Frequently Asked Questions
+        .column.large-12.accordion.faq_inner(data-accordion data-allow-all-closed="true")
+            +faq_item('Why invest in LevelNet?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
+            +faq_item('How are you going to store such amount of information in the blockchain?', 'Answer')
+            +faq_item('Why are we launching ICO?', 'Answer')
+            +faq_item('What makes LevelNet special?', 'Answer')
+            +faq_item('How many Developers are in your Team?', 'Answer')
+        .column.large-offset-1
+            a.button.hollow.short.icon(href="#")
+                | See full FAQ
+                i.icon.icon--arrow

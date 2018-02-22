@@ -1,0 +1,177 @@
+.countdown{
+    border: 1px solid $light-black;
+    background-color: rgba(32, 30, 32, 0.75);
+    border-radius: $global-radius;
+    &--white{
+        border: 0;
+        background: none;
+        width: 505px;
+        margin: auto;
+        margin-bottom: 74px;
+        .countdown{
+            &_header{
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            &_sep{
+                color: $dark-gray;
+            }
+        }
+    }
+    &--pre_ico{
+        margin-top: 60px;
+        padding: 40px 20px;
+        text-align: center;
+        .countdown{
+            &_header {
+                margin-bottom: 35px;
+            }
+            &_container{
+                width: 505px;
+                margin: auto;
+            }
+        }
+        .primary{
+            margin: 24px auto 7px;
+        }
+    }
+    &_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        border-bottom: 1px solid $light-black;
+        padding: 15px 20px;
+    }
+    &_raised{
+        color: $dark-gray;
+        span{
+            color: #c1c6cc;
+        }
+    }
+    &_content{
+        height: 158px;
+        display: flex;
+        align-items: center;
+        padding: 0 23px;
+    }
+    &_container{
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &_digit{
+        &_num{
+            font-family: 'EurofontExtendedC';
+            font-size: 48px;
+            letter-spacing: 1.92px;
+            line-height: 0.916;
+        }
+        &_label {
+            letter-spacing: 0.56px;
+            font-size: 14px;
+            color: $dark-gray;
+            text-align: center;
+            margin-top: 4px;
+        }
+    }
+    &_sep{
+        @extend .countdown_digit_num;
+        margin-top: -4px;
+    }
+    &_hr{
+        max-width: 550px;
+        height: 1px;
+        background-color: $light-black;
+        margin: 33px auto;
+    }
+    &_cap{
+        position: relative;
+        background-color: $light-black;
+        max-width: 740px;
+        height: 48px;
+        border-radius: $global-radius;
+        margin: 55px auto;
+        display: flex;
+        &_raised{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40.6%;
+            height: 100%;
+            background-color: $secondary-color;
+            border-radius: $global-radius 0 0 $global-radius;
+            padding: 12px;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+            color: $white;
+            b{
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        }
+        &_milestone{
+            height: 100%;
+            border-right: 1px solid rgba($medium-gray, 0.15);
+            position: relative;
+            &--half{
+                width: 44.1%;
+                .countdown_cap_milestone_perc{
+                    color: $primary-color;
+                }
+            }
+            &--five{
+                width: 18%;
+                .countdown_cap_milestone_perc {
+                    color: $tertiary-color;
+                }
+            }
+            &--seven{
+                width: 20.7%;
+                .countdown_cap_milestone_perc {
+                    color: $secondary-color;
+                }
+            }
+            &_label{
+                color: $dark-gray;
+                position: absolute;
+                right: 0;
+                bottom: 100%;
+                margin-bottom: 7px;
+                transform: translateX(50%);
+            }
+            &_perc{
+                position: absolute;
+                left: 0;
+                top: 100%;
+                margin-top: 8px;
+                font-weight: 600;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &_label{
+            position: absolute;
+            top: 6px;
+            left: 100%;
+            margin-left: 10px;
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+    &_course{
+        font-size: 20px;
+        color: $dark-gray;
+        margin-bottom: 37px;
+        b{
+            color: $medium-gray;
+            margin-right: 20px;
+        }
+        &_note{
+            margin-top: 14px;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+        }
+    }
+}

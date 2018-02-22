@@ -1,0 +1,36 @@
+$icons: (
+    ('telegram', 24, 22, 'social'),
+    ('reddit', 26, 22, 'social'),
+    ('bitcointalk', 18, 24, 'social'),
+    ('facebook', 11, 22, 'social'),
+    ('twitter', 24, 19, 'social'),
+    ('linkedin', 21, 21, 'social'),
+    ('instagram', 23, 23, 'social'),
+    ('medium', 25, 19, 'social'),
+    ('youtube', 24, 18, 'social'),
+    ('github', 25, 21, 'social'),
+    ('arr_graph', 16, 16, false),
+    ('arrow', 18, 12, false),
+    ('minus', 20, 2, false),
+    ('check', 24, 17, false),
+    ('check_gray', 23, 17, false),
+    ('angellist', 15, 21, false),
+    ('linkedin_square', 21, 21, false)
+);
+
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    @each $icon in $icons {
+        &--#{nth($icon, 1)} {
+            width: #{nth($icon, 2)}px;
+            height: #{nth($icon, 3)}px;
+            @if nth($icon, 4) {
+                background-image: url('../img/icons/#{nth($icon, 4)}/#{nth($icon, 1)}.svg')
+            } @else {
+                background-image: url('../img/icons/#{nth($icon, 1)}.svg')
+            }
+        }
+    }
+}

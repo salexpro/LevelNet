@@ -1,0 +1,73 @@
+.kit{
+    padding-top: 85px;
+    &_inner{
+        margin-top: 52px;
+    }
+    &_releases{
+        margin-bottom: 37px;
+    }
+    &_release{
+        margin-top: 31px;
+        &_title{
+            line-height: 1.33;
+        }
+        &_date{
+            margin-top: 10px;
+            color: $dark-gray;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+        }
+    }
+    &_materials{
+        margin-top: 18px;
+        margin-bottom: 40px;
+    }
+    &_material{
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        &[aria-expanded="true"]{
+            .kit_material{
+                &_icon {
+                    border-color: $dark-gray;
+                    &::before,
+                    &::after {
+                        border-color: $dark-gray;
+                    }
+                }
+                &_label{
+                    &::after{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+        &_icon{
+            @include hexagon(66, $medium-black, 2, #343a40, null);
+            margin-right: 24px;
+            transition: 300ms;
+            &::before, &::after{
+                transition: 300ms;
+            }
+        }
+        &_label{
+            &::after{
+                content: '';
+                width: 11px;
+                height: 8px;
+                display: inline-block;
+                background-image: url(../img/icons/arrow_down.svg);
+                margin-left: 12px;
+                background-size: cover;
+                transform: rotate(-90deg);
+                transition: 300ms;
+            }
+        }
+        &_content{
+            height: 209px;
+            margin-bottom: 40px;
+            border: 1px solid #31373c;
+            border-radius: $global-radius;
+        }
+    }
+}

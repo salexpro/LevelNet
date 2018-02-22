@@ -1,0 +1,53 @@
+mixin member(photo, name, pos, color, descr, ang, lin)
+    .team_member
+        .team_member_photo
+            img(src="./img/members/" + photo +".jpg", alt=name)
+        h4.team_member_name
+            =name
+        .team_member_position
+            =pos
+        .team_member_line(class="team_member_line--" + color)
+        .team_member_descr
+            !=descr
+        ul.menu.align-center.team_member_social
+            li
+                a(href=ang)
+                    i.icon.icon--angellist
+            li
+                a(href=lin)
+                    i.icon.icon--linkedin_square
+
+section#team.team
+    .row.column
+        h2 Management Team
+        p.team_descr
+            | Feel free to ask us directly everything you want to know
+        .owl-carousel.team_members
+            +member('pavel_s', 'Pavel Shkliaev', 'CEO/Founder', 'red', 'Security design & analyze<br>Security software architect<br>Multiple tech start-ups in US and RU EntrepreneurX2', '#', '#')
+            +member('alex_b', 'Alex Bodiagin', 'CTO/Founder', 'red', 'Networking & driver development<br>Security software architect <br>System programming', '#', '#')
+            +member('anton_a', 'Anton Aksenov', 'COO', 'red', 'Successful entrepreneur <br>MBA International operations', '#', '#')
+            +member('arthur_e', 'Arthur Eolyan', 'CLO', 'red', 'Tax Law<br>Corporate Law<br>International Law', '#', '#')
+            +member('pavel_s', 'Pavel Shkliaev', 'CEO/Founder', 'red', 'Security design & analyze<br>Security software architect<br>Multiple tech start-ups in US and RU EntrepreneurX2', '#', '#')
+            +member('alex_b', 'Alex Bodiagin', 'CTO/Founder', 'red', 'Networking & driver development<br>Security software architect <br>System programming', '#', '#')
+            +member('anton_a', 'Anton Aksenov', 'COO', 'red', 'Successful entrepreneur <br>MBA International operations', '#', '#')
+            +member('arthur_e', 'Arthur Eolyan', 'CLO', 'red', 'Tax Law<br>Corporate Law<br>International Law', '#', '#')
+        h2 Tech
+        .owl-carousel.team_members
+            +member('ivan_k', 'Ivan Krivonos', 'Software engineer', 'blue', 'Linux System<br>Developer<br>Security design<br>MacOS system developer', '#', '#')
+            +member('alexey_k', 'Alexey Kudryavtsev', 'Software engineer', 'blue', 'Windows low level developer<br>Malware researcher<br>Security software architect', '#', '#')
+            +member('alexander_v', 'Alexander Volkov', 'Software engineer', 'blue', 'Windows Low level developer<br>Authoring 0day exploits<br>Malware researcher', '#', '#')
+            +member('anton_l', 'Anton Leshchenko', 'Software engineer', 'blue', 'Linux system developer<br>Networking & drive dev<br>Embedded systems', '#', '#')
+            +member('ivan_k', 'Ivan Krivonos', 'Software engineer', 'blue', 'Linux System<br>Developer<br>Security design<br>MacOS system developer', '#', '#')
+            +member('alexey_k', 'Alexey Kudryavtsev', 'Software engineer', 'blue', 'Windows low level developer<br>Malware researcher<br>Security software architect', '#', '#')
+            +member('alexander_v', 'Alexander Volkov', 'Software engineer', 'blue', 'Windows Low level developer<br>Authoring 0day exploits<br>Malware researcher', '#', '#')
+            +member('anton_l', 'Anton Leshchenko', 'Software engineer', 'blue', 'Linux system developer<br>Networking & drive dev<br>Embedded systems', '#', '#')
+        h2 Advisors
+        .owl-carousel.team_members
+            +member('ivan_k', 'Ivan Krivonos', 'Software engineer', 'blue', 'Linux System<br>Developer<br>Security design<br>MacOS system developer', '#', '#')
+            +member('alexey_k', 'Alexey Kudryavtsev', 'Software engineer', 'blue', 'Windows low level developer<br>Malware researcher<br>Security software architect', '#', '#')
+            +member('alexander_v', 'Alexander Volkov', 'Software engineer', 'blue', 'Windows Low level developer<br>Authoring 0day exploits<br>Malware researcher', '#', '#')
+            +member('anton_l', 'Anton Leshchenko', 'Software engineer', 'blue', 'Linux system developer<br>Networking & drive dev<br>Embedded systems', '#', '#')
+            +member('ivan_k', 'Ivan Krivonos', 'Software engineer', 'blue', 'Linux System<br>Developer<br>Security design<br>MacOS system developer', '#', '#')
+            +member('alexey_k', 'Alexey Kudryavtsev', 'Software engineer', 'blue', 'Windows low level developer<br>Malware researcher<br>Security software architect', '#', '#')
+            +member('alexander_v', 'Alexander Volkov', 'Software engineer', 'blue', 'Windows Low level developer<br>Authoring 0day exploits<br>Malware researcher', '#', '#')
+            +member('anton_l', 'Anton Leshchenko', 'Software engineer', 'blue', 'Linux system developer<br>Networking & drive dev<br>Embedded systems', '#', '#')

@@ -1,0 +1,25 @@
+mixin offer(icon, label)
+    figure.whitepaper_offer
+        .whitepaper_offer_icon
+            i.material-icons
+                =icon
+        figcaption.whitepaper_offer_label
+            !=label
+section#whitepaper.whitepaper
+    .row.align-center.whitepaper_inner
+        h2.column.large-10
+            | Download Whitepaper And Learn Everything
+            br
+            | On Distributed Cyber Security Platform LevelNet
+    .row.whitepaper_offers
+        .column.large-6
+            +offer('security', 'Blocks Viruses and Hackers in <b>Real Time</b>')
+            +offer('widgets', 'Works with existing antivirus software')
+        .column.large-6
+            +offer('https', 'Protects your private data')
+            +offer('important_devices', 'Mobile and Desktop platforms')
+    .row.align-center
+        .column.large-10
+            a.button.long.secondary.icon(href="#")
+                | Learn more from the Whitepaper
+                i.icon.icon--arrow

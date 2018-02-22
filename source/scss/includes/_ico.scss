@@ -1,0 +1,62 @@
+.ico{
+    padding: 80px 0;
+    &_box{
+        text-align: center;
+        &_descr{
+            color: $dark-gray;
+            b {
+                color: $light-black;
+            }
+        }
+        &_content{
+            margin-top: 55px;
+            margin-bottom: 55px;
+            padding-top: 53px;
+            padding-bottom: 65px;
+        }
+        &_offers{
+            max-width: 695px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10px;
+        }
+        &_offer{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            text-align: left;
+            &_icon{
+                @include hexagon(51, $white, 2, $medium-gray, null);
+                margin-right: 20px;
+            }
+        }
+        &_hexagons{
+            max-width: 510px;
+            margin: 35px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_hex{
+            @include hexagon(118, $white, 2, $medium-gray, null);
+            &_percent{
+                font-size: 24px;
+                letter-spacing: 0.96px;
+                margin-bottom: 3px;
+                &--primary{
+                    color: $primary-color;
+                }
+                &--secondary {
+                    color: $secondary-color;
+                }
+                &--tertiary {
+                    color: $tertiary-color;
+                }
+                span{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

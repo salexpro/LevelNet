@@ -1,0 +1,23 @@
+.footer{
+    text-align: center;
+    &_top{
+        padding: 110px 10px 96px;
+        b{
+            font-weight: 400;
+        }
+        &_content{
+            margin: 40px auto 95px;
+        }
+    }
+    &_bottom{
+        background-color: rgba(#1c1a1c, .65);
+        border-top: 1px solid $light-black;
+        line-height: 1.33;
+        &_inner{
+            height: 125px;
+        }
+    }
+    &_copyright {
+        color: rgba($medium-gray, .75);
+    }
+}

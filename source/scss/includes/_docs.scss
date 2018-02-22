@@ -1,0 +1,38 @@
+.docs{
+    padding: 85px 0 95px;
+    &_inner{
+        text-align: center;
+        border: 1px solid $light-black;
+        border-radius: $global-radius;
+        overflow: hidden;
+        h2{
+            margin: 0;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &_items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1px;
+    }
+    &_item{
+        width: calc(20% + 1px);
+        border-top: 1px solid $light-black;
+        border-right: 1px solid $light-black;
+        border-left: 1px solid $light-black;
+        margin-right: -1px;
+        height: 146px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: 300ms;
+        padding: 20px;
+        &_icon{
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.events{
+    padding: 85px 0 58px;
+    &_inner{
+        margin-top: 66px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_event{
+        margin: 0 10px;
+        width: calc(33.333% - 20px);
+        margin-bottom: 38px;
+        &_img{
+            display: block;
+            margin-bottom: 16px;
+        }
+        &_title{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+footer.pattern.footer
+    .footer_top
+        h2
+            if page == 'pre_ico'
+                | Buy tokens with
+                | 
+                b bonus +25%
+                |
+                | now
+            else
+                | Join the Whitelist and get bonus
+                | 
+                b +25%
+                | 
+                | for tokens before 1.5m
+        .footer_top_content
+            if page == 'pre_ico'
+                a.button.primary.short.spaced(href="#")
+                    | BUY TOKENS
+            else
+                +form('JOIN WHITELIST', 'primary')
+        +social
+    .footer_bottom
+        .row.align-middle.align-justify.footer_bottom_inner
+            .column.shrink.logo
+                img(src="./img/logo.svg", alt="LevelNet")
+            .column.shrink.footer_contact
+                a(href="mailto:contact@levelnet.com" target="_blank") contact@levelnet.com
+                br
+                a(href="tel:9499362699") (949) 936-26-99
+            .column.shrink.footer_location
+                | US Office: 100 Spectrum center drive,
+                br
+                | Suite 900, Irvine, CA 92618
+            .column.shrink.footer_copyright
+                | All right reserved
+                br
+                | © LevelNet, 2018

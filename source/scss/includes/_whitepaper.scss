@@ -1,0 +1,22 @@
+.whitepaper{
+    padding: 85px 0;
+    &_offers{
+        padding: 52px 0;
+    }
+    &_offer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &:last-child{
+            margin: 0;
+        }
+        &_icon{
+            @include hexagon(66, #1c1a1c, 2, #343a40, null);
+            margin-right: 25px;
+        }
+        &_label{
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+    }
+}

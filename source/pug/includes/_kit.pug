@@ -1,0 +1,53 @@
+mixin release(title, date)
+    .kit_release
+        a.kit_release_title(href="#")
+            =title
+        .kit_release_date
+            =date
+
+mixin material(icon, label)
+    a.accordion-title.kit_material(href="#")
+        span.kit_material_icon
+            i.material-icons
+                =icon
+        span.kit_material_label
+            =label
+        
+
+section#kit.kit(data-magellan-target="kit")
+    .row.align-center
+        .column.large-10
+            h2 Media Kit
+    .row.align-center.kit_inner
+        .column.large-5
+            h4 Relases
+            .kit_releases
+                - var k = 0;
+                while k < 4
+                    +release('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.', 'November 14, 2017')
+                    - k++
+            button.button.hollow.short.icon
+                | Show all releases
+                i.icon.icon--arrow
+        .column.large-5
+            h4 Materials
+            .accordion.kit_materials(data-accordion data-allow-all-closed="true")
+                .accordion-item(data-accordion-item)
+                    +material('wallpaper', 'Logo and Graphics')
+                    .accordion-content.kit_material_content(data-tab-content)
+                        | Tabs
+                .accordion-item(data-accordion-item)
+                    +material('camera_alt', 'Photos of the Team and key events')
+                    .accordion-content.kit_material_content(data-tab-content)
+                        | Tabs
+                .accordion-item(data-accordion-item)
+                    +material('format_align_left', 'Articles and other texts')
+                    .accordion-content.kit_material_content(data-tab-content)
+                        | Tabs
+                .accordion-item(data-accordion-item)
+                    +material('font_download', 'Banners & Advertising materials')
+                    .accordion-content.kit_material_content(data-tab-content)
+                        | Tabs
+            a.button.secondary.shorter.icon(href="#")
+                | Download Full Media Kit
+                i.icon.icon--arrow

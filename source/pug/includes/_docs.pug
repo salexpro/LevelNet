@@ -1,0 +1,21 @@
+mixin docs_item(icon, label)
+    a.docs_item(href="#")
+        span.docs_item_icon
+            img(src="./img/icons/" + icon + ".svg", alt="")
+        span.docs_item_label
+            =label
+section#documents.docs(data-magellan-target="documents")
+    .row.column
+        .docs_inner
+            h2 Documents
+            .docs_items
+                +docs_item('bussines', 'Whitepaper')
+                +docs_item('success', 'Pitch Deck')
+                +docs_item('financial', 'One Pager')
+                +docs_item('legal', 'Patent Confirmation')
+                +docs_item('money', 'Financial Model')
+                +docs_item('blog', 'Executive Summary')
+                +docs_item('global_conn', 'Tech Document')
+                +docs_item('signing', 'Privacy Policy')
+                +docs_item('workflow', 'Terms of Token Sale')
+                +docs_item('features', 'Howey Test')

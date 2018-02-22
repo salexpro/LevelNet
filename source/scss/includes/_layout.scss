@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Thin.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'SF UI Display';
+//     src: url('../fonts/SFUIDisplay/SFUIDisplay-Ultralight.woff2') format('woff2'),
+//         url('../fonts/SFUIDisplay/SFUIDisplay-Ultralight.woff') format('woff');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EurofontExtendedC';
+    src: url('../fonts/EurofontExtendedC/EurofontExtendedC.woff2') format('woff2'),
+        url('../fonts/EurofontExtendedC/EurofontExtendedC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EurofontExtendedC';
+    src: url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff2') format('woff2'),
+        url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $light-black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    border-radius: $global-radius;
+}
+
+html, body{
+    -webkit-overflow-scrolling: touch;
+    letter-spacing: 0.6px;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 320px;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea,
+select,
+button {
+    outline: none;
+}
+
+select{
+    padding-right: 20px;
+}
+
+h1{
+    letter-spacing: 1.68px;
+}
+
+h2{
+    letter-spacing: 1.44px;
+    margin-bottom: 7px;
+    line-height: 1.194;
+}
+
+h3{
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+}
+
+h4{
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    line-height: 1.4;
+}

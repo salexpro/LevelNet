@@ -1,0 +1,32 @@
+.partners{
+    padding: 85px 0 90px;
+    &_inner{
+        margin: 30px 0 40px;
+        border: 1px solid $light-black;
+        background-color: rgba(28, 26, 28, 0.6);
+        border-radius: $global-radius;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_partner{
+        flex: 1 1 25%;
+        padding: 20px;
+        &_img{
+            display: block;
+            margin-bottom: 16px;
+            img{
+                max-width: 100%;
+            }
+        }
+        &_brief{
+            margin: 10px 0;
+        }
+        &_descr{
+            color: $medium-gray;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            line-height: 1.29;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.roadmap{
+    padding-top: 85px;
+    &_table{
+        table-layout: fixed;
+        margin-top: 87px;
+        &_hex{
+            position: absolute;
+            bottom: calc(100% - 44px);
+            left: 50%;
+            transform: translateX(-50%);
+            &.is_active{
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: -4px;
+                    bottom: 8px;
+                    width: 84px;
+                    height: 84px;
+                    background-image: url(../img/hexagons/roadmap_active.svg);
+                }
+            }
+            &_label{
+                font-weight: 600;
+                text-align: center;
+                font-size: 15px;
+                letter-spacing: 0.6px;
+                padding-bottom: 10px;
+            }
+            &_figure{
+                @include hexagon(76, #1c1a1c, 2, $dark-gray, null)
+            }
+        }
+        &_hint{
+            position: absolute;
+            bottom: calc(100% + 88px);
+            left: 12px;
+            background-color: $input-background-focus;
+            padding: 6px 8px;
+            white-space: nowrap;
+            border-radius: $global-radius $global-radius $global-radius 0;
+            &::before{
+                content: '';
+                position: absolute;
+                top: calc(100% + 79px);
+                left: -7px;
+                width: 15px;
+                height: 17px;
+                background-image: url(../img/hexagons/roadmap_hint.svg);
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 2px;
+                height: 110px;
+                background-color: $input-background-focus;
+            }
+        }
+        tr{
+            &:first-child {
+                th, 
+                td {
+                    border-top: 2px solid $dark-gray;
+                    padding-top: 77px;
+                }
+                th{
+                    padding-top: 70px;
+                }
+            }
+            &:last-child {
+                th,
+                td {
+                    border-bottom: 0;
+                }
+            }
+        }
+        th{
+            padding-right: 52px;
+            border: 1px solid $light-black;
+            border-left: 0;
+            white-space: nowrap;
+            width: 170px;
+            padding: 36px 0;
+            text-align: left;
+            vertical-align: top;
+        }
+        td{
+            position: relative;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            padding: 36px 10px;
+            color: $medium-gray;
+            border: 1px solid $light-black;
+            vertical-align: top;
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}

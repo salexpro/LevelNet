@@ -1,0 +1,32 @@
+.head{
+    border-top: 0;
+    padding: 152px 0;
+    &--pre_ico{
+        padding-bottom: 95px;
+    }
+    &_content{
+        padding-top: 66px;
+        &_left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &_right{
+            position: relative;
+        }
+    }
+    &_list{
+        li{
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            &::before{
+                content: '';
+                width: 10px;
+                height: 12px;
+                background-image: url(../img/hexagons/list.svg);
+                margin-right: 14px;
+            }
+        }
+    }
+}

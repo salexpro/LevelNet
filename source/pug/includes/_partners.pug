@@ -1,0 +1,22 @@
+mixin partner(img, name, brief, descr)
+    .partners_partner
+        a.partners_partner_img(href="#")
+            img(src="//placehold.it/230x160", alt=name)
+        h3.partners_partner_name
+            a(href="#")
+                =name
+        p.partners_partner_brief
+            =brief
+        p.partners_partner_descr
+            !=descr
+section#partners.pattern.partners(data-magellan-target="partners")
+    .row.column
+        h2 Partners
+        .partners_inner
+            - var i = 0;
+            while i < 8
+                +partner('', 'SHRM', 'Fiduciary and administration services', 'SHRM is a world-leading global  provider of fiduciary and administration services.')
+                - i++
+        button.button.hollow.short.icon
+            | Show more
+            i.icon.icon--arrow

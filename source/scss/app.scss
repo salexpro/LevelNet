@@ -1,18 +1,18 @@
 @charset 'utf-8';
-
+$contrast-warnings: false;
 @import 'settings';
 @import '../../node_modules/foundation-sites/scss/foundation';
 // @import 'motion-ui';
 
 @include foundation-global-styles;
 //@include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 // @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
 // @include foundation-range-input;
-// @include foundation-accordion;
+@include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
@@ -20,12 +20,12 @@
 // @include foundation-callout;
 // @include foundation-card;
 // @include foundation-close-button;
-// @include foundation-menu;
+@include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
 // @include foundation-dropdown-menu;
-// @include foundation-responsive-embed;
+@include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
 // @include foundation-off-canvas;
@@ -35,11 +35,11 @@
 // @include foundation-progress-element;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
-// @include foundation-slider;
+@include foundation-slider;
 // @include foundation-sticky;
 // @include foundation-reveal;
 // @include foundation-switch;
-// @include foundation-table;
+@include foundation-table;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
@@ -47,11 +47,46 @@
 // @include foundation-top-bar;
 // @include foundation-visibility-classes;
 // @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
 
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import 'includes/_layout';
+// Components
+@import 'includes/layout';
+@import 'includes/pattern';
+@import 'includes/icons';
+@import 'includes/button';
+@import 'includes/select';
+@import 'includes/countdown';
+@import 'includes/form';
+@import 'includes/social';
+@import 'includes/box';
+@import 'includes/hexagon';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel';
+@import 'includes/owl';
+
+// Sections
+@import 'includes/nav';
+@import 'includes/sidebar_nav';
+@import 'includes/head';
+@import 'includes/about';
+@import 'includes/whitepaper';
+@import 'includes/use_cases';
+@import 'includes/services';
+@import 'includes/products';
+@import 'includes/ico';
+@import 'includes/token';
+@import 'includes/roadmap';
+@import 'includes/team';
+@import 'includes/partners';
+@import 'includes/press';
+@import 'includes/interview';
+@import 'includes/kit';
+@import 'includes/events';
+@import 'includes/reviews';
+@import 'includes/faq';
+@import 'includes/docs';
+@import 'includes/footer';

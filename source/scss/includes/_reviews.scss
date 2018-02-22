@@ -1,0 +1,13 @@
+.reviews{
+    padding: 85px 0 96px;
+    h2{
+        text-align: center;
+    }
+    &_inner{
+        margin-top: 67px;
+    }
+    &_review{
+        border: 1px solid $light-black;
+        margin-bottom: 10px;
+    }
+}

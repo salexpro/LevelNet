@@ -1,0 +1,19 @@
+mixin review(large)
+    .column(class="large-" + (large ? "6" : "3"))
+        .reviews_review.responsive-embed.widescreen
+            iframe(src='https://www.youtube.com/embed/_Th1GTJmL2Y?rel=0&controls=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+section#reviews.pattern.reviews(data-magellan-target="reviews")
+    .row.align-center
+        h2.column Video Reviews and Stories
+    .row.reviews_inner
+        +review(1)
+        .column.large-6
+            .row
+                +review(1)
+                +review(1)
+                +review(1)
+                +review(1)
+        +review
+        +review
+        +review
+        +review

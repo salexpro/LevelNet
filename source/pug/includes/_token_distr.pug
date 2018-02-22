@@ -1,0 +1,20 @@
+mixin token_perc(mod, digit, label, is_small)
+    .token_distr_stat_perc(class="token_distr_stat_perc--" + mod + (is_small ? " token_distr_stat_perc--small" : ""))
+        .token_distr_stat_perc_digit
+            | #{digit}%
+        .token_distr_stat_perc_label
+            =label
+section.pattern.token_distr
+    .row.column
+        h2 Token Distribution
+        .token_distr_stat
+            +token_perc('cont', 85, 'Contributors')
+            +token_perc('adv', 5, 'Advisors')
+            +token_perc('opt', 5, 'Options pool')
+            +token_perc('wings', 3, 'Wings')
+            +token_perc('bounty', 2, 'Bounties')
+            +token_perc('btctalk', 35, 'Bitcointalk', 1)
+            +token_perc('blog', 30, 'Blogging', 1)
+            +token_perc('fb', 15, 'Facebook', 1)
+            +token_perc('tw', 10, 'Twitter', 1)
+            +token_perc('reddit', 10, 'Reddit', 1)

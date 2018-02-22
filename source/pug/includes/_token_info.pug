@@ -1,0 +1,23 @@
+mixin token_item(pos, icon, label)
+    .token_info_hex_item
+        .token_info_hex_item_icon
+            img(src="./img/icons/" + icon + ".svg", alt=icon).class
+        h4.token_info_hex_item_label(class="token_info_hex_item_label--" + (pos ? "right" : "left"))
+            !=label
+section.token_info
+    .row.column
+        h2 Token Information
+        .token_info_hex
+            .token_info_hex_info.token_info_hex_info--top
+                +token_item(0, 'libra', '1 LVL = 1 USD')
+                +token_item(1, 'safe', 'BTC, ETH, LTC, USD, VISA')
+            .token_info_hex_info.token_info_hex_info--middle
+                +token_item(0, 'cloud', 'All tokens are pre-mined')
+                h4.token_info_hex_info_center
+                    | 15 000 000
+                    br
+                    | TOKENS ISSUED
+                +token_item(1, 'lock', 'Tokens not sold during the<br>token offering are destroyed')
+            .token_info_hex_info.token_info_hex_info--bottom
+                +token_item(0, 'cup', 'Soft cap $1.5M')
+                +token_item(1, 'first_cup', 'Hard cap $12M')

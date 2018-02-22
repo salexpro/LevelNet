@@ -1,0 +1,19 @@
+.form{
+    position: relative;
+    display: flex;
+    max-width: 473px;
+    input{
+        margin-right: 8px;
+    }
+    &_note{
+        position: absolute;
+        right: 0;
+        top: calc(100% + 10px);
+        color: $dark-gray;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+        span{
+            color: $medium-gray;
+        }
+    }
+}

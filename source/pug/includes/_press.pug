@@ -1,0 +1,16 @@
+mixin press
+    a.press_item(href="#")
+        img(src="//placehold.it/200x80", alt="")
+section#press.press
+    .row.column
+        h2 Press
+        p.press_descr
+            | Learn more about LevelNet from over 40 publications in press and social media
+        .press_items
+            - var j = 0;
+            while j < 20
+                +press
+                - j++
+        button.button.hollow.short.icon
+            | View all
+            i.icon.icon--arrow

@@ -1,0 +1,19 @@
+.press{
+    padding: 85px 0 95px;
+    &_descr{
+        color: $medium-gray;
+    }
+    &_items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 90px -15px 10px;
+        padding: 0;
+
+    }
+    &_item{
+        display: block;
+        width: calc(20% - 30px);
+        margin: 0 15px 30px;
+    }
+}

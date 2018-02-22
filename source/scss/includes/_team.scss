@@ -1,0 +1,61 @@
+.team{
+    padding-top: 85px;
+    padding-bottom: 15px;
+    &_descr{
+        color: $medium-gray;
+    }
+    &_members{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        background-color: #f8f9fa;
+        border-radius: $global-radius;
+        color: $light-black;
+        
+    }
+    &_member{
+        padding: 0 32px;
+        // border-left: 1px solid $medium-gray;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_photo{
+            width: 120px;
+            height: 120px;
+            flex: 0 0 120px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid $medium-gray;
+        }
+        &_position{
+            color: $dark-gray;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+        }
+        &_line{
+            width: 100px;
+            height: 3px;
+            border-radius: $global-radius;
+            margin: 18px auto 26px;
+            &--red{
+                background-color: $primary-color;
+            }
+        }
+        &_descr{
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            line-height: 1.29;
+            margin: auto;
+        }
+        &_social{
+            margin-top: 18px;
+            a{
+                padding: 0;
+                margin: 0 7px;
+            }
+        }
+    }
+}
