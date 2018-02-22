@@ -19,9 +19,9 @@ section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "")
                 if page == 'pre_ico'
                     h2 PUBLIC PRE-SALE is live
                     h3 01.03.2018  —  31.03.2018
-                    +countdown('white')
+                    +countdown('light')
                     +countdown_course
-                    +countdown_cap
+                    +countdown_cap('light')
                     .ico_box_stat
                         .ico_box_stat_item
                             b 1 223,52
@@ -55,3 +55,6 @@ section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "")
                     +ico_hexagon('secondary', 3, '$5m - $7m')
                 button.button.short.small.spaced.primary(data-open="join")
                     | JOIN WHITELIST
+                if page == 'pre_ico'
+                    .ico_box_footer_note
+                        | Tokens not sold during the TOKEN OFFERING are destroyed. All tokens are pre-mined

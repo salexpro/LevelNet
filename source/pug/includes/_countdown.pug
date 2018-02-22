@@ -27,8 +27,8 @@ mixin counter
             .countdown_digit_label
                     | Seconds
 
-mixin countdown_cap
-    .countdown_cap
+mixin countdown_cap(mod)
+    .countdown_cap(class=mod ? "countdown_cap--" + mod : "")
         .countdown_cap_raised
             span Raised
             b $1 384 000
@@ -52,12 +52,13 @@ mixin countdown_cap
             br
             | Hard Cap
 
-mixin countdown_course
+mixin countdown_course(note)
     .countdown_course
         b 1 LVL = 1 USD
         span BTC, ETH, LTC, USD, VISA
-        .countdown_course_note
-            | Unsold tokens will be destroyed
+        if note
+            .countdown_course_note
+                =note
 
 mixin countdown(mod, header)
     .countdown(class=mod ? "countdown--" + mod : "")
@@ -84,7 +85,7 @@ mixin countdown(mod, header)
             a.button.primary.short.spaced(href="#")
                 | BUY TOKENS
             .countdown_hr
-            +countdown_course
+            +countdown_course('Unsold tokens will be destroyed')
             a.button.hollow.short.icon(href="#ico" data-smooth-scroll)
                 | Token Sale Details
                 i.icon.icon--arrow

@@ -7,7 +7,9 @@
         margin-top: 67px;
     }
     &_review{
+        display: block;
         border: 1px solid $light-black;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        border-radius: $global-radius;
     }
 }

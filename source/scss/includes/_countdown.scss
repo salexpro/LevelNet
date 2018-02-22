@@ -2,7 +2,7 @@
     border: 1px solid $light-black;
     background-color: rgba(32, 30, 32, 0.75);
     border-radius: $global-radius;
-    &--white{
+    &--light{
         border: 0;
         background: none;
         width: 505px;
@@ -94,6 +94,20 @@
         border-radius: $global-radius;
         margin: 55px auto;
         display: flex;
+        &--light{
+            background-color: #e9ecef;
+            .countdown_cap{
+                &_milestone {
+                    border-color: rgba($medium-black, .15);
+                    &_label {
+                        color: $medium-black;
+                    }
+                }
+                &_label{
+                    color: $medium-black;
+                }
+            }
+        }
         &_raised{
             position: absolute;
             top: 0;

@@ -1,0 +1,27 @@
+.oppotunities{
+    padding: 85px 0 7px;
+    h3{
+        color: $medium-gray;
+    }
+    &_items{
+        padding-top: 27px;
+    }
+    &_item{
+        margin-top: 27px;
+        &_img{
+            display: block;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: $global-radius;
+            background-color: $white;
+            margin-bottom: 15px;
+        }
+        a {
+            transition: 300ms
+        }
+    }
+}
