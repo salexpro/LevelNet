@@ -169,4 +169,14 @@
             letter-spacing: 0.56px;
         }
     }
+    .hexagon{
+        &--4{
+            top: 360px;
+            right: calc(50% - 750px);
+        }
+        &--3{
+            top: 560px;
+            left: calc(50% - 750px);
+        }
+    }
 }

@@ -91,4 +91,18 @@
             border-top: 1px solid #31373c;
         }
     }
+    .hexagon{
+        &--1{
+            top: 100px;
+            right: calc(50% - 530px);
+        }
+        &--3{
+            top: 374px;
+            left: calc(50% - 630px);
+        }
+        &--6{
+            top: 630px;
+            right: calc(50% - 675px);
+        }
+    }
 }

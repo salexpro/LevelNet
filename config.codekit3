@@ -69613,6 +69613,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/_hexagon.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_hexagon.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/_ico.pug": {
 		"cB": 1,
 		"cOD": 1,

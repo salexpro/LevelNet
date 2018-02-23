@@ -1,0 +1,5 @@
+mixin hexagon(num, mod)
+    - var i = 0;
+    .hexagon(class="hexagon--" + num)
+        while i < num
+            .hexagon_hex(class="hexagon_hex--" + ++i + (mod == i ? " mod" : ""))

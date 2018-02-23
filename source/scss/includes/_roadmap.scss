@@ -98,4 +98,14 @@
             }
         }
     }
+    .hexagon {
+        &--3{
+            top: 510px;
+            right: calc(50% - 710px);
+        }
+        &--2{
+            top: 727px;
+            left: calc(50% - 592px);
+        }
+    }
 }

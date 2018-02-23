@@ -73,3 +73,48 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
 		z-index: 2;
 	}
 }
+
+.hexagon{
+	position: absolute;
+	z-index: -1;
+	&_hex{
+		@include hexagon(131, $medium-black, 1.5, $light-black, null);
+		position: absolute;
+		&--1{
+			right: 0;
+			top: 0;
+		}
+		&--2{
+			bottom: -39px;
+			right: 64px;
+			&.mod {
+				bottom: -151px;
+				right: -129px;
+			}
+		}
+		&--3{
+			bottom: -39px;
+			left: -66px;
+		}
+		&--4{
+			bottom: 74px;
+			right: 0;
+			&.mod {
+				right: -129px;
+			}
+		}
+		&--5{
+			bottom: 207px;
+			left: -46px;
+			&.mod {
+				bottom: auto;
+				top: 0;
+				left: -260px;
+			}
+		}
+		&--6{
+			top: 0;
+			right: -129px;
+		}
+	}
+}

@@ -59,6 +59,16 @@
                 }
             }
         }
+        .hexagon{
+            &--6{
+                top: -92px;
+                right: calc(50% - 720px);
+            }
+            &--1{
+                top: 400px;
+                left: calc(50% - 550px);
+            }
+        }
     }
 
     &_distr{

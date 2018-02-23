@@ -805,7 +805,7 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: none;
+$tab-background: $body-background;
 $tab-color: rgba($white, .5);
 $tab-background-active: none;
 $tab-active-color: $white;
@@ -813,7 +813,7 @@ $tab-item-font-size: rem-calc(15);
 $tab-item-background-hover: none;
 $tab-item-padding: 0.9rem 10px 0.7rem 10px;
 $tab-expand-max: 6;
-$tab-content-background: none;
+$tab-content-background: $body-background;
 $tab-content-border: #31373c;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;

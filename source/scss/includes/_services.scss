@@ -3,4 +3,14 @@
     &_inner{
         padding: 46px 0;
     }
+    .hexagon{
+        &--1{
+            top: 212px;
+            right: calc(50% - 750px);
+        }
+        &--2 {
+            top: 630px;
+            right: calc(50% - 815px);
+        }
+    }
 }
