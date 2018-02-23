@@ -2,30 +2,30 @@ mixin counter
     .countdown_container
         .countdown_digit
             .countdown_digit_num.countdown_digit_num--days
-                | 12
+                | ——
             .countdown_digit_label
                 | Days
         .countdown_sep
             | :
         .countdown_digit
             .countdown_digit_num.countdown_digit_num--hours
-                | 03
+                | ——
             .countdown_digit_label
-                | Days
+                | Hours
         .countdown_sep
             | :
         .countdown_digit
             .countdown_digit_num.countdown_digit_num--minutes
-                | 11
+                | ——
             .countdown_digit_label
                 | Minutes
         .countdown_sep
             | :
         .countdown_digit
             .countdown_digit_num.countdown_digit_num--seconds
-                | 49
+                | ——
             .countdown_digit_label
-                    | Seconds
+                | Seconds
 
 mixin countdown_cap(mod)
     .countdown_cap(class=mod ? "countdown_cap--" + mod : "")
@@ -82,7 +82,7 @@ mixin countdown(mod, header)
             .countdown_hr
             +countdown_cap
             h3 Buy Tokens with Bonus +25%
-            a.button.primary.short.spaced(href="#")
+            a.button.primary.short.spaced(href="./buy.html")
                 | BUY TOKENS
             .countdown_hr
             +countdown_course('Unsold tokens will be destroyed')
