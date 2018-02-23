@@ -52,38 +52,50 @@ $('.countdown_container').countdown(hourX.toDate(), function(event) {
 
 // Graph slider
 $('.slider').on('moved.zf.slider', (e, el) => {
-    let pos = $(el).attr('aria-valuenow');
+    let year, pos = $(el).attr('aria-valuenow');
     const graph_group1 = $('.about_graph_map_group--1');
     const graph_group2 = $('.about_graph_map_group--2');
+
     if(pos < 50){
         graph_group2.addClass('is_hide');
         graph_group1.removeClass('is_hide');
-    } else if (pos >= 50 && pos < 100) {
-        graph_group1.addClass('is_hide');
-        graph_group2
-            .removeClass('about_graph_map_group--2019 about_graph_map_group--2020 about_graph_map_group--2021')
-            .removeClass('is_hide');
-    } else if (pos>=100 && pos < 150){
-        graph_group1.addClass('is_hide');
-        graph_group2
-            .addClass('about_graph_map_group--2019')
-            .removeClass('about_graph_map_group--2020 about_graph_map_group--2021')
-            .removeClass('is_hide');
-    } else if (pos >= 150 && pos < 200) {
-        graph_group1.addClass('is_hide');
-        graph_group2.removeClass('is_hide');
-        graph_group2
-            .addClass('about_graph_map_group--2020')
-            .removeClass('about_graph_map_group--2019 about_graph_map_group--2021')
-            .removeClass('is_hide');
-    } else if (pos >= 200){
-        graph_group1.addClass('is_hide');
-        graph_group2.removeClass('is_hide');
-        graph_group2
-            .addClass('about_graph_map_group--2021')
-            .removeClass('about_graph_map_group--2019 about_graph_map_group--2020')
-            .removeClass('is_hide');
+        year = '2017';
     }
+    if (pos >= 50 && pos < 100) {
+        graph_group1.addClass('is_hide');
+        graph_group2
+        .removeClass('about_graph_map_group--2019 about_graph_map_group--2020 about_graph_map_group--2021')
+        .removeClass('is_hide');
+        year = '2018';
+    }
+    if (pos>=100 && pos < 150){
+        graph_group1.addClass('is_hide');
+        graph_group2
+        .addClass('about_graph_map_group--2019')
+        .removeClass('about_graph_map_group--2020 about_graph_map_group--2021')
+        .removeClass('is_hide');
+        year = '2019';
+    }
+    if (pos >= 150 && pos < 200) {
+        graph_group1.addClass('is_hide');
+        graph_group2.removeClass('is_hide');
+        graph_group2
+        .addClass('about_graph_map_group--2020')
+        .removeClass('about_graph_map_group--2019 about_graph_map_group--2021')
+        .removeClass('is_hide');
+        year = '2020';
+    }
+    if (pos >= 200){
+        graph_group1.addClass('is_hide');
+        graph_group2.removeClass('is_hide');
+        graph_group2
+        .addClass('about_graph_map_group--2021')
+        .removeClass('about_graph_map_group--2019 about_graph_map_group--2020')
+        .removeClass('is_hide');
+        year = '2021';
+    }
+    if (year) $('.about_graph_comment_inner').removeClass('is_visible');
+    $('.about_graph_comment--' + year).addClass('is_visible');
 })
 
 $('.team_members').owlCarousel({
