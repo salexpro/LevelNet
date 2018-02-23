@@ -7,6 +7,8 @@ footer.pattern.footer
                 b bonus +25%
                 |
                 | now
+            else if page == 'product'
+                | Subscribe for discounts and bonuses!
             else
                 | Join the Whitelist and get bonus
                 | 
@@ -17,6 +19,8 @@ footer.pattern.footer
             if page == 'pre_ico'
                 a.button.primary.short.spaced(href="#")
                     | BUY TOKENS
+            else if page == 'product'
+                +form('SUBSCRIBE', 'primary')
             else
                 +form('JOIN WHITELIST', 'primary')
         +social

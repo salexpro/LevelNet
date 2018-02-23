@@ -1,8 +1,12 @@
-mixin form(button, color, note)
-    form.form(action="#")
-        input(type="email" placeholder="Enter your email")
-        button.button.short.spaced(type="submit" class=color)
-            =button
-        if note
-            .form_note
-                !=note
+mixin form(button, color, header, note)
+    .form
+        if header
+            .form_header
+                = header
+        form.form_form(action="#")
+            input(type="email" placeholder="Enter your email")
+            button.button.short.spaced(type="submit" class=color)
+                =button
+            if note
+                .form_note
+                    !=note

@@ -1,23 +1,27 @@
 nav.nav.is_filled
-    .nav_inner
+    .nav_inner(data-smooth-scroll)
         .logo
-            a(href="/")
+            a(href="#top")
                 img(src="./img/logo.svg", alt="LevelNet")
-        ul.menu(data-smooth-scroll)
+        ul.menu
             li
                 a(href="#whitepaper") Whitepaper
             li
                 a(href="#about") Technology
             li
                 a(href="#team") Team
-            li
-                a(href="#ico") Token Sale
+            if page != 'product'
+                li
+                    a(href="#ico") Token Sale
             li
                 a(href="#press") Press
             li
                 a(href="#faq") FAQ
         button.button.hollow.thin(data-open="register")
-            | Register for Whitelist
+            if page == 'product'
+                | Token Sale
+            else
+                | Register for Whitelist
         .nav_phone
             a(href="tel:+823123456") +82 312 34 56
         .nav_lang

@@ -1,7 +1,13 @@
 .form{
-    position: relative;
-    display: flex;
     max-width: 473px;
+    &_form{
+        position: relative;
+        display: flex;
+    }
+    &_header {
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
     input{
         margin-right: 8px;
     }

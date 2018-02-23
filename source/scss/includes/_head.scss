@@ -1,7 +1,7 @@
 .head{
     border-top: 0;
     padding: 152px 0;
-    &--pre_ico{
+    &--small{
         padding-bottom: 95px;
     }
     &_content{
@@ -28,5 +28,8 @@
                 margin-right: 14px;
             }
         }
+    }
+    &_subs{
+        margin-top: 60px;
     }
 }

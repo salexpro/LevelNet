@@ -1,25 +1,29 @@
-header.pattern.head(class=(page == 'pre_ico') ? "head--pre_ico" : "")
+header#top.pattern.head(class=(page != 'main') ? "head--small" : "" data-magellan-target="top")
     .row
-        h1.column(class=(page == 'pre_ico') ? "large-10 large-offset-1" : "")
+        h1.column(class=(page != 'main') ? "large-10 large-offset-1" : "")
             if (page == 'pre_ico')
                 | Join Disrupting Cyber Security Platform LevelNet
             else
                 | Disrupting Cyber Security Platform LevelNet
-    .row.head_content(class=(page == 'pre_ico') ? "align-middle" : "")
-        .column.head_content_left(class=(page != 'pre_ico') ? "large-6" : "large-offset-1 shrink")
+    .row.head_content(class=(page != 'main') ? "align-middle" : "")
+        .column.head_content_left(class=(page == 'main') ? "large-6" : "large-offset-1 shrink")
             ul.menu.vertical.head_list
                 li
                     h4 Faster than any other single Antivirus software
                 li
                     h4 Thousands of virus databases in one token
-            if page != 'pre_ico'
-                +form('JOIN WHITELIST', 'primary', 'Don\'t miss <span>bonus +25%</span> for tokens before 1.5m')
-        .column.head_content_right(class=(page != 'pre_ico') ? "large-6" : "large-offset-3")
-            if page != 'pre_ico'
+            if page == 'main'
+                +form('JOIN WHITELIST', 'primary', false, 'Don\'t miss <span>bonus +25%</span> for tokens before 1.5m')
+        .column.head_content_right(class=(page == 'main') ? "large-6" : "large-offset-3")
+            if page == 'main'
                 +countdown('main')
-            +social(true, (page != 'pre_ico' ? 'head' : ''))
+            +social(true, (page == 'main' ? 'head' : ''))
     if page == 'pre_ico'
         .row.align-center
             .column.large-10
                 .head_pre_ico
                     +countdown('pre_ico', 'PUBLIC PRE-SALE is live, ends in')
+    if page == 'product'
+        .row.align-center.head_subs
+            .column.large-10
+                +form('SUBSCRIBE', 'primary', 'Subscribe for hot news and bonuses')

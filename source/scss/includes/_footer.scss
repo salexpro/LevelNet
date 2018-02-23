@@ -7,6 +7,9 @@
         }
         &_content{
             margin: 40px auto 95px;
+            > * {
+                margin: auto;
+            }
         }
     }
     &_bottom{
