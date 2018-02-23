@@ -1,14 +1,14 @@
 .token{
     &_info{
         padding-top: 30px;
+        text-align: center;
         h2{
             text-align: center;
         }
         &_hex{
             max-width: 380px;
             height: 437px;
-            margin: auto;
-            margin-top: 53px;
+            margin: 53px auto 60px;
             background-image: url(../img/bg_token_info.svg);
             background-repeat: no-repeat;
             display: flex;
@@ -50,9 +50,11 @@
                     white-space: nowrap;
                     &--left{
                         right: calc(75px + 40px);
+                        text-align: right;
                     }
                     &--right {
                         left: calc(75px + 40px);
+                        text-align: left;
                     }
                 }
             }

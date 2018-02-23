@@ -8,7 +8,7 @@ mixin faq_item(quest, answ)
         .accordion-content.faq_item_answer(data-tab-content)
             =answ
 
-section#faq.faq
+section#faq.faq(data-magellan-target="faq")
     .row
         h2.column.large-offset-1 Frequently Asked Questions
         .column.large-12.accordion.faq_inner(data-accordion data-allow-all-closed="true")
@@ -18,6 +18,6 @@ section#faq.faq
             +faq_item('What makes LevelNet special?', 'Answer')
             +faq_item('How many Developers are in your Team?', 'Answer')
         .column.large-offset-1
-            a.button.hollow.short.icon(href="#")
+            a.button.hollow.short.icon(href="./faq.html")
                 | See full FAQ
                 i.icon.icon--arrow

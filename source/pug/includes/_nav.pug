@@ -1,5 +1,5 @@
 nav.nav.is_filled
-    .nav_inner(data-smooth-scroll)
+    .nav_inner
         .logo
             a(href="#top")
                 img(src="./img/logo.svg", alt="LevelNet")
@@ -17,10 +17,11 @@ nav.nav.is_filled
                 a(href="#press") Press
             li
                 a(href="#faq") FAQ
-        button.button.hollow.thin(data-open="register")
-            if page == 'product'
+        if page == 'product'
+            a.button.hollow.thin(href="/")
                 | Token Sale
-            else
+        else
+            button.button.hollow.thin(data-open="register")
                 | Register for Whitelist
         .nav_phone
             a(href="tel:+823123456") +82 312 34 56

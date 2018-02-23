@@ -9,22 +9,29 @@
         max-width: 950px;
     }
     &_case{
+        display: block;
         border: 1px solid $light-black;
         height: 150px;
         background-color: rgba(32, 30, 32, 0.75);
-        padding: 20px;
+        padding: 17px 20px;
         border-radius: $global-radius;
         &_top{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            height: 62px;
         }
         &_note{
             color: $medium-gray;
             font-size: 14px;
             letter-spacing: 0.56px;
             margin-top: -1em;
+        }
+        &_label{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }

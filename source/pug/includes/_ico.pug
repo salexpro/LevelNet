@@ -12,7 +12,7 @@ mixin ico_hexagon(color, percent, cap)
             | %
         .ico_box_hex_cap
             =cap
-section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "")
+section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "" data-magellan-target="ico")
     .row.column
         .box.ico_box
             .ico_box_top
@@ -53,8 +53,11 @@ section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "")
                     +ico_hexagon('primary', 10, '0 - $1.5m')
                     +ico_hexagon('tertiary', 5, '$1.5m - $5m')
                     +ico_hexagon('secondary', 3, '$5m - $7m')
-                button.button.short.small.spaced.primary(data-open="join")
-                    | JOIN WHITELIST
                 if page == 'pre_ico'
+                    a.button.short.small.spaced.primary(href="./buy.html")
+                        | BUY TOKENS WITH BONUS
                     .ico_box_footer_note
                         | Tokens not sold during the TOKEN OFFERING are destroyed. All tokens are pre-mined
+                else
+                    button.button.short.small.spaced.primary(data-open="join")
+                        | JOIN WHITELIST
