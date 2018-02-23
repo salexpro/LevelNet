@@ -69469,54 +69469,11 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/source\/img\/patterns\/box.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/patterns\/box.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/patterns\/left.png": {
+	"\/source\/img\/pattern.png": {
 		"ft": 32768,
-		"iS": 1008462,
+		"iS": 484936,
 		"oA": 0,
-		"oAP": "\/build\/img\/patterns\/left.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/img\/patterns\/left@2x.png": {
-		"ft": 32768,
-		"iS": 1490600,
-		"oA": 0,
-		"oAP": "\/build\/img\/patterns\/left@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/img\/patterns\/right.png": {
-		"ft": 32768,
-		"iS": 1014494,
-		"oA": 0,
-		"oAP": "\/build\/img\/patterns\/right.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/img\/patterns\/right@2x.png": {
-		"ft": 32768,
-		"iS": 1491344,
-		"oA": 0,
-		"oAP": "\/build\/img\/patterns\/right@2x.png",
+		"oAP": "\/build\/img\/pattern.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

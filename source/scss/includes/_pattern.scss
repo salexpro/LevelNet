@@ -2,8 +2,6 @@
     position: relative;
     border-top: 1px solid $light-black;
     border-bottom: 1px solid $light-black;
-    background-size: 50% auto;
-    background-repeat: no-repeat;
     &::before,
     &::after {
         content: '';
@@ -13,16 +11,14 @@
         height: 100%;
         z-index: -1;
         background-repeat: no-repeat;
-        background-position-y: center;
+        background-position: center right;
+        background-image: url(../img/pattern.png);
     }
     &::before {
         left: 0;
-        background-image: url(../img/patterns/left.png);
-        background-position-x: right;
     }
     &::after {
         right: 0;
-        background-image: url(../img/patterns/right.png);
-        background-position-x: left;
+        transform: scale(-1, -1);
     }
 }
