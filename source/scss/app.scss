@@ -40,7 +40,7 @@ $contrast-warnings: false;
 // @include foundation-reveal;
 // @include foundation-switch;
 @include foundation-table;
-// @include foundation-tabs;
+@include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
 // @include foundation-tooltip;
@@ -67,6 +67,7 @@ $contrast-warnings: false;
 @import 'includes/hexagon';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel';
 @import 'includes/owl';
+@import 'includes/tabs';
 
 // Sections
 @import 'includes/nav';

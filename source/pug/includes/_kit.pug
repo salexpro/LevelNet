@@ -12,7 +12,24 @@ mixin material(icon, label)
                 =icon
         span.kit_material_label
             =label
-        
+
+mixin tab_item(title)
+    a.kit_tab_item(href="#" target="_blank")
+        i.icon.icon--file
+        =title
+
+mixin tab(name, ext, is_active)
+    - var name_label = name.toLowerCase();
+    .tabs-panel.kit_tab_panel(id="tab_graphics_" + name_label class= is_active ? "is-active" : "")
+        .kit_tab_content
+            +tab_item(name + ' (' + ext + ')')
+            +tab_item(name + ' (' + ext + ')')
+            +tab_item(name + ' (' + ext + ')')
+            +tab_item(name + ' (' + ext + ')')
+        .kit_tab_bottom
+            a(href="#" target="_blank")
+                i.icon.icon--download
+                | Download all #{name}s (zip)
 
 section#kit.kit(data-magellan-target="kit")
     .row.align-center
@@ -35,20 +52,55 @@ section#kit.kit(data-magellan-target="kit")
                 .accordion-item(data-accordion-item)
                     +material('wallpaper', 'Logo and Graphics')
                     .accordion-content.kit_material_content(data-tab-content)
-                        | Tabs
+                        ul#tab_graphics.tabs(data-tabs)
+                            li.tabs-title.is-active
+                                a(href='#tab_graphics_logo', aria-selected='true')
+                                    | Logo
+                            li.tabs-title
+                                a(href='#tab_graphics_background')
+                                    | Background
+                            li.tabs-title
+                                a(href='#tab_graphics_illustration')
+                                    | Illustrations
+                            li.tabs-title
+                                a(href='#tab_graphics_infographic')
+                                    | Infographics
+                        .kit_tab.tabs-content(data-tabs-content='tab_graphics')
+                            +tab('Logo', 'pdf', 1)
+                            +tab('Background', 'jpg')
+                            +tab('Illustration', 'ai')
+                            +tab('Infographic', 'pdf')
+
                 .accordion-item(data-accordion-item)
                     +material('camera_alt', 'Photos of the Team and key events')
                     .accordion-content.kit_material_content(data-tab-content)
-                        | Tabs
+                        ul#tab_graphics.tabs(data-tabs)
+                            li.tabs-title.is-active
+                                a(href='#tab_graphics_photo', aria-selected='true')
+                                    | Photos
+                        .kit_tab.tabs-content(data-tabs-content='tab_graphics')
+                            +tab('Photo', 'jpg', 1)
+
                 .accordion-item(data-accordion-item)
                     +material('format_align_left', 'Articles and other texts')
                     .accordion-content.kit_material_content(data-tab-content)
-                        | Tabs
+                        ul#tab_graphics.tabs(data-tabs)
+                            li.tabs-title.is-active
+                                a(href='#tab_graphics_article', aria-selected='true')
+                                    | Articles
+                        .kit_tab.tabs-content(data-tabs-content='tab_graphics')
+                            +tab('Article', 'doc', 1)
+
                 .accordion-item(data-accordion-item)
                     +material('font_download', 'Banners & Advertising materials')
                     .accordion-content.kit_material_content(data-tab-content)
-                        | Tabs
-            a.button.secondary.shorter.icon(href="#")
+                        ul#tab_graphics.tabs(data-tabs)
+                            li.tabs-title.is-active
+                                a(href='#tab_graphics_photo', aria-selected='true')
+                                    | Banners
+                        .kit_tab.tabs-content(data-tabs-content='tab_graphics')
+                            +tab('Banner', 'png', 1)
+
             a.button.secondary.shorter.icon(href="#" download)
                 | Download Full Media Kit
                 i.icon.icon--arrow

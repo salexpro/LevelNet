@@ -134,6 +134,12 @@
             border-radius: $global-radius;
             background-color: $input-background-focus;
             line-height: 1.29;
+            &_inner{
+                display: none;
+                &.is_visible{
+                    display: block;
+                }
+            }
         }
         &_timeline{
             position: relative;

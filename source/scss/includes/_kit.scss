@@ -64,10 +64,31 @@
             }
         }
         &_content{
-            height: 209px;
             margin-bottom: 40px;
-            border: 1px solid #31373c;
-            border-radius: $global-radius;
+        }
+    }
+    &_tab {
+        &_panel{
+            padding: 0;
+            overflow: hidden;
+        }
+        .icon {
+            margin-right: 15px;
+        }
+        &_content{
+            padding: 10px 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &_item{
+            display: block;
+            margin: 12px 0;
+            width: 50%;
+        }
+        &_bottom{
+            padding: 12px 25px;
+            border-top: 1px solid #31373c;
         }
     }
 }

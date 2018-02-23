@@ -1,0 +1,17 @@
+.tabs{
+    border-radius: $global-radius $global-radius 0 0;
+    &-title{
+        > a {
+            margin: 0 10px;
+            outline: none;
+            border-bottom: 3px solid transparent;
+            transition: 300ms;
+            &[aria-selected='true']{
+                border-color: #31373c;
+            }
+        }
+    }
+    &-content {
+        border-radius: 0 0 $global-radius $global-radius;
+    }
+}

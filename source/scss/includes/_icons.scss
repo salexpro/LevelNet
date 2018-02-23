@@ -15,13 +15,17 @@ $icons: (
     ('check', 24, 17, false),
     ('check_gray', 23, 17, false),
     ('angellist', 15, 21, false),
-    ('linkedin_square', 21, 21, false)
+    ('linkedin_square', 21, 21, false),
+    ('file', 22, 28, false),
+    ('download', 22, 17, false)
 );
 
 .icon{
     display: inline-block;
     vertical-align: middle;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     @each $icon in $icons {
         &--#{nth($icon, 1)} {
             width: #{nth($icon, 2)}px;

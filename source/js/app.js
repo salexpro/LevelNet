@@ -12,6 +12,7 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.slider.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min';
 @codekit-prepend './lib/jquery-select7';
 @codekit-prepend '../../node_modules/moment/moment';
 @codekit-prepend '../../node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.min';
