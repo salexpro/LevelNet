@@ -69775,6 +69775,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/_video.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_video.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/_whitepaper.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -70294,6 +70303,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_use_cases.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/_video.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_video.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

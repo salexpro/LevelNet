@@ -731,9 +731,10 @@ $prototype-text-overflow: ellipsis;
 
 $responsive-embed-margin-bottom: 0;
 $responsive-embed-ratios: (
-  default: 4 by 3,
-  widescreen: 16 by 9,
-  ultrawide: 21 by 9
+  default: 16 by 9,
+  widescreen: 16 by 10,
+  ultrawide: 21 by 9,
+  custom: 16 by 9.7
 );
 
 // 47. Reveal

@@ -1,0 +1,52 @@
+.video{
+    display: block;
+    width: 100%;
+    background-color: $black;
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+    &--border{
+        overflow: hidden;
+        border-radius: $global-radius;
+        border: 1px solid $light-black;
+        .video_bg{
+            border-radius: $global-radius - 1;
+        }
+    }
+    &--small{
+        .video{
+            &_title{
+                font-size: 14px;
+                letter-spacing: 0.56px;
+            }
+            &_button {
+                width: 55px;
+                height: 38px;
+            }
+        }
+    }
+    &:hover{
+        path{
+            fill: $primary-color;
+        }
+    }
+    &_title{
+        position: relative;
+        display: block;
+        padding: 16px;
+        z-index: 2;
+    }
+    &_button{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 66px;
+        height: 46px;
+        z-index: 2;
+        path{
+            fill: $dark-gray;
+            transition: 500ms;
+        }
+    }
+}
