@@ -29,4 +29,8 @@
             line-height: 1.29;
         }
     }
+    &_hidden{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

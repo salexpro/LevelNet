@@ -23,6 +23,12 @@
         align-items: center;
         .icon{
             margin-left: 20px;
+            transition: 300ms;
+        }
+        &.up{
+            .icon{
+                transform: rotate(-90deg);
+            }
         }
     }
     &.spaced{

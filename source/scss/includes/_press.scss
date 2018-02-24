@@ -16,6 +16,11 @@
         width: calc(20% - 30px);
         margin: 0 15px 30px;
     }
+    &_hidden{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .hexagon{
         top: 464px;
         left: calc(50% - 612px);

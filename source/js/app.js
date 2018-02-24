@@ -69,7 +69,7 @@ $('.slider').on('moved.zf.slider', (e, el) => {
         .removeClass('is_hide');
         year = '2018';
     }
-    if (pos>=100 && pos < 150){
+    if (pos >= 100 && pos < 150){
         graph_group1.addClass('is_hide');
         graph_group2
         .addClass('about_graph_map_group--2019')
@@ -99,9 +99,18 @@ $('.slider').on('moved.zf.slider', (e, el) => {
     $('.about_graph_comment--' + year).addClass('is_visible');
 })
 
+// Team carousel
 $('.team_members').owlCarousel({
     items: 4,
     nav: true,
     dots: false,
     navText: ['<i class="icon icon--arrow"></i>', '<i class="icon icon--arrow"></i>']
 });
+
+// More items press/partners
+$('[data-toggle]').click(function() {
+    const button = $(this);
+    $('span', button).text(button.hasClass('up') ? button.data('show-label') : button.data('hide-label'));
+    button.toggleClass('up');
+    $('.' + button.data('toggle')).toggleClass('hide');
+})
