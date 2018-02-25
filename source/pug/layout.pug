@@ -10,10 +10,11 @@ doctype html
 html(lang="ru")
     include includes/_head
     body
-        main.off-canvas-content.wrap(data-off-canvas-content)
+        main.off-canvas-content.wrap(data-off-canvas-content class=page=='faq'?"wrap--headless":"")
             include includes/_nav
-            include includes/_sidebar_nav
-            include includes/_header
+            block header
+                include includes/_header
+                include includes/_sidebar_nav
             block content
                 include includes/_about
                 include includes/_whitepaper

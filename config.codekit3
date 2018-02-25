@@ -69562,6 +69562,15 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/pug\/faq.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/faq.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/_about.pug": {
 		"cB": 1,
 		"cOD": 1,

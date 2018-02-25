@@ -40,8 +40,15 @@
             height: 3px;
             border-radius: $global-radius;
             margin: 18px auto 26px;
+            $colors: primary, secondary, teritary;
             &--red{
                 background-color: $primary-color;
+            }
+            &--blue {
+                background-color: $secondary-color;
+            }
+            &--green {
+                background-color: $tertiary-color;
             }
         }
         &_descr{

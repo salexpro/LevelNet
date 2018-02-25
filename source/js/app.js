@@ -27,20 +27,22 @@ $(document).foundation();
 $('.select7').select7();
 
 // Fill top bar
-const top_fill = () => {
-    const nav = $('.nav');
-    if (nav.offset().top > 40) {
-        nav.addClass('is_filled');
-    } else if (!$('html').hasClass('is-reveal-open')){
-        nav.removeClass('is_filled');
+if($('.head').length){
+    const top_fill = () => {
+        const nav = $('.nav');
+        if (nav.offset().top > 40) {
+            nav.addClass('is_filled');
+        } else if (!$('html').hasClass('is-reveal-open')){
+            nav.removeClass('is_filled');
+        }
     }
-}
 
-top_fill();
-
-$(document).scroll(() => {
     top_fill();
-});
+
+    $(document).scroll(() => {
+        top_fill();
+    });
+}
 
 // Forms
 $('form[action]').submit(function(e){
@@ -66,7 +68,6 @@ $('#success').on('open.zf.reveal', function() {
     const modal = $(this);
     const descr = $('.reveal_descr', this);
     const mod = $(this).data('mod');
-    console.log(modal, descr, mod);
     if (mod == 'join' || mod == 'complete') {
         descr.text('You’ve been added to our whitelist');
         modal.removeClass('reveal_success--min');

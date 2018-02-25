@@ -8,17 +8,56 @@ mixin faq_item(quest, answ)
         .accordion-content.faq_item_answer(data-tab-content)
             =answ
 
-section#faq.faq(data-magellan-target="faq")
+section#faq.faq(data-magellan-target="faq" class=page=='faq'?"faq--light":"")
     .row
-        h2.column.large-offset-1 Frequently Asked Questions
-        .column.large-12.accordion.faq_inner(data-accordion data-allow-all-closed="true")
-            +faq_item('Why invest in LevelNet?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
-            +faq_item('How are you going to store such amount of information in the blockchain?', 'Answer')
-            +faq_item('Why are we launching ICO?', 'Answer')
-            +faq_item('What makes LevelNet special?', 'Answer')
-            +faq_item('How many Developers are in your Team?', 'Answer')
-        .column.large-offset-1
-            a.button.hollow.short.icon(href="./faq.html")
-                | See full FAQ
-                i.icon.icon--arrow
-    +hexagon(5, 4)
+        if page == 'faq'
+            h2.column.large-12
+                | FAQ: all you need to know of Cyber Security Platform LevelNet
+            .column.large-12
+                ul#tab_faq.tabs.faq_tabs(data-tabs)
+                    li.tabs-title.faq_tabs_title.is-active
+                        a(href='#tab_faq_levelnet')
+                            | About Cyber Security Platform LevelNet
+                    li.tabs-title.faq_tabs_title
+                        a(href='#tab_faq_ico')
+                            | About ICO
+        else
+            h2.column.large-offset-1
+                | Frequently Asked Questions
+        
+        .column.large-12
+            if page!='faq'
+                .accordion.faq_inner.faq_inner--light(data-accordion data-allow-all-closed="true")
+                    +faq_item('Why invest in LevelNet?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
+                    +faq_item('How are you going to store such amount of information in the blockchain?', 'Answer')
+                    +faq_item('Why are we launching ICO?', 'Answer')
+                    +faq_item('What makes LevelNet special?', 'Answer')
+                    +faq_item('How many Developers are in your Team?', 'Answer')
+            else
+                .tabs-content(data-tabs-content='tab_faq')
+                    .tabs-panel.is-active(id="tab_faq_levelnet")
+                        .accordion.faq_inner(data-accordion data-allow-all-closed="true")
+                            +faq_item('So is this like an antivirus?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
+                            +faq_item('Do I need to uninstall my other antivirus?', 'Answer')
+                            +faq_item('Why are we launching ICO?', 'Answer')
+                            +faq_item('What makes LevelNet special?', 'Answer')
+                            +faq_item('How many Developers are in your Team?', 'Answer')
+                            +faq_item('So is this like an antivirus?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
+                            +faq_item('Do I need to uninstall my other antivirus?', 'Answer')
+                            +faq_item('Why are we launching ICO?', 'Answer')
+                            +faq_item('What makes LevelNet special?', 'Answer')
+                            +faq_item('How many Developers are in your Team?', 'Answer')
+                    .tabs-panel(id="tab_faq_ico")
+                        .accordion.faq_inner(data-accordion data-allow-all-closed="true")
+                            +faq_item('Why invest in LevelNet?', 'LevelNet integrates virtually all existing anti-virus technologies into one simple, user-friendly application. This distributed system enables participants to share threat data globally and in real time, allowing for the entire system to become much smarter, much faster, than  any single security cybersecurity provider can today. LevelNet significantly boosts the capabilities of any user installed anti-virus program. If a user does not have any security applications installed, LevelNet can take advantage of its distributed network platform and act as a self-standing application.')
+                            +faq_item('How are you going to store such amount of information in the blockchain?', 'Answer')
+                            +faq_item('Why are we launching ICO?', 'Answer')
+                            +faq_item('What makes LevelNet special?', 'Answer')
+                            +faq_item('How many Developers are in your Team?', 'Answer')
+        if page!='faq'
+            .column.large-offset-1
+                a.button.hollow.short.icon(href="./faq.html")
+                    | See full FAQ
+                    i.icon.icon--arrow
+    if page!='faq'
+        +hexagon(5, 4)

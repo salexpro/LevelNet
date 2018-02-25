@@ -1,7 +1,7 @@
 nav.nav.is_filled
     .nav_inner
         .logo
-            a(href="#top")
+            a(href=page=='faq'||page=='sign_up'?"/":"#top")
                 img(src="./img/logo.svg", alt="LevelNet")
         ul.menu
             li
