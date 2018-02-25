@@ -1,29 +1,30 @@
 footer.pattern.footer(data-magellan-target="footer")
-    .footer_top
-        h2
-            if page == 'pre_ico'
-                | Buy tokens with
-                | 
-                b bonus +25%
-                |
-                | now
-            else if page == 'product'
-                | Subscribe for discounts and bonuses!
-            else
-                | Join the Whitelist and get bonus
-                | 
-                b +25%
-                | 
-                | for tokens before 1.5m
-        .footer_top_content
-            if page == 'pre_ico'
-                a.button.primary.short.spaced(href="#")
-                    | BUY TOKENS
-            else if page == 'product'
-                +form('SUBSCRIBE', 'primary')
-            else
-                +form('JOIN WHITELIST', 'primary')
-        +social
+    if page != 'sign_up'
+        .footer_top
+            h2
+                if page == 'pre_ico'
+                    | Buy tokens with
+                    | 
+                    b bonus +25%
+                    |
+                    | now
+                else if page == 'product'
+                    | Subscribe for discounts and bonuses!
+                else
+                    | Join the Whitelist and get bonus
+                    | 
+                    b +25%
+                    | 
+                    | for tokens before 1.5m
+            .footer_top_content
+                if page == 'pre_ico'
+                    a.button.primary.short.spaced(href="#")
+                        | BUY TOKENS
+                else if page == 'product'
+                    +form('SUBSCRIBE', 'primary')
+                else
+                    +form('JOIN WHITELIST', 'primary')
+            +social
     .footer_bottom
         .row.align-middle.align-justify.footer_bottom_inner
             .column.shrink.logo

@@ -28,6 +28,7 @@
         }
         &.is_active{
             color: $medium-gray;
+            font-weight: 600;
             + .sidebar_nav_hex {
                 border-color: transparent;
                 background-color: $secondary-color;

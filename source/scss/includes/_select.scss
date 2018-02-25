@@ -8,9 +8,12 @@ $paddingH: 8px;
 $optionFontSize: 14px;
 
 select{
-    visibility: hidden;
+    &.select7{
+        visibility: hidden;
+    }
     padding-right: 33px;
     background-position: right -20px center;
+    background-image: url(../img/icons/arr_down_gray.svg);
 }
 
 .select7 {

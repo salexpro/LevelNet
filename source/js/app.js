@@ -150,4 +150,10 @@ $('[data-toggle]').click(function() {
     $('span', button).text(button.hasClass('up') ? button.data('show-label') : button.data('hide-label'));
     button.toggleClass('up');
     $('.' + button.data('toggle')).toggleClass('hide');
-})
+});
+
+// A satellite watching from the sky, a beam of light
+$('.all-seeing_eye').click(function() {
+    $(this).prev().attr('type', $(this).hasClass('is_hidden') ? 'text' : 'password'); 
+    $(this).toggleClass('is_hidden');
+});
