@@ -47,15 +47,21 @@ if($('.head').length){
 // Forms
 $('form[action]').submit(function(e){
     e.preventDefault();
+    const wnd = $(this).closest('.reveal');
     const action = $(this).attr('action');
     switch (action) {
         case 'join': {
-            $('#complete').foundation('open');
+            if (wnd.length){
+                open_new(wnd, '#complete');
+            } else {
+                $('#complete').foundation('open');
+            }
             break;
         }
         case 'send':
         case 'complete': {
-            $('#success').data('mod', action).foundation('open');
+            $('#success').data('mod', action);
+            open_new(wnd, '#success');
             break;
         }
         default: {
@@ -156,4 +162,17 @@ $('[data-toggle]').click(function() {
 $('.all-seeing_eye').click(function() {
     $(this).prev().attr('type', $(this).hasClass('is_hidden') ? 'text' : 'password'); 
     $(this).toggleClass('is_hidden');
+});
+
+// Fix open modal in modal
+const open_new = (wold, id_new) => {
+    wold.on('closed.zf.reveal', () => {
+        $(id_new).foundation('open');
+        wold.off('closed.zf.reveal');
+    });
+    wold.foundation('close');
+}
+$('.reveal [data-open]').click(function (e) {
+    e.stopPropagation();
+    open_new($(this).closest('.reveal'), '#' + $(this).data('open'));
 });
