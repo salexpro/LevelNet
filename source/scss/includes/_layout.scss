@@ -30,13 +30,13 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'SF UI Display';
-    src: url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'SF UI Display';
+//     src: url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff2') format('woff2'),
+//         url('../fonts/SFUIDisplay/SFUIDisplay-Black.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+// }
 
 @font-face {
     font-family: 'SF UI Display';
@@ -54,21 +54,21 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'SF UI Display';
-    src: url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'SF UI Display';
+//     src: url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff2') format('woff2'),
+//         url('../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff') format('woff');
+//     font-weight: 900;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'SF UI Display';
-    src: url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'SF UI Display';
+//     src: url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff2') format('woff2'),
+//         url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+// }
 
 @font-face {
     font-family: 'EurofontExtendedC';
@@ -78,26 +78,34 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'EurofontExtendedC';
-    src: url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff2') format('woff2'),
-        url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'EurofontExtendedC';
+//     src: url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff2') format('woff2'),
+//         url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+// }
 
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
-
 ::-webkit-scrollbar-track {
-    background: $light-black;
+    // background: $light-black;
 }
-
 ::-webkit-scrollbar-thumb {
     background: $secondary-color;
     border-radius: $global-radius;
+}
+
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus,
+:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px $input-background-focus inset;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $white;
+    border: 1px solid #868e96;
 }
 
 html, body{
@@ -128,10 +136,58 @@ textarea,
 select,
 button {
     outline: none;
+    &:invalid:not(:focus):not(:placeholder-shown) {
+        border-color: $primary-color;
+        box-shadow: inset 0 0 0 1px $primary-color;
+    }
+}
+
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    + label {
+        user-select: none;
+        color: $input-background-focus;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -2px;
+            background-color: $secondary-color;
+            border-radius: $global-radius;
+            margin-right: 6px;
+            color: $white;
+            border: 1px solid $secondary_dark;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        a{
+            color: $input-background-focus;
+            text-decoration: underline;
+            &:hover, &:focus{
+                text-decoration: none;
+            }
+        }
+    }
+    &:checked {
+        +label {
+            &::before {
+                background-image: url(../img/icons/check_min.svg);
+            }
+        }
+    }
 }
 
 a{
     transition: 300ms;
+    &[data-open]{
+        outline: none;
+        user-select: none;
+    }
 }
 
 select{

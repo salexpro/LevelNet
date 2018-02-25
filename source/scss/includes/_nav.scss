@@ -1,6 +1,8 @@
 .nav{
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
     border-bottom: 1px solid $light-black;
     transition: 300ms;
