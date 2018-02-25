@@ -9,7 +9,8 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
     $capWidth: $width/$sqrt2; // caps being the top and bottom rhombuses
     $border: solid #{$borderWidth}px #{$borderColor};
     $capBorder: solid #{$borderWidth*$sqrt2}px #{$borderColor};
-    position: relative;
+	position: relative;
+	flex: 0 0 #{$width}px;
 	display: flex;
 	flex-direction: column;
     align-items: center;

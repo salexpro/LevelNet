@@ -26,6 +26,25 @@
     }
     &_box{
         text-align: center;
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 76px;
+            left: 0;
+            content: '';
+            width: 151px;
+            height: 251px;
+            background-image: url(../img/hexagons/bg/5.svg);
+            background-size: cover;
+            background-position: center right;
+            background-repeat: no-repeat;
+        }
+        &::after{
+            @extend .ico_box::before;
+            left: auto;
+            right: 0;
+            background-position: center left;
+        }
         &_descr{
             color: $dark-gray;
             b {
@@ -65,7 +84,7 @@
             margin-top: 20px;
             text-align: left;
             &_icon{
-                @include hexagon(51, $white, 2, $medium-gray, null);
+                @include hexagon(51, #f8f9fa, 2, $medium-gray, null);
                 margin-right: 20px;
             }
         }

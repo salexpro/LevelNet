@@ -1,10 +1,5 @@
 .social{
     display: inline-flex;
-    &--head{
-        position: absolute;
-        right: 5px;
-        top: calc(100% + 10px);
-    }
     a{
         display: flex;
         align-items: center;
@@ -25,4 +20,27 @@
         opacity: 0.4;
     }
 
+    &--head {
+        position: absolute;
+        right: 5px;
+        top: calc(100% + 10px);
+    }
+
+    &--release {
+        a {
+            background: none;
+            width: 26px;
+            height: 26px;
+        }
+        svg{
+            transform: scale(.84)
+        }
+        use {
+            fill: $input-background-focus
+        }
+    }
+
+    &--event{
+        @extend .social--release;
+    }
 }

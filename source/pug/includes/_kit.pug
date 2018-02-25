@@ -1,7 +1,13 @@
-mixin release(title, date)
+mixin release(title, date, more)
     .kit_release
-        a.kit_release_title(href="#")
+        a.kit_release_title(data-open="release")
             =title
+            if more
+                span.kit_release_more
+                    | Read more
+                    svg(width='18', height='12', xmlns='http://www.w3.org/2000/svg', version='1.1', viewbox='0 0 18 12')
+                        g(transform='matrix(1,0,0,1,-849,-236)')
+                            path(d='M849,243h14.17l-3.58,3.59l1.41,1.41l6,-6l-6,-6l-1.41,1.41l3.58,3.59h-14.17z')
         .kit_release_date
             =date
 
@@ -27,7 +33,7 @@ mixin tab(name, ext, is_active)
             +tab_item(name + ' (' + ext + ')')
             +tab_item(name + ' (' + ext + ')')
         .kit_tab_bottom
-            a(href="#" target="_blank")
+            a(href="#" download)
                 i.icon.icon--download
                 | Download all #{name}s (zip)
 
@@ -43,7 +49,7 @@ section#kit.kit(data-magellan-target="kit")
                 while k < 4
                     +release('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.', 'November 14, 2017')
                     - k++
-            button.button.hollow.short.icon
+            button.button.hollow.short.icon(data-open="releases")
                 | Show all releases
                 i.icon.icon--arrow
         .column.large-5

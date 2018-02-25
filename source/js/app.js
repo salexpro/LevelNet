@@ -8,11 +8,13 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.slider.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
 @codekit-prepend './lib/jquery-select7';
 @codekit-prepend '../../node_modules/moment/moment';
 @codekit-prepend '../../node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.min';
@@ -29,7 +31,7 @@ const top_fill = () => {
     const nav = $('.nav');
     if (nav.offset().top > 40) {
         nav.addClass('is_filled');
-    } else {
+    } else if (!$('html').hasClass('is-reveal-open')){
         nav.removeClass('is_filled');
     }
 }
@@ -39,6 +41,40 @@ top_fill();
 $(document).scroll(() => {
     top_fill();
 });
+
+// Forms
+$('form[action]').submit(function(e){
+    e.preventDefault();
+    const action = $(this).attr('action');
+    switch (action) {
+        case 'join': {
+            $('#complete').foundation('open');
+            break;
+        }
+        case 'send':
+        case 'complete': {
+            $('#success').data('mod', action).foundation('open');
+            break;
+        }
+        default: {
+            break;
+        }
+    }
+});
+
+$('#success').on('open.zf.reveal', function() {
+    const modal = $(this);
+    const descr = $('.reveal_descr', this);
+    const mod = $(this).data('mod');
+    console.log(modal, descr, mod);
+    if (mod == 'join' || mod == 'complete') {
+        descr.text('You’ve been added to our whitelist');
+        modal.removeClass('reveal_success--min');
+    } else if(mod == 'send'){
+        descr.text('Request sent successfully');
+        modal.addClass('reveal_success--min');
+    }
+})
 
 // Countdown
 var hourX = moment.tz('2018-03-01 00:00', 'America/Sao_Paulo');

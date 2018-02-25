@@ -17,6 +17,11 @@ section#partners.pattern.partners(data-magellan-target="partners")
             while i < 8
                 +partner('', 'SHRM', 'Fiduciary and administration services', 'SHRM is a world-leading global  provider of fiduciary and administration services.')
                 - i++
-        button.button.hollow.short.icon
-            | Show more
+            .partners_hidden.hide
+                - var i = 0;
+                while i < 4
+                    +partner('', 'SHRM', 'Fiduciary and administration services', 'SHRM is a world-leading global  provider of fiduciary and administration services.')
+                    - i++
+        button.button.hollow.short.icon#press_more(data-toggle="partners_hidden" data-show-label="Show more" data-hide-label="Hide")
+            span Show more
             i.icon.icon--arrow

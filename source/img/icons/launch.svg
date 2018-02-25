@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12238 3768 64 64" width="62" height="62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2aa0bc;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="_x30_2_x5F_startup_x5F_launch__x28_копия_x29_" transform="translate(12238 3768)">
+    <path id="Path_366" data-name="Path 366" class="cls-1" d="M22,54,10,42S35,1,63,1C63,29,22,54,22,54Z"/>
+    <path id="Path_367" data-name="Path 367" class="cls-1" d="M20,52l-3,3L9,47l3-3"/>
+    <path id="Path_368" data-name="Path 368" class="cls-1" d="M7,50A20.017,20.017,0,0,0,1,63a20.017,20.017,0,0,0,13-6"/>
+    <circle id="Ellipse_100" data-name="Ellipse 100" class="cls-1" cx="4" cy="4" r="4" transform="translate(42 14)"/>
+    <circle id="Ellipse_101" data-name="Ellipse 101" class="cls-1" cx="4" cy="4" r="4" transform="translate(33 23)"/>
+    <circle id="Ellipse_102" data-name="Ellipse 102" class="cls-1" cx="4" cy="4" r="4" transform="translate(24 32)"/>
+    <path id="Path_369" data-name="Path 369" class="cls-1" d="M54,25,37,63H27V55"/>
+    <path id="Path_370" data-name="Path 370" class="cls-1" d="M39,10,1,27V37H9"/>
+    <path id="Path_371" data-name="Path 371" class="cls-1" d="M61,11a8.024,8.024,0,0,1-8-8"/>
+  </g>
+</svg>

@@ -3,8 +3,8 @@ mixin form(button, color, header, note)
         if header
             .form_header
                 = header
-        form.form_form(action="#")
-            input(type="email" placeholder="Enter your email")
+        form.form_form(action=color=='primary' ? "join" : "send")
+            input(type="email" placeholder="Enter your email" name="email" required)
             button.button.short.spaced(type="submit" class=color)
                 =button
             if note

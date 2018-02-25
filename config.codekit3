@@ -68889,6 +68889,26 @@
 		"oAP": "\/build\/fonts\/SFUIDisplay\/SFUIDisplay-Ultralight.woff2",
 		"oF": 0
 		},
+	"\/source\/img\/benefits\/1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/benefits\/1.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/benefits\/2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/benefits\/2.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/bg_token_distr.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -68909,32 +68929,22 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/hexagons\/bg.svg": {
+	"\/source\/img\/hexagons\/bg\/1.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "\/build\/img\/hexagons\/bg.svg",
+		"oAP": "\/build\/img\/hexagons\/bg\/1.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/hexagons\/box.svg": {
+	"\/source\/img\/hexagons\/bg\/5.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/hexagons\/box.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/hexagons\/box_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/hexagons\/box_small.svg",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/build\/img\/hexagons\/bg\/5.svg",
+		"oF": 1,
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
@@ -68944,26 +68954,6 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/hexagons\/list.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/hexagons\/offer.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/hexagons\/offer.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/hexagons\/roadmap.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/hexagons\/roadmap.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -68994,6 +68984,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/icons\/angellist.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/icons\/appreciations.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/appreciations.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -69069,6 +69069,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/icons\/check_min.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/check_min.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/icons\/cloud.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -69094,6 +69104,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/icons\/cup.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/icons\/dialog.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/dialog.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -69169,6 +69189,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/icons\/launch.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/launch.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/icons\/legal.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -69209,6 +69239,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/icons\/mailing.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/mailing.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/icons\/minus.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -69224,6 +69264,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/icons\/money.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/icons\/revenue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/revenue.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -69259,106 +69309,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/icons\/social\/bitcointalk.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/bitcointalk.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/facebook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/facebook.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/github.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/github.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/instagram.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/instagram.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/linkedin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/linkedin.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/medium.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/reddit.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/reddit.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/telegram.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/telegram.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/twitter.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/twitter.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/img\/icons\/social\/youtube.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/build\/img\/icons\/social\/youtube.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/source\/img\/icons\/success.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -69374,6 +69324,86 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/icons\/workflow.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/1.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/2.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/3.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/lines\/1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/lines\/1.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/lines\/2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/lines\/2.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/lines\/3-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/lines\/3-1.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/lines\/3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/lines\/3.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/infographics\/lines\/4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/infographics\/lines\/4.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -69471,7 +69501,7 @@
 		},
 	"\/source\/img\/pattern.png": {
 		"ft": 32768,
-		"iS": 484936,
+		"iS": 623588,
 		"oA": 0,
 		"oAP": "\/build\/img\/pattern.png",
 		"oF": 0,
@@ -69682,6 +69712,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_partners.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/includes\/_popup.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_popup.html",
 		"oF": 0,
 		"oS": 1
 		},

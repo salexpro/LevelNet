@@ -17,7 +17,7 @@ header#top.pattern.head(class=(page != 'main') ? "head--small" : "" data-magella
         .column.head_content_right(class=(page == 'main') ? "large-6" : "large-offset-3")
             if page == 'main'
                 +countdown('main')
-            +social(true, (page == 'main' ? 'head' : ''))
+            +social(3, (page == 'main' ? 'head' : ''))
     if page == 'pre_ico'
         .row.align-center
             .column.large-10

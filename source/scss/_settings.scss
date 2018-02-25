@@ -80,6 +80,7 @@ $foundation-palette: (
     alert: #cc4b37,
 );
 $tertiary-color: get-color(tertiary);
+$secondary_dark: get-color(secondary_dark);
 $light-gray: #e6e6e6;
 $medium-gray: #ced4da;
 $dark-gray: #868e96;
@@ -355,15 +356,15 @@ $card-margin-bottom: $global-margin;
 $closebutton-position: right top;
 $closebutton-offset-horizontal: (
   small: 0.66rem,
-  medium: 1rem,
+  medium: 52px,
 );
 $closebutton-offset-vertical: (
   small: 0.33em,
-  medium: 0.5rem,
+  medium: 56px,
 );
 $closebutton-size: (
   small: 1.5em,
-  medium: 2em,
+  medium: 2.5em,
 );
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
@@ -742,8 +743,8 @@ $responsive-embed-ratios: (
 
 $reveal-background: $white;
 $reveal-width: 600px;
-$reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
+$reveal-max-width: 1326px;
+$reveal-padding: 52px 75px 75px;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;

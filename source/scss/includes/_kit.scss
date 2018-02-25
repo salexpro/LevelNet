@@ -11,6 +11,18 @@
         &_title{
             line-height: 1.33;
         }
+        &_more.kit_release_more {
+            color: $secondary_dark;
+            font-weight: 700;
+            margin-left: 12px;
+            svg{
+                margin-left: 7px;
+                vertical-align: middle;
+            }
+            path{
+                fill: $secondary_dark;
+            }
+        }
         &_date{
             margin-top: 10px;
             color: $dark-gray;
