@@ -1,12 +1,38 @@
 .footer{
     text-align: center;
+    @include breakpoint(small down) {
+        &::before{
+            width: 110%;
+        }
+        &::after{
+            display: none;
+        }
+    }
     &_top{
         padding: 110px 10px 96px;
+        @include breakpoint(medium down) {
+            padding: 62px 16px 115px;
+        }
+        @include breakpoint(small down) {
+            padding: 50px 16px 55px;
+        }
+        h2{
+            @include breakpoint(medium down) {
+                max-width: 460px;
+                margin: auto;
+            }
+        }
         b{
             font-weight: 400;
         }
         &_content{
             margin: 40px auto 95px;
+            @include breakpoint(medium down) {
+                margin: 45px auto 115px;
+            }
+            @include breakpoint(small down) {
+                margin: 55px auto;
+            }
             > * {
                 margin: auto;
             }
@@ -16,11 +42,79 @@
         background-color: rgba(#1c1a1c, .65);
         border-top: 1px solid $light-black;
         line-height: 1.33;
+        padding: 0 30px;
+        @include breakpoint(medium down) {
+            text-align: left;
+        }
+        @include breakpoint(small down) {
+            padding: 55px 25px 57px;
+        }
         &_inner{
             height: 125px;
+            @include breakpoint(medium only) {
+                height: 196px;
+                > .column{
+                    flex: 1 1 50%;
+                    margin: auto 0;
+                    &:first-child,
+                    &:last-child {
+                        margin-top: 18px;
+                    }
+                    &:nth-child(2), &:nth-child(3){
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+            @include breakpoint(small down) {
+                height: auto;
+                .column{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .logo{
+        @include breakpoint(small down) {
+            width: 200px;
+            margin: 28px auto 15px;
+        }
+    }
+    &_contact{
+        @include breakpoint(small down) {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            margin-bottom: 20px;
+        }
+    }
+    &_location{
+        @include breakpoint(medium only) {
+            text-align: right;
+        }
+        @include breakpoint(small down) {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.56px;
         }
     }
     &_copyright {
         color: rgba($medium-gray, .75);
+        @include breakpoint(medium down) {
+            text-align: right;
+            height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            br{
+                display: none;
+            }
+        }
+        @include breakpoint(small down) {
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 0.52px;
+            justify-content: center;
+            height: auto;
+        }
     }
 }

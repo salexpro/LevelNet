@@ -32,6 +32,9 @@ select{
         display: inline-block;
         margin: 0;
         width: 70px;
+        @include breakpoint(small down) {
+            width: 55px;
+        }
         .select7 {
             &__current {
                 height: auto;
@@ -41,6 +44,12 @@ select{
                 cursor: pointer;
                 background-color: transparent;
                 border-bottom: 1px solid $light-black;
+                @include breakpoint(large down) {
+                    border-bottom: 0;
+                }
+                @include breakpoint(small down) {
+                    padding: 0;
+                }
                 &:hover {
                     .select7 {
                         &__current-value {
@@ -61,11 +70,17 @@ select{
                 border-width: 1px;
                 border-radius: $borderRadius;
                 background-clip: padding-box;
+                @include breakpoint(small down) {
+                    padding-top: 26px;
+                }
             }
             &__current-value {
                 overflow: visible;
                 display: inline-block;
                 padding: 10.5px 0 10.5px 11px;
+                @include breakpoint(small down) {
+                    padding: 5px 0 5px 10px;
+                }
                 
             }
             &__caret {
@@ -74,6 +89,9 @@ select{
             &__option {
                 padding: 11.5px 19px;
                 border-top: 1px solid $borderColor;
+                @include breakpoint(small down) {
+                    padding: 5px 10px;
+                }
             }
         }
     }
@@ -93,7 +111,7 @@ select{
             }
         }
     }
-    &_position:_right {
+    &_position_right {
         .select7 {
             &__drop {
                 left: auto;

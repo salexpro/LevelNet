@@ -1,12 +1,42 @@
 .reviews{
-    padding: 85px 0 96px;
+    padding: 85px 30px 96px;
+    @include breakpoint(medium down) {
+        padding: 47px 30px 0;
+        border: 0;
+        &::before, &::after{
+            display: none;
+        }
+    }
+    @include breakpoint(small down) {
+        padding: 23px 6px 0;
+    }
     h2{
         text-align: center;
     }
     &_inner{
         margin-top: 67px;
+        @include breakpoint(medium down) {
+            margin-top: 60px;
+        }
+        @include breakpoint(small down) {
+            margin-top: 25px;
+            > .reviews_review{
+                display: none;
+                &:first-child{
+                    display: block;
+                }
+            }
+            .row .reviews_review{
+                &:nth-last-child(-n+2){
+                    display: none;
+                }
+            }
+        }
     }
     &_review{
         margin-bottom: 20px;
+        @include breakpoint(small down) {
+            margin-bottom: 16px;
+        }
     }
 }

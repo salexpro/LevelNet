@@ -1,4 +1,5 @@
-/* global moment */
+/* global moment, intercomSettings */
+/* eslint no-inner-declarations: 'off' */
 /*
 @codekit-prepend '../../node_modules/jquery/dist/jquery.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.core.min';
@@ -9,6 +10,7 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.slider.min';
@@ -61,7 +63,11 @@ $('form[action]').submit(function(e){
         case 'send':
         case 'complete': {
             $('#success').data('mod', action);
-            open_new(wnd, '#success');
+            if (wnd.length) {
+                open_new(wnd, '#success');
+            } else {
+                $('#success').foundation('open');
+            }
             break;
         }
         default: {
@@ -147,15 +153,33 @@ $('.team_members').owlCarousel({
     items: 4,
     nav: true,
     dots: false,
-    navText: ['<i class="icon icon--arrow"></i>', '<i class="icon icon--arrow"></i>']
+    navText: ['<i class="icon icon--arrow"></i>', '<i class="icon icon--arrow"></i>'],
+    responsive: {
+        0:{
+            items: 1,
+            dots: true,
+            nav: false
+        },
+        640: {
+            items: 2,
+            dots: false,
+            nav: true
+        },
+        800: {
+            items: 3
+        },
+        1200: {
+            items: 4
+        }
+    }
 });
 
 // More items press/partners
-$('[data-toggle]').click(function() {
+$('[data-toggler]').click(function() {
     const button = $(this);
     $('span', button).text(button.hasClass('up') ? button.data('show-label') : button.data('hide-label'));
     button.toggleClass('up');
-    $('.' + button.data('toggle')).toggleClass('hide');
+    $('.' + button.data('toggler')).toggleClass('hide');
 });
 
 // A satellite watching from the sky, a beam of light
@@ -176,3 +200,9 @@ $('.reveal [data-open]').click(function (e) {
     e.stopPropagation();
     open_new($(this).closest('.reveal'), '#' + $(this).data('open'));
 });
+
+// Intercom
+window.intercomSettings = {
+    app_id: 'ymua2wwv'
+};
+(function () { var w = window; var ic = w.Intercom; if (typeof ic === 'function') { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/ymua2wwv'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })() 

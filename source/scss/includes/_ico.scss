@@ -1,5 +1,11 @@
 .ico{
-    padding: 80px 0;
+    padding: 80px 10px;
+    @include breakpoint(medium down) {
+        padding: 60px 10px;
+    }
+    @include breakpoint(small down) {
+        padding: 57px 0 50px;
+    }
     &--pre_ico{
         .ico{
             &_box{
@@ -26,27 +32,33 @@
     }
     &_box{
         text-align: center;
-        position: relative;
-        &::before{
-            position: absolute;
-            top: 76px;
-            left: 0;
-            content: '';
-            width: 151px;
-            height: 251px;
-            background-image: url(../img/hexagons/bg/5.svg);
-            background-size: cover;
-            background-position: center right;
-            background-repeat: no-repeat;
-        }
-        &::after{
-            @extend .ico_box::before;
-            left: auto;
-            right: 0;
-            background-position: center left;
+        &--hex{
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 76px;
+                left: 0;
+                content: '';
+                width: 151px;
+                height: 251px;
+                background-image: url(../img/hexagons/bg/5.svg);
+                background-size: cover;
+                background-position: center right;
+                background-repeat: no-repeat;
+            }
+            &::after {
+                @extend .ico_box--hex::before;
+                left: auto;
+                right: 0;
+                background-position: center left;
+            }
         }
         &_descr{
             color: $dark-gray;
+            @include breakpoint(small down) {
+                font-size: 14px;
+                letter-spacing: 0.56px;
+            }
             b {
                 color: $light-black;
             }
@@ -69,6 +81,21 @@
             margin-bottom: 55px;
             padding-top: 53px;
             padding-bottom: 65px;
+            @include breakpoint(medium down) {
+                margin-top: 60px;
+                padding: 65px 20px;
+            }
+            @include breakpoint(small down) {
+                margin-top: 35px;
+                margin-bottom: 32px;
+                padding: 32px 16px 27px;
+                &::before{
+                    width: 120%;
+                }
+                &::after{
+                    display: none;
+                }
+            }
         }
         &_offers{
             max-width: 695px;
@@ -76,6 +103,9 @@
             display: flex;
             flex-wrap: wrap;
             padding-top: 10px;
+            @include breakpoint(small down) {
+                padding-top: 5px;
+            }
         }
         &_offer{
             width: 50%;
@@ -83,6 +113,15 @@
             align-items: center;
             margin-top: 20px;
             text-align: left;
+            @include breakpoint(medium down) {
+                br {
+                    display: none;
+                }
+            }
+            @include breakpoint(small down) {
+                width: 100%;
+                margin-top: 13px;
+            }
             &_icon{
                 @include hexagon(51, #f8f9fa, 2, $medium-gray, null);
                 margin-right: 20px;
@@ -101,13 +140,23 @@
             margin: 35px auto;
             display: flex;
             justify-content: space-between;
+            @include breakpoint(small down) {
+                margin: 23px auto 27px;
+            }
         }
         &_hex{
             @include hexagon(118, $white, 2, $medium-gray, null);
+            @include breakpoint(small down) {
+                @include hexagon(90, $white, 2, $medium-gray, null);
+            }
             &_percent{
                 font-size: 24px;
                 letter-spacing: 0.96px;
                 margin-bottom: 3px;
+                @include breakpoint(small down) {
+                    font-size: 17px;
+                    letter-spacing: 0.68px;
+                }
                 &--primary{
                     color: $primary-color;
                 }
@@ -119,6 +168,14 @@
                 }
                 span{
                     font-size: 36px;
+                    @include breakpoint(small down) {
+                        font-size: 26px;
+                    }
+                }
+            }
+            &_cap{
+                @include breakpoint(small down) {
+                    font-size: 12px;
                 }
             }
         }

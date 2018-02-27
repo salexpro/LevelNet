@@ -1,8 +1,30 @@
 .faq{
-    padding: 85px 0 10px;
+    padding: 85px 30px 10px;
+    @include breakpoint(medium down) {
+        padding: 42px 30px 0;
+        h2{
+            text-align: center;
+        }
+        .button{
+            margin-left: 90px;
+        }
+    }
+    @include breakpoint(small down) {
+        padding: 33px 6px 0;
+        h2{
+            text-align: left;
+        }
+        .button{
+            margin: 0;
+        }
+    }
     &_inner{
         margin-top: 35px;
         margin-bottom: 50px;
+        @include breakpoint(small down) {
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
     }
     &_item{
         display: flex;
@@ -10,6 +32,12 @@
         margin-top: 20px;
         transition: 300ms;
         margin-left: 6px;
+        @include breakpoint(large down){
+            margin-left: 0;
+        }
+        @include breakpoint(small down) {
+            margin-top: 28px;
+        }
         &[aria-expanded="true"] {
             .faq_item {
                 &_icon {
@@ -28,6 +56,9 @@
             font-weight: 700;
             margin-right: 24px;
             transition: 300ms;
+            @include breakpoint(small down) {
+                display: none;
+            }
             &::before,
             &::after {
                 transition: 300ms;
@@ -36,11 +67,32 @@
         &_question{
             font-size: 20px;
             letter-spacing: 0.8px;
+            @include breakpoint(medium down) {
+                font-size: 18px;
+                letter-spacing: 0.72px;
+            }
+            @include breakpoint(small down) {
+                font-size: 16px;
+                letter-spacing: 0.64px;
+            }
         }
         &_answer{
             margin-left: 96px;
             padding-bottom: 8px;
             line-height: 1.47;
+            @include breakpoint(large down) {
+                margin-left: 90px;
+            }
+            @include breakpoint(medium down) {
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                line-height: 1.4;
+            }
+            @include breakpoint(small down) {
+                margin-left: 0;
+                margin-top: 18px;
+                padding: 0;
+            }
         }
     }
     .hexagon{

@@ -1,15 +1,43 @@
 .kit{
     padding-top: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include breakpoint(medium down) {
+        padding-top: 63px;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 6px 0;
+    }
     &_inner{
         margin-top: 52px;
+        @include breakpoint(medium down) {
+            margin-top: 55px;
+        }
+        @include breakpoint(small down) {
+            margin-top: 32px;
+            >.column:first-child{
+                margin-bottom: 43px;
+            }
+        }
     }
     &_releases{
         margin-bottom: 37px;
+        @include breakpoint(small down) {
+            margin-bottom: 25px;
+        }
     }
     &_release{
         margin-top: 31px;
+        @include breakpoint(small down) {
+            margin-top: 18px;
+        }
         &_title{
             line-height: 1.33;
+            @include breakpoint(medium down) {
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                line-height: 1.4;
+            }
         }
         &_more.kit_release_more {
             color: $secondary_dark;
@@ -38,6 +66,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 18px;
+        @include breakpoint(small down) {
+            font-size: 14px;
+        }
         &[aria-expanded="true"]{
             .kit_material{
                 &_icon {
@@ -63,6 +94,9 @@
             }
         }
         &_label{
+            @include breakpoint(medium down) {
+                font-weight: 600;
+            }
             &::after{
                 content: '';
                 width: 11px;
@@ -73,10 +107,18 @@
                 background-size: cover;
                 transform: rotate(-90deg);
                 transition: 300ms;
+                @include breakpoint(medium down) {
+                    display: none;
+                }
             }
         }
         &_content{
             margin-bottom: 40px;
+            @include breakpoint(medium down) {
+                .tabs-title{
+                    width: 50%;
+                }
+            }
         }
     }
     &_tab {
@@ -92,15 +134,27 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @include breakpoint(medium down) {
+                padding: 5px 15px;
+            }
         }
         &_item{
-            display: block;
+            display: flex;
             margin: 12px 0;
             width: 50%;
+            align-items: center;
+            padding-right: 10px;
         }
         &_bottom{
             padding: 12px 25px;
             border-top: 1px solid #31373c;
+            @include breakpoint(medium down) {
+                padding: 10px 15px;
+                a{
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
     }
     .hexagon{

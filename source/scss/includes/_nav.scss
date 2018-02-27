@@ -6,21 +6,127 @@
     z-index: 10;
     border-bottom: 1px solid $light-black;
     transition: 300ms;
+    padding: 0 30px;
+    @include breakpoint(small down) {
+        padding: 0 10px;
+        background: $medium-black;
+    }
     &.is_filled{
         background: $medium-black;
     }
     &_inner{
-        width: 1375px;
+        max-width: 1375px;
         height: 84px;
         padding: 0 10px;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include breakpoint(small down) {
+            height: 56px;
+        }
+    }
+    .logo{
+        @include breakpoint(small down) {
+            width: 120px;
+        }
     }
     &_phone{
         font-size: 20px;
         font-weight: 500;
         letter-spacing: 0.4px;
+        a {
+            display: block;
+            @include breakpoint(small down) { 
+                span{
+                    display: none;
+                }
+                &::before{
+                    display: block;
+                    content: 'phone';
+                    font-family: 'Material Icons';
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 24px;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-transform: none;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    direction: ltr;
+                    -webkit-font-feature-settings: 'liga';
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+        }
+    }
+    &_lang{
+        @include breakpoint(xlarge down) {
+            margin-right: auto;
+            margin-left: 20px;
+        }
+        @include breakpoint(small down) {
+            margin-left: 6px;
+            font-size: 14px;
+        }
+    }
+    .hamb{
+        position: relative;
+        width: 18px;
+        height: 12px;
+        border-top: 2px solid $white;
+        border-bottom: 2px solid $white;
+        border-radius: 0;
+        margin-left: 40px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        @include breakpoint(small down) {
+            margin-left: 22px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 100%;
+            border-bottom: 2px solid $white;
+        }
+    }
+    &_mobile{
+        &.is-closed{
+            visibility: visible;
+        }
+        padding: 20px;
+        &_logo{
+            width: 43px;
+            margin-bottom: 20px;
+        }
+        &_menu{
+            margin-top: 35px;
+            a{
+                padding: 0;
+                display: flex;
+                margin-bottom: 25px;
+                &.is_active{
+                    .nav_mobile_menu{
+                        &_hex{
+                            background: #00ccff;
+                        }
+                        &_label{
+                            font-weight: 600;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            &_hex{
+                @include hexagon(13, #575b60, 0, false, false)
+            }
+            &_label{
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                margin-left: 18px;
+            }
+        }
     }
 }

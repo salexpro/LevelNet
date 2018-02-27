@@ -1,5 +1,5 @@
 mixin review(url, large, title, ratio)
-    .column.reviews_review(class="large-" + (large ? "6" : "3"))
+    .column.reviews_review(class="large-" + (large ? "6" : "3") + " medium-" + (ratio=='widescreen' ? "12" : "6") + " small-12")
         +video(url, title, true, false, ratio)
 
 section#reviews.pattern.reviews(data-magellan-target="reviews")
@@ -7,7 +7,7 @@ section#reviews.pattern.reviews(data-magellan-target="reviews")
         h2.column Video Reviews and Stories
     .row.reviews_inner
         +review('', true, 'Introducing LevelNet The First Distributed Cyber Security Platform', 'widescreen')
-        .column.large-6
+        .column.large-6.medium-12
             .row
                 +review('', true, 'ICO StartUP! Unique Antivirus','custom')
                 +review('', true, 'Global Cyber Security Platform','custom')

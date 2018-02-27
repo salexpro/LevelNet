@@ -1,17 +1,41 @@
 .events{
-    padding: 85px 0 58px;
+    padding: 85px 30px 58px;
+    @include breakpoint(medium down) {
+        padding: 63px 30px 60px;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 6px 0;
+    }
     &_inner{
         margin-top: 66px;
         display: flex;
         flex-wrap: wrap;
+        @include breakpoint(medium down) {
+            margin-top: 58px;
+        }
+        @include breakpoint(small down) {
+            margin-top: 26px;
+        }
     }
     &_event{
         margin: 0 10px;
         width: calc(33.333% - 20px);
         margin-bottom: 38px;
+        @include breakpoint(medium down) {
+            width: calc(50% - 20px);
+            margin-bottom: 30px;
+        }
+        @include breakpoint(small down) {
+            width: calc(50% - 16px);
+            margin: 0 8px;
+            margin-bottom: 24px;
+        }
         &_img{
             display: block;
             margin-bottom: 16px;
+            img{
+                width: 100%;
+            }
         }
         &_title{
             margin-bottom: 10px;

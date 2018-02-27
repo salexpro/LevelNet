@@ -1,6 +1,18 @@
 .interview{
-    padding: 90px 0 90px;
+    padding: 90px 30px 90px;
     border-color: #3c3b3e;
+    @include breakpoint(medium down) {
+        padding: 68px 30px 75px;
+        &::after{
+            width: 70%;
+        }
+    }
+    @include breakpoint(small down) {
+        padding: 54px 6px 60px;
+        &::after {
+            width: 170%;
+        }
+    }
     &::before{
         width: 100%;
         background: #292729;

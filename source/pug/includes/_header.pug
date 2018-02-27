@@ -6,7 +6,7 @@ header#top.pattern.head(class=(page != 'main') ? "head--small" : "" data-magella
             else
                 | Disrupting Cyber Security Platform LevelNet
     .row.head_content(class=(page != 'main') ? "align-middle" : "")
-        .column.head_content_left(class=(page == 'main') ? "large-6" : "large-offset-1 shrink")
+        .column.head_content_left(class=(page == 'main') ? "large-6 small-12" : "large-offset-1 shrink")
             ul.menu.vertical.head_list
                 li
                     h4 Faster than any other single Antivirus software
@@ -14,7 +14,7 @@ header#top.pattern.head(class=(page != 'main') ? "head--small" : "" data-magella
                     h4 Thousands of virus databases in one token
             if page == 'main'
                 +form('JOIN WHITELIST', 'primary', false, 'Don\'t miss <span>bonus +25%</span> for tokens before 1.5m')
-        .column.head_content_right(class=(page == 'main') ? "large-6" : "large-offset-3")
+        .column.head_content_right(class=(page == 'main') ? "large-6 small-12" : "large-offset-3")
             if page == 'main'
                 +countdown('main')
             +social(3, (page == 'main' ? 'head' : ''))

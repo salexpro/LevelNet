@@ -1,5 +1,10 @@
 .social{
     display: inline-flex;
+    @include breakpoint(small down) {
+        margin: 0 -5px;
+        justify-content: center;
+        max-width: 298px;
+    }
     a{
         display: flex;
         align-items: center;
@@ -12,6 +17,9 @@
         margin: 0 5px;
         opacity: 0.8;
         transition: 300ms;
+        @include breakpoint(small down) {
+            margin: 5px;
+        }
         &:hover, &:focus{
             opacity: 1;
         }
@@ -24,6 +32,12 @@
         position: absolute;
         right: 5px;
         top: calc(100% + 10px);
+        flex-wrap: nowrap;
+        @include breakpoint(medium down) {
+            right: 50%;
+            top: calc(100% + 20px);
+            transform: translateX(50%);
+        }
     }
 
     &--release {

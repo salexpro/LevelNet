@@ -203,22 +203,55 @@ section {
 
 h1{
     letter-spacing: 1.68px;
+    @include breakpoint(medium down) {
+        letter-spacing: 1.36px;
+        line-height: 1.41;
+    }
+    @include breakpoint(small down) {
+        letter-spacing: 0.96px;
+        line-height: 1.33;
+    }
 }
 
 h2{
     letter-spacing: 1.44px;
     margin-bottom: 7px;
     line-height: 1.194;
+    @include breakpoint(medium down) {
+        letter-spacing: 1.28px;
+        line-height: 1.4
+    }
+    @include breakpoint(small down) {
+        letter-spacing: 0.96px;
+        line-height: 1.33;
+    }
 }
 
 h3{
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.2;
+    @include breakpoint(medium down) {
+        letter-spacing: 0.72px;
+        line-height: 1.56;
+        color: $medium-gray;
+    }
+    @include breakpoint(small down) {
+        letter-spacing: 0.64px;
+        line-height: 1.38;
+    }
 }
 
 h4{
     letter-spacing: 0.8px;
     font-weight: 400;
     line-height: 1.4;
+    @include breakpoint(medium down) {
+        letter-spacing: 0.72px;
+        line-height: 1.33;
+    }
+    @include breakpoint(small down) {
+        letter-spacing: 0.64px;
+        line-height: 1.38;
+    }
 }

@@ -8,7 +8,7 @@ mixin ico_hexagon(color, percent, cap)
             =cap
 section#ico.ico(class=(page == 'pre_ico') ? "ico--pre_ico" : "" data-magellan-target="ico")
     .row.column
-        .box.ico_box
+        .box.ico_box(class=page!='main'?"ico_box--hex":"")
             .ico_box_top
                 if page == 'pre_ico'
                     h2 PUBLIC PRE-SALE is live

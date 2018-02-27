@@ -1,8 +1,45 @@
 .roadmap{
     padding-top: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include breakpoint(medium down) {
+        padding-top: 63px;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 6px 0;
+    }
+    .column{
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(32, 30, 32, 0) 0%, rgba(32, 30, 32, 0.8) 59%, $medium-black 81%, $medium-black 100%);
+        }
+    }
+    &_overflow{
+        padding-top: 27px;
+        margin-top: -27px;
+        overflow: auto;
+        margin-right: -40px;
+        padding-right: 40px;
+        // -webkit-overflow-scrolling: touch;
+        @include breakpoint(medium down) {
+           padding-top: 50px;
+        }
+    }
     &_table{
         table-layout: fixed;
         margin-top: 87px;
+        min-width: 1090px;
+        @include breakpoint(medium down) {
+            margin-bottom: 30px;
+        }
+        @include breakpoint(small down) {
+            min-width: 1060px;
+        }
         &_hex{
             position: absolute;
             bottom: calc(100% - 44px);
@@ -84,6 +121,9 @@
             padding: 36px 0;
             text-align: left;
             vertical-align: top;
+            @include breakpoint(small down) {
+                width: 100px;
+            }
         }
         td{
             position: relative;
@@ -98,6 +138,12 @@
             }
         }
     }
+    &_note{
+        color: $dark-gray;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+
     .hexagon {
         &--3{
             top: 510px;

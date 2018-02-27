@@ -68929,6 +68929,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/bg_token_info_mob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg_token_info_mob.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/hexagons\/bg\/1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -69434,6 +69444,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/logo_mobile.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/logo_mobile.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,

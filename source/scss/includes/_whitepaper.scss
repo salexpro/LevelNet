@@ -1,22 +1,33 @@
 .whitepaper{
-    padding: 85px 0;
+    padding: 85px 30px;
+    @include breakpoint(medium down) {
+        padding: 40px 30px 75px;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 6px 60px;
+    }
     &_offers{
         padding: 52px 0;
+        @include breakpoint(medium down) {
+            padding: 43px 0 56px;
+        }
+        @include breakpoint(small down) {
+            padding: 4px 0 40px;
+        }
     }
     &_offer{
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        @include breakpoint(small down) {
+            margin: 18px 0 0;
+        }
         &:last-child{
-            margin: 0;
+            margin-bottom: 0;
         }
         &_icon{
             @include hexagon(66, #1c1a1c, 2, #343a40, null);
-            margin-right: 25px;
-        }
-        &_label{
-            font-size: 20px;
-            letter-spacing: 0.8px;
+            margin-right: 24px;
         }
     }
     .hexagon{

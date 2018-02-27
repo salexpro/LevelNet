@@ -3,9 +3,20 @@
     border-radius: $global-radius;
     padding: 60px 95px;
     color: $light-black;
+    @include breakpoint(medium down) {
+        padding: 60px 40px;
+    }
+    @include breakpoint(small down) {
+        padding: 28px 16px 38px;
+        margin: 0 -10px;
+        border-radius: 0;
+    }
     &--about{
         padding-top: 85px;
         padding-bottom: 0;
+        @include breakpoint(medium down) {
+            padding-top: 64px;
+        }
     }
     > h2, > h3{
         color: $medium-black;
@@ -15,6 +26,17 @@
         margin: 0 -95px;
         padding: 0 95px;
         z-index: 1;
+        @include breakpoint(medium down) {
+            margin: 0 -40px;
+            padding: 0 40px;
+        }
+        @include breakpoint(small down) {
+            margin: 0 -16px;
+            padding: 0 16px;
+            h3{
+                color: $light-black;
+            }
+        }
         &:not(:last-child){
             border-bottom: 1px solid #dee2e6;
         }
@@ -24,6 +46,9 @@
             }
             &::after{
                 width: 61%;
+                @include breakpoint(medium down) {
+                    width: 100%;
+                }
             }
         }
     }

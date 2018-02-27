@@ -1,7 +1,17 @@
 .press{
-    padding: 85px 0 95px;
+    padding: 85px 30px 95px;
+    @include breakpoint(medium down) {
+        padding: 62px 30px 75px;
+    }
+    @include breakpoint(small down) {
+        padding: 38px 6px 60px;
+    }
     &_descr{
         color: $medium-gray;
+        @include breakpoint(medium down) {
+            font-size: 14px;
+            letter-spacing: 0.56px;
+        }
     }
     &_items{
         display: flex;
@@ -9,17 +19,35 @@
         justify-content: space-between;
         margin: 90px -15px 10px;
         padding: 0;
-
+        @include breakpoint(medium down) {
+            margin: 72px -10px 20px;
+        }
+        @include breakpoint(small down) {
+            margin: 25px -8px 8px;
+        }
     }
     &_item{
         display: block;
         width: calc(20% - 30px);
         margin: 0 15px 30px;
+        @include breakpoint(medium down) {
+            width: calc(25% - 20px);
+            margin: 0 10px 20px;
+        }
+        @include breakpoint(small down) {
+            width: calc(50% - 16px);
+            margin: 0 8px 16px;
+        }
     }
     &_hidden{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include breakpoint(medium down) {
+            .press_item:last-child{
+                display: none;
+            }
+        }
     }
     .hexagon{
         top: 464px;

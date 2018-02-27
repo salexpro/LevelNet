@@ -58,7 +58,7 @@
     :-webkit-autofill:hover,
     :-webkit-autofill:focus,
     :-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0px 1000px #f1f3f5 inset;
+        box-shadow: 0 0 0px 1000px #f1f3f5 inset;
         -webkit-text-fill-color: $black;
     }
 
@@ -114,13 +114,13 @@
     &_success{
         padding: 80px 0 0 0;
         &::before{
-            @extend .ico_box::before;
+            @extend .ico_box--hex::before;
             width: 129px;
             height: 201px;
             top: 187px;
         }
         &::after{
-            @extend .ico_box::before;
+            @extend .ico_box--hex::before;
             width: 132px;
             height: 201px;
             left: auto;
@@ -457,10 +457,14 @@
 
 .close-button {
     transition: 300ms;
+    -webkit-tap-highlight-color: transparent;
     span {
         line-height: 0.3;
         display: block;
         overflow: hidden;
         padding-bottom: 30%;
+    }
+    &.small{
+        color: $white;
     }
 }

@@ -1,9 +1,9 @@
 nav.nav.is_filled
     .nav_inner
-        .logo
+        .logo.small-order-1
             a(href=page=='faq'||page=='sign_up'?"/":"#top")
                 img(src="./img/logo.svg", alt="LevelNet")
-        ul.menu
+        ul.menu.show-for-xxlarge.small-order-2
             li
                 a(href="#whitepaper") Whitepaper
             li
@@ -18,14 +18,15 @@ nav.nav.is_filled
             li
                 a(href="#faq") FAQ
         if page == 'product'
-            a.button.hollow.thin(href="/")
+            a.button.hollow.thin.show-for-xxlarge.small-order-3(href="/")
                 | Token Sale
         else
-            button.button.hollow.thin(data-open="join")
+            button.button.hollow.thin.show-for-xxlarge.small-order-3(data-open="join")
                 | Register for Whitelist
-        .nav_phone
-            a(href="tel:+823123456") +82 312 34 56
-        .nav_lang
+        .nav_phone.xxlarge-order-4.small-order-5
+            a(href="tel:+823123456")
+                span +82 312 34 56
+        .nav_lang.xxlarge-order-5.small-order-4
             select.select7.select7_dropdown.select7_remove_current
                 option(value="EN") EN
                 option(value="CN") CN
@@ -33,3 +34,4 @@ nav.nav.is_filled
                 option(value="RU") RU
                 option(value="GE") GE
                 option(value="FR") FR
+        button.hamb.hide-for-xxlarge.small-order-6(data-open="menu")

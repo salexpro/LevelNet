@@ -1,6 +1,11 @@
 .team{
-    padding-top: 85px;
-    padding-bottom: 15px;
+    padding: 85px 30px 15px;
+    @include breakpoint(medium down) {
+        padding: 60px 30px 15px;
+    }
+    @include breakpoint(small down) {
+        padding: 47px 6px 10px;
+    }
     &_descr{
         color: $medium-gray;
     }
@@ -10,7 +15,12 @@
         background-color: #f8f9fa;
         border-radius: $global-radius;
         color: $light-black;
-        
+        @include breakpoint(medium down) {
+            margin-bottom: 60px;
+        }
+        @include breakpoint(small down) {
+            margin: 22px 0 50px;
+        }
     }
     &_member{
         padding: 0 32px;

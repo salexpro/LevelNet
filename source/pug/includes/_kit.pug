@@ -39,10 +39,10 @@ mixin tab(name, ext, is_active)
 
 section#kit.kit(data-magellan-target="kit")
     .row.align-center
-        .column.large-10
+        .column.xlarge-10
             h2 Media Kit
     .row.align-center.kit_inner
-        .column.large-5
+        .column.xlarge-5.medium-6.small-12
             h4 Relases
             .kit_releases
                 - var k = 0;
@@ -52,7 +52,7 @@ section#kit.kit(data-magellan-target="kit")
             button.button.hollow.short.icon(data-open="releases")
                 | Show all releases
                 i.icon.icon--arrow
-        .column.large-5
+        .column.xlarge-5.medium-6.small-12
             h4 Materials
             .accordion.kit_materials(data-accordion data-allow-all-closed="true")
                 .accordion-item(data-accordion-item)

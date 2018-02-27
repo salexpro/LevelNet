@@ -35,6 +35,10 @@
         display: block;
         padding: 16px;
         z-index: 2;
+        @include breakpoint(small down) {
+            font-size: 14px;
+            letter-spacing: 0.56px;
+        }
     }
     &_button{
         position: absolute;

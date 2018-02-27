@@ -3,7 +3,7 @@ mixin offer(icon, label)
         .whitepaper_offer_icon
             i.material-icons
                 =icon
-        figcaption.whitepaper_offer_label
+        h4.whitepaper_offer_label
             !=label
 section#whitepaper.whitepaper
     .row.align-center.whitepaper_inner
@@ -12,10 +12,10 @@ section#whitepaper.whitepaper
             br
             | On Distributed Cyber Security Platform LevelNet
     .row.whitepaper_offers
-        .column.large-6
+        .column.medium-6.small-12
             +offer('security', 'Blocks Viruses and Hackers in <b>Real Time</b>')
             +offer('widgets', 'Works with existing antivirus software')
-        .column.large-6
+        .column.medium-6.small-12
             +offer('https', 'Protects your private data')
             +offer('important_devices', 'Mobile and Desktop platforms')
     .row.align-center

@@ -1,27 +1,62 @@
 .head{
     border-top: 0;
-    padding: 152px 0;
+    padding: 152px 30px;
+    @include breakpoint(medium down) {
+        padding: 166px 30px 143px;
+    }
+    @include breakpoint(small down) {
+        padding: 107px 6px 128px;
+        border-bottom: 0;
+        &::before{
+            width: 130%;
+        }
+        &::after{
+            display: none;
+        }
+    }
     &--small{
         padding-bottom: 95px;
     }
     &_content{
         padding-top: 66px;
+        @include breakpoint(medium down) {
+            padding-top: 38px;
+        }
         &_left{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include breakpoint(medium down) {
+                margin-bottom: 95px;
+            }
+            @include breakpoint(small down) {
+                margin-bottom: 80px;
+            }
         }
         &_right{
             position: relative;
         }
     }
     &_list{
+        @include breakpoint(medium down){
+            margin-bottom: 22px;
+        }
+        @include breakpoint(small down) {
+            margin-bottom: 45px;
+        }
         li{
             display: flex;
             align-items: center;
             margin: 10px 0;
+            @include breakpoint(medium down) {
+                margin: 9px 0;
+            }
+            @include breakpoint(small down) {
+                align-items: baseline;
+            }
             &::before{
                 content: '';
+                flex: 0 0 10px;
                 width: 10px;
                 height: 12px;
                 background-image: url(../img/hexagons/list.svg);

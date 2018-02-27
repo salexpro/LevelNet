@@ -7,6 +7,9 @@
         box-shadow: 1px 0 0 0 $medium-gray;
         margin: 40px 0;
         flex: 0 0 280px;
+        @include breakpoint(large down) {
+            flex: 0 0 auto
+        }
         &:last-child{
             box-shadow: none;
         }
@@ -20,11 +23,41 @@
         &.disabled{
             opacity: .3;
         }
+        @include breakpoint(xlarge down){
+            width: auto;
+            border: 0;
+            left: calc(100% + 10px);
+            &::before, &::after{
+                display: none;
+            }
+        }
     }
     &-prev {
         @extend .owl-next;
         left: auto;
         right: calc(100% + 36px);
         transform: scale(-1, 1);
+        @include breakpoint(xlarge down) {
+            right: calc(100% + 10px);
+        }
+    }
+    &-dots{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: calc(100% + 16px);
+    }
+    &-dot{
+        width: 8px;
+        height: 8px;
+        background-color: $white;
+        opacity: 0.4;
+        border-radius: 50%;
+        transition: 300ms;
+        margin: 0 4px;
+        &.active{
+            opacity: 1;
+        }
     }
 }

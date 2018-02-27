@@ -1,5 +1,14 @@
 .partners{
-    padding: 85px 0 90px;
+    padding: 72px 30px 70px;
+    @include breakpoint(medium down) {
+        padding: 62px 30px 75px;
+    }
+    @include breakpoint(small down) {
+        padding: 47px 6px 59px;
+        &::before, &::after{
+            display: none;
+        }
+    }
     &_inner{
         margin: 30px 0 40px;
         border: 1px solid $light-black;
@@ -8,19 +17,49 @@
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
+        @include breakpoint(medium down) {
+            border: 0;
+            background: none;
+            padding: 0;
+            margin: 50px -10px 23px;
+            > .partners_partner{
+                &:nth-last-child(2),
+                &:nth-last-child(3) {
+                    display: none;
+                }
+            }
+        }
+        @include breakpoint(small down) {
+            margin: 10px -10px 13px;
+        }
     }
     &_partner{
         flex: 1 1 25%;
         padding: 20px;
+        @include breakpoint(medium down) {
+            flex: 1 1 33.333%;
+            padding: 15px 10px;
+            &:last-child{
+                display: none;
+            }
+        }
+        @include breakpoint(small down) {
+            flex: 1 1 100%;
+            padding: 12px 10px;
+        }
         &_img{
             display: block;
             margin-bottom: 16px;
             img{
-                max-width: 100%;
+                width: 100%;
             }
         }
         &_brief{
             margin: 10px 0;
+            @include breakpoint(medium down) {
+                font-size: 14px;
+                letter-spacing: 0.56px;
+            }
         }
         &_descr{
             color: $medium-gray;

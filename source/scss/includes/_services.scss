@@ -1,7 +1,19 @@
 .services {
-    padding: 85px 0;
+    padding: 85px 30px;
+    @include breakpoint(medium down) {
+        padding: 62px 30px;
+    }
+    @include breakpoint(small down) {
+        padding: 48px 6px 50px;
+    }
     &_inner{
         padding: 46px 0;
+        @include breakpoint(medium down) {
+            padding: 36px 0 40px;
+        }
+        @include breakpoint(small down) {
+            padding: 13px 0 28px;
+        }
     }
     .hexagon{
         &--1{
@@ -11,6 +23,14 @@
         &--2 {
             top: 630px;
             right: calc(50% - 815px);
+        }
+    }
+    &_infographics{
+        @include breakpoint(medium down) {
+            margin-top: 44px;
+        }
+        @include breakpoint(small down) {
+            display: none;
         }
     }
 }

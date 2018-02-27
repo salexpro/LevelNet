@@ -1,12 +1,70 @@
 .use_cases{
-    padding-top: 85px;
-    padding-bottom: 95px;
+    padding: 85px 30px 95px;
+    @include breakpoint(medium down) {
+        padding: 62px 30px 75px;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 6px 52px;
+        &::before{
+            width: 100%;
+        }
+        &::after{
+            display: none;
+        }
+    }
     &_videos{
         margin-top: 75px;
         margin-bottom: 20px;
+        @include breakpoint(medium down) {
+            margin-top: 70px;
+            margin-bottom: 40px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 150px;
+                right: 0;
+                bottom: 75px;
+                background-image: linear-gradient(to right, rgba(32, 30, 32, 0) 0%, rgba(32, 30, 32, 0.8) 59%, $medium-black 81%, $medium-black 100%);
+                z-index: 2;
+            }
+        }
+        @include breakpoint(small down) {
+            margin: 56px 0 20px;
+            .column:first-child{
+                margin-bottom: 16px;
+            }
+            &::after{
+                display: none;
+            }
+        }
     }
     &_cases{
         max-width: 950px;
+        overflow: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        @include breakpoint(large down){
+            max-width: none;
+        }
+        @include breakpoint(medium down) {
+            position: relative;
+            margin-left: 10px;
+            margin-right: -30px;
+            >.column {
+                padding: 0;
+                min-width: 316px;
+            }
+        }
+        @include breakpoint(small down) {
+            margin: 0;
+            flex-wrap: wrap;
+            > .column{
+                flex: 1 1 100%;
+                min-width: auto;
+                padding: 8px 10px;
+            }
+        }
     }
     &_case{
         display: block;
@@ -15,6 +73,12 @@
         background-color: rgba(32, 30, 32, 0.75);
         padding: 17px 20px;
         border-radius: $global-radius;
+        @include breakpoint(medium down) {
+            width: 296px;
+        }
+        @include breakpoint(small down) {
+            width: 100%;
+        }
         &_top{
             display: flex;
             align-items: center;

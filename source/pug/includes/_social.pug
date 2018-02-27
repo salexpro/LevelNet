@@ -17,7 +17,7 @@ mixin social(num, mod)
     ul.menu.social(class=mod ? "social--" + mod : "")
         while i < num
             li
-                a(href="#")
+                a(href="#" target="_blank")
                     svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][1] + " " + social[i][2] width=social[i][1] height=social[i][2])
                         use(fill='#fff', xlink:href='#' + social[i][0])
             - i++
