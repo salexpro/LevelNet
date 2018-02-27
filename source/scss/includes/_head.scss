@@ -45,6 +45,33 @@
             }
         }
     }
+    &--product{
+        @include breakpoint(medium down) {
+            padding-bottom: 168px;
+            margin-bottom: 0;
+            .head_list{
+                margin-bottom: 0;
+            }
+            
+            .form{
+                margin: auto;
+                
+                &_header{
+                    text-align: center;
+                }
+            }
+            .social{
+                top: auto;
+                bottom: 55px;
+            }
+        }
+        @include breakpoint(small down) {
+            padding-bottom: 148px;
+            .head_subs{
+                margin-top: 36px;
+            }
+        }
+    }
     &_content{
         padding-top: 66px;
         @include breakpoint(medium down) {

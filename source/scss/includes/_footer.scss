@@ -22,7 +22,7 @@
         }
         h2{
             @include breakpoint(medium down) {
-                max-width: 490px;
+                max-width: 540px;
                 margin: auto;
             }
         }
