@@ -118,6 +118,9 @@ html, body{
     min-width: 320px;
     &--headless{
         padding-top: 85px;
+        @include breakpoint(small down) {
+            padding-top: 57px;
+        }
     }
 }
 

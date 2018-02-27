@@ -1,61 +1,70 @@
 #menu.off-canvas.position-right.nav_mobile(data-off-canvas data-transition="overlap")
     .nav_mobile_logo
         img(src="./img/logo_mobile.svg", alt="LevelNet")
-    button.button.hollow.thin.wide.clean(data-open="join")
-        | Register for Whitelist
+    if page == 'pre_ico'
+        a.button.hollow.thin.wide.clean(href="./sign_up.html")
+            | Buy Tokens
+    else if page == 'product'
+        a.button.hollow.thin.wide.clean(href="./pre_ico.html")
+            | Token Sale
+    else
+        button.button.hollow.thin.wide.clean(data-open="join")
+            | Register for Whitelist
     ul.menu.vertical.nav_mobile_menu(data-magellan data-active-class="is_active")
+        - var st_url = (page == 'faq' || page == 'sign_up') ? "/" : "";
+        if page != 'product'
+            li
+                a(href=st_url + "#ico")
+                    span.nav_mobile_menu_hex
+                    span.nav_mobile_menu_label
+                        | Token Sale
         li
-            a(href="#ico")
-                span.nav_mobile_menu_hex
-                span.nav_mobile_menu_label
-                    | Token Sale
-        li
-            a(href="#about")
+            a(href=st_url + "#about")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Technology
         li
-            a(href="#use_cases")
+            a(href=st_url + "#use_cases")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Use Cases
         li
-            a(href="#services")
+            a(href=st_url + "#services")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | For Corporate
         li
-            a(href="#roadmap")
+            a(href=st_url + "#roadmap")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Roadmap
         li
-            a(href="#team")
+            a(href=st_url + "#team")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Team
         li
-            a(href="#partners")
+            a(href=st_url + "#partners")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Partners
         li
-            a(href="#kit")
+            a(href=st_url + "#kit")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Media Kit
         li
-            a(href="#reviews")
+            a(href=st_url + "#reviews")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Reviews and Stories
         li
-            a(href="#events")
+            a(href=st_url + "#events")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Conferences and Events
         li
-            a(href="#documents")
+            a(href=st_url + "#documents")
                 span.nav_mobile_menu_hex
                 span.nav_mobile_menu_label
                     | Documents
