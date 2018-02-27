@@ -4,7 +4,7 @@
     padding: 60px 95px;
     color: $light-black;
     @include breakpoint(medium down) {
-        padding: 60px 40px;
+        padding: 60px 20px;
     }
     @include breakpoint(small down) {
         padding: 28px 16px 38px;
@@ -27,7 +27,7 @@
         padding: 0 95px;
         z-index: 1;
         @include breakpoint(medium down) {
-            margin: 0 -40px;
+            margin: 0 -20px;
             padding: 0 40px;
         }
         @include breakpoint(small down) {

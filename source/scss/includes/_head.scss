@@ -16,6 +16,34 @@
     }
     &--small{
         padding-bottom: 95px;
+        @include breakpoint(medium down) {
+            padding-bottom: 0;
+            margin-bottom: 54px;
+            .head_content{
+                &_left {
+                    margin-bottom: 8px;
+                }
+                &_right{
+                    position: static;
+                }
+            }
+            .social{
+                position: absolute;
+                top: calc(100% + 40px);
+                left: 50%;
+                transform: translateX(-50%);
+                flex-wrap: nowrap;
+            }
+        }
+        @include breakpoint(small down) {
+            margin-bottom: 128px;
+            border-bottom: 1px solid $light-black;
+            .head_content {
+                &_left {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
     &_content{
         padding-top: 66px;
@@ -35,6 +63,9 @@
         }
         &_right{
             position: relative;
+            .social{
+                float: right;
+            }
         }
     }
     &_list{

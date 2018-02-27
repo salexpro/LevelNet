@@ -9,7 +9,7 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     }
     @include breakpoint(small down) {
-        &.button{
+        &.button:not(.short){
             min-width: auto !important;
             width: 100%;
             &:not(.hollow){

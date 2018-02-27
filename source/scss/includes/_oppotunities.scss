@@ -1,5 +1,9 @@
 .oppotunities{
-    padding: 85px 0 7px;
+    padding: 85px 30px 7px;
+    @include breakpoint(small down) {
+        padding: 57px 6px 0;
+        margin-bottom: -20px;
+    }
     h3{
         color: $medium-gray;
     }
@@ -8,6 +12,9 @@
     }
     &_item{
         margin-top: 27px;
+        @include breakpoint(small down) {
+            margin: 0;
+        }
         &_img{
             display: block;
             width: 100%;
@@ -19,6 +26,20 @@
             border-radius: $global-radius;
             background-color: $white;
             margin-bottom: 15px;
+            @include breakpoint(medium down) {
+                height: 185px;
+            }
+            @include breakpoint(small down) {
+                min-height: 76px;
+                height: auto;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        &_title{
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
         a {
             transition: 300ms

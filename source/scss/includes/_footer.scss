@@ -15,10 +15,14 @@
         }
         @include breakpoint(small down) {
             padding: 50px 16px 55px;
+            .button{
+                width: 100%;
+                max-width: 290px;
+            }
         }
         h2{
             @include breakpoint(medium down) {
-                max-width: 460px;
+                max-width: 490px;
                 margin: auto;
             }
         }
@@ -28,7 +32,7 @@
         &_content{
             margin: 40px auto 95px;
             @include breakpoint(medium down) {
-                margin: 45px auto 115px;
+                margin: 45px auto 95px;
             }
             @include breakpoint(small down) {
                 margin: 55px auto;

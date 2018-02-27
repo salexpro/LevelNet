@@ -13,11 +13,20 @@
                     h3 {
                         margin: 18px 0 70px;
                         color: $medium-black;
+                        @include breakpoint(small down) {
+                            margin-bottom: 54px;
+                        }
                     }
                     .countdown{
                         margin-bottom: 63px;
+                        @include breakpoint(small down) {
+                            margin-bottom: 52px;
+                        }
                         &_course{
                             margin-bottom: 70px;
+                            @include breakpoint(small down) {
+                                margin-bottom: 52px;
+                            }
                             b{
                                 color: $medium-black;
                             }
@@ -34,6 +43,7 @@
         text-align: center;
         &--hex{
             position: relative;
+            z-index: 1;
             &::before {
                 position: absolute;
                 top: 76px;
@@ -45,12 +55,18 @@
                 background-size: cover;
                 background-position: center right;
                 background-repeat: no-repeat;
+                z-index: -1;
             }
             &::after {
                 @extend .ico_box--hex::before;
                 left: auto;
                 right: 0;
                 background-position: center left;
+            }
+            @include breakpoint(small down) {
+                &::before, &::after{
+                    display: none;
+                }
             }
         }
         &_descr{
@@ -70,10 +86,22 @@
             border-top: 1px solid #dee2e6;
             display: flex;
             justify-content: space-around;
+            @include breakpoint(medium down) {
+                margin: 75px -20px 0;
+                padding: 0 16px;
+            }
+            @include breakpoint(small down) {
+                margin: 58px -20px 0;
+            }
             &_item{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                @include breakpoint(small down) {
+                    align-items: flex-start;
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+                }
             }
         }
         &_content{

@@ -30,8 +30,23 @@
     }
     &--pre_ico{
         margin-top: 60px;
-        padding: 40px 20px;
+        padding: 40px 90px;
         text-align: center;
+        @include breakpoint(medium down) {
+            padding: 40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            border-bottom: 0;
+            border-right: 0;
+            border-left: 0;
+            border-radius: 0;
+        }
+        @include breakpoint(small down) {
+            margin-left: -16px;
+            margin-right: -16px;
+            margin-top: 0;
+            padding: 40px 0;
+        }
         .countdown{
             &_header {
                 margin-bottom: 35px;
@@ -131,6 +146,16 @@
         border-radius: $global-radius;
         margin: 55px auto;
         display: flex;
+        @include breakpoint(medium down) {
+            margin-right: 76px;
+        }
+        @include breakpoint(small down) {
+            width: 48px;
+            height: 372px;
+            flex-direction: column-reverse;
+            margin: 34px auto;
+            transform: translateX(-42px);
+        }
         &--light{
             background-color: #e9ecef;
             .countdown_cap{
@@ -142,6 +167,17 @@
                 }
                 &_label{
                     color: $medium-black;
+                    @include breakpoint(small down) {
+                        font-weight: 700;
+                        b{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &_raised{
+                    @include breakpoint(small down) {
+                        color: $medium-black;
+                    }
                 }
             }
         }
@@ -158,29 +194,69 @@
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
             color: $white;
             z-index: 2;
+            @include breakpoint(small down) {
+                width: 100%;
+                height: 40.6%;
+                top: auto;
+                bottom: 0;
+                border-radius: 0 0 $global-radius $global-radius;
+            }
+            span{
+                @include breakpoint(small down) {
+                    position: absolute;
+                    top: calc(50% - 20px);
+                    bottom: auto;
+                    left: 100%;
+                    margin-left: 16px;
+                }
+            }
             b{
                 font-size: 20px;
                 margin-left: 10px;
+                @include breakpoint(small down) {
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    margin-left: 16px;
+                    white-space: nowrap;
+                }
             }
         }
         &_milestone{
             height: 100%;
             border-right: 1px solid rgba($medium-gray, 0.15);
             position: relative;
+            @include breakpoint(small down) {
+                width: 100%;
+                border-right: 0;
+                border-top: 1px solid rgba($medium-gray, 0.15);
+            }
             &--half{
                 width: 44.1%;
+                @include breakpoint(small down) {
+                    width: 100%;
+                    height: 44.1%;
+                }
                 .countdown_cap_milestone_perc{
                     color: $primary-color;
                 }
             }
             &--five{
                 width: 18%;
+                @include breakpoint(small down) {
+                    width: 100%;
+                    height: 18%;
+                }
                 .countdown_cap_milestone_perc {
                     color: $tertiary-color;
                 }
             }
             &--seven{
                 width: 20.7%;
+                @include breakpoint(small down) {
+                    width: 100%;
+                    height: 20.7%;
+                }
                 .countdown_cap_milestone_perc {
                     color: $secondary-color;
                 }
@@ -192,6 +268,16 @@
                 bottom: 100%;
                 margin-bottom: 7px;
                 transform: translateX(50%);
+                @include breakpoint(small down) {
+                    margin: 0;
+                    right: auto;
+                    left: 100%;
+                    margin-left: 15px;
+                    transform: translateY(50%);
+                    white-space: nowrap;
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+                }
             }
             &_perc{
                 position: absolute;
@@ -201,6 +287,16 @@
                 font-weight: 600;
                 width: 100%;
                 text-align: center;
+                @include breakpoint(small down) {
+                    margin: 0;
+                    top: 50%;
+                    left: auto;
+                    right: 100%;
+                    margin-right: 10px;
+                    transform: translateY(-50%);
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+                }
             }
         }
         &_label{
@@ -210,20 +306,50 @@
             margin-left: 10px;
             text-align: left;
             white-space: nowrap;
+            @include breakpoint(small down) {
+                top: 0;
+                margin-left: 15px;
+                display: flex;
+                flex-direction: row-reverse;
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                br{
+                    display: none;
+                }
+                b{
+                    margin-left: 5px;
+                    font-weight: 400;
+                }
+            }
         }
     }
     &_course{
         font-size: 20px;
         color: $dark-gray;
         margin-bottom: 37px;
+        @include breakpoint(small down) {
+            font-size: 16px;
+            letter-spacing: 0.64px;
+            margin-bottom: 24px;
+        }
         b{
             color: $medium-gray;
             margin-right: 20px;
+            @include breakpoint(small down) {
+                margin: 0;
+                margin-bottom: 10px;
+                display: block;
+            }
         }
         &_note{
             margin-top: 14px;
             font-size: 14px;
             letter-spacing: 0.56px;
+            @include breakpoint(small down) {
+                margin-top: 20px;
+                font-size: 13px;
+                letter-spacing: 0.52px;
+            }
         }
     }
 }
