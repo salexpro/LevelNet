@@ -154,6 +154,7 @@ $('.team_members').owlCarousel({
     nav: true,
     dots: false,
     navText: ['<i class="icon icon--arrow"></i>', '<i class="icon icon--arrow"></i>'],
+    loop: true,
     responsive: {
         0:{
             items: 1,
@@ -199,6 +200,19 @@ const open_new = (wold, id_new) => {
 $('.reveal [data-open]').click(function (e) {
     e.stopPropagation();
     open_new($(this).closest('.reveal'), '#' + $(this).data('open'));
+});
+
+// Centering mobile infographics
+const scrollcenter = wnd => {
+    setTimeout(() => {
+        const outer = $('.reveal_infographics_img', wnd)[0].offsetWidth
+        const inner = $('.reveal_infographics_img img', wnd)[0].offsetWidth;
+        $('.reveal_infographics_img', wnd).scrollLeft((inner - outer) / 2);
+    }, 100);
+}
+
+$('.reveal_infographics').on('open.zf.reveal', function() {
+    scrollcenter(this);
 });
 
 // Intercom

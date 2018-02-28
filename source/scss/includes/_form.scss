@@ -2,6 +2,10 @@
     max-width: 473px;
     @include breakpoint(small down) {
         max-width: 100%;
+        .button{
+            font-size: 14px;
+            padding: 0.93em 1.334em;
+        }
     }
     &_form{
         position: relative;

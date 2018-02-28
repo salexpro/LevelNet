@@ -38,6 +38,15 @@
         @include breakpoint(small down) {
             margin-top: 28px;
         }
+        &:hover {
+            .faq_item_icon {
+                background-color: #414041;
+                &::before,
+                &::after {
+                    background-color: #414041;
+                }
+            }
+        }
         &[aria-expanded="true"] {
             .faq_item {
                 &_icon {
@@ -159,7 +168,6 @@
                         padding-right: 16px;
                         text-align: left;
                         border: 0;
-                        
                     }
                     &[aria-selected='true'] {
                         font-weight: 700;
@@ -188,6 +196,15 @@
             }
             &_item{
                 color: $medium-black;
+                &:hover{
+                    .faq_item_icon{
+                        background-color: $white;
+                        &::before,
+                        &::after {
+                            background-color: $white;
+                        }
+                    }
+                }
                 &_answer{
                     color: $medium-black;
                 }
@@ -197,6 +214,7 @@
                     border-color: $medium-gray;
                     &::before, &::after{
                         border-color: $medium-gray;
+                        background-color: $white;
                     }
                 }
                 &[aria-expanded="true"]{

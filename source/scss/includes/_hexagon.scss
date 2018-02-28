@@ -35,9 +35,9 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
 		width: #{$capWidth}px;
 		height: #{$capWidth}px;
 		transform: scaleY(#{$scaleFactor}) rotate(-45deg);
-		background-color: inherit;
+		background-color: $color;
 		left: #{($width - $capWidth)/2 - $borderWidth}px; //offset by half the difference in 
-		transition: border-color 300ms;
+		transition: 300ms;
 
 		@if ($shadow != "") {
 			box-shadow: $shadow;

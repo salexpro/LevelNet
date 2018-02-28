@@ -2,6 +2,18 @@
     outline: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.24);
     color: $light-black;
+    @include breakpoint(small down) {
+        padding: 53px 20px 40px;
+    }
+    &.large{
+        width: 100%;
+        @include breakpoint(xlarge down) {
+            width: calc(100% - 40px);
+        }
+        @include breakpoint(small down) {
+            width: 100%;
+        }
+    }
     &.fade-in.mui-enter {
         transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
         &.mui-enter-active {
@@ -18,9 +30,16 @@
         padding: 0 7%;
         color: $medium-black;
         text-align: center;
+        @include breakpoint(small down) {
+            padding: 0;
+        }
         &--left{
             text-align: left;
             padding-left: 0;
+            @include breakpoint(medium down) {
+                text-align: center;
+                padding-left: 7%;
+            }
         }
     }
     
@@ -33,6 +52,9 @@
         margin-top: 17px;
         &--bold{
             font-weight: 700;
+            @include breakpoint(small down) {
+                margin-top: 13px;
+            }
         }
     }
 
@@ -42,6 +64,9 @@
         text-align: center;
         letter-spacing: 0.56px;
         margin-top: 36px;
+        @include breakpoint(small down) {
+            margin-top: 20px;
+        }
     }
 
     [type="text"],
@@ -67,31 +92,60 @@
             display: flex;
             flex-wrap: wrap;
             margin: 70px 0 30px;
+            @include breakpoint(small down) {
+                margin: 40px 0 20px;
+            }
         }
         &_item {
             flex: 1 1 50%;
             text-align: center;
             margin-bottom: 40px;
+            @include breakpoint(small down) {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+                text-align: left;
+                display: flex;
+                align-items: center;
+            }
             &_img {
                 height: 62px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 20px;
+                @include breakpoint(small down) {
+                    margin: 0;
+                    width: 48px;
+                    height: 48px;
+                    flex: 0 0 48px;
+                    margin-right: 16px;
+                }
             }
         }
     }
 
     &_complete{
         padding-bottom: 60px;
+        @include breakpoint(small down) {
+            padding-bottom: 30px;
+        }
         &_form{
             margin-top: 64px;
             font-size: 14px;
+            @include breakpoint(small down) {
+                margin-top: 50px;
+            }
             > a{
                 text-decoration: underline;
                 color: $secondary_dark;
-                margin: 12px 0 0 14px;
+                margin: 12px 12px 0 14px;
                 display: inline-block;
+                // float: right;
+                @include breakpoint(small down) {
+                    margin: auto;
+                    margin-top: 10px;
+                    display: table;
+                }
                 &:hover, &:focus{
                     text-decoration: none;
                 }
@@ -102,22 +156,36 @@
             align-items: center;
             justify-content: space-between;
             margin: 32px 0 60px;
+            @include breakpoint(small down) {
+                margin: 14px 0 20px;
+                flex-direction: column;
+                label{
+                    width: 100%;
+                    margin-bottom: 18px;
+                }
+            }
             + .reveal_complete_row{
                 margin: 0;
             }
             &_sep{
-                margin: 0 20px;
+                margin: 10px 20px;
             }
         }
     }
 
     &_success{
         padding: 80px 0 0 0;
+        @include breakpoint(small down) {
+            padding-top: 50px;
+        }
         &::before{
             @extend .ico_box--hex::before;
             width: 129px;
             height: 201px;
             top: 187px;
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
         &::after{
             @extend .ico_box--hex::before;
@@ -127,6 +195,9 @@
             top: 130px;
             right: 0;
             background-position: center left;
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
         &--min{
             .reveal_success_bottom{
@@ -136,6 +207,9 @@
         &_content{
             padding: 58px 20px 94px;
             text-align: center;
+            @include breakpoint(small down) {
+                padding-bottom: 60px;
+            }
             &::before {
                 content: '';
                 position: absolute;
@@ -144,6 +218,9 @@
                 width: 68px;
                 height: 77px;
                 background-image: url(../img/hexagons/bg/1.svg);
+                @include breakpoint(small down) {
+                    display: none;
+                }
             }
         }
         &_bottom{
@@ -151,10 +228,19 @@
             padding: 20px 40px;
             font-size: 14px;
             letter-spacing: 0.56px;
+            @include breakpoint(small down) {
+                padding: 12px 30px 12px 18px;
+            }
             li{
                 display: flex;
                 align-items: center;
                 margin: 16px 0;
+                @include breakpoint(small down) {
+                    margin: 12px 0;
+                    color: $input-background-focus;
+                    font-size: 13px;
+                    letter-spacing: 0.52px;
+                }
             }
             i{
                 color: $medium-gray;
@@ -167,6 +253,14 @@
         background-color: $input-background-focus;
         border: 0;
         padding: 0;
+        @include breakpoint(small down) {
+            height: auto;
+            min-height: auto;
+            width: calc(100% - 16px);
+            margin: 0 8px;
+            top: 35% !important;
+            // transform: translateY(-50%);
+        }
         .close-button{
             padding: 10px 8px;
             background: rgba(65, 64, 65, 0.58);
@@ -190,12 +284,35 @@
                     height: #{$h}px;
                     background-image: url(../img/infographics/lines/#{$n}.svg);
                     background-repeat: no-repeat;
+                    @include breakpoint(xlarge down) {
+                        display: none;
+                    }
                 }
             }
         }
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 60px;
+        @include breakpoint(xlarge down) {
+            padding-left: 74px;
+            padding-right: 74px;
+            padding-bottom: 74px;
+        }
+        @include breakpoint(medium down) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+        }
+        @include breakpoint(small down) {
+            padding-top: 22px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 28px;
+            .reveal_header{
+                text-align: left;
+                padding-right: 40px;
+            }
+        }
         &--unable, &--able{
             .reveal_infographics{
                 &_steps{
@@ -207,8 +324,8 @@
                 }
                 &_step{
                     @include line(0, '3-1', 201, 127);
-                    &--1{
-                        margin-bottom: 0;
+                    &--2{
+                        padding-right: 25px !important;
                     }
                 }
                 &_img{
@@ -220,21 +337,32 @@
         &_content{
             margin-top: 36px;
             display: flex;
+            position: relative;
+            @include breakpoint(xlarge down) {
+                margin-top: 40px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            @include breakpoint(small down) {
+                margin-top: 20px;
+            }
         }
         &_steps{
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
             padding: 20px 0;
             padding-top: 24px;
-            &--right{
-                align-items: flex-end;
-                .reveal_infographics_step{
-                    padding: 20px 40px 20px 18px;
-                    &_hex {
-                        left: 100%;
-                    }
-                }
+            flex-wrap: wrap;
+            align-items: flex-start;
+            @include breakpoint(xlarge down) {
+                padding: 0;
+                padding-top: 40px;
+                justify-content: space-around;
+            }
+            @include breakpoint(small down) {
+                width: 100%;
+                align-items: center;
+                padding-top: 24px;
             }
         }
         &_step{
@@ -249,18 +377,73 @@
             min-height: 127px;
             display: flex;
             align-items: center;
+            margin-right: calc(50% - 270px);
+            @include breakpoint(xlarge down) {
+                margin-right: calc(40% - 270px);
+            }
+            @include breakpoint(medium down) {
+                margin-right: calc(35% - 270px);
+            }
+            @include breakpoint(740 down) {
+                margin-right: calc(50% - 280px);
+            }
+            @include breakpoint(small down) {
+                width: 100%;
+                margin-right: 0;
+                margin-left: 22px;
+                padding: 20px 10px 20px 34px;
+                min-height: auto;
+            }
+            &:nth-child(even){
+                padding: 20px 40px 20px 18px;
+                margin-right: 0;
+                margin-left: calc(50% - 270px);
+                @include breakpoint(xlarge down) {
+                    margin-left: calc(40% - 270px);
+                }
+                @include breakpoint(medium down) {
+                    margin-left: calc(35% - 270px);
+                }
+                @include breakpoint(740 down) {
+                    margin-left: calc(50% - 280px);
+                }
+                @include breakpoint(small down) {
+                    padding: 20px 10px 20px 34px;
+                    margin-left: 22px;
+                }
+                .reveal_infographics_step_hex {
+                    left: 100%;
+                    @include breakpoint(small down) {
+                        left: 0;
+                    }
+                }
+            }
             &--1, &--2{
                 margin-bottom: 40px;
                 min-height: 91px;
+                @include breakpoint(small down) {
+                    margin-bottom: 16px;
+                }
             }
             &--3, &--4{
                 margin-bottom: 27px;
+                @include breakpoint(small down) {
+                    margin-bottom: 16px;
+                }
                 &-1{
                     margin-bottom: 40px;
+                    @include breakpoint(small down) {
+                        margin-bottom: 16px;
+                    }
                 }
             }
-            &:last-child{
-                margin-top: 16px;
+            &:nth-last-child(-n+2){
+                margin-top: 16px; 
+            }
+            &:nth-last-child(2) {
+                @include breakpoint(small down) {
+                    margin-top: 0;
+                }
             }
             @include line(0, 1, 316, 56);
             @include line(1, 2, 200, 38);
@@ -286,6 +469,32 @@
             align-items: center;
             justify-content: center;
             border: 2px solid;
+            margin-right: calc(50% - 52px);
+            @include breakpoint(xlarge down) {
+                margin-right: calc(40% - 52px);
+            }
+            @include breakpoint(medium down) {
+                margin-right: calc(35% - 52px);
+            }
+            @include breakpoint(740 down) {
+                margin-right: calc(50% - 52px);
+            }
+            @include breakpoint(small down) {
+                display: none;
+            }
+            &:nth-child(even){
+                margin-right: 0;
+                margin-left: calc(50% - 52px);
+                @include breakpoint(xlarge down) {
+                    margin-left: calc(40% - 52px);
+                }
+                @include breakpoint(medium down) {
+                    margin-left: calc(35% - 52px);
+                }
+                @include breakpoint(740 down) {
+                    margin-left: calc(50% - 52px);
+                }
+            }
             i{
                 font-size: 30px;
             }
@@ -313,26 +522,120 @@
         }
         &_img{
             flex: 1 1 100%;
-            position: relative;
             z-index: 2;
             padding-left: 31px;
             padding-right: 22px;
+            overflow: auto;
+            position: absolute;
+            width: calc(100% - 540px);
+            left: 50%;
+            transform: translateX(-50%);
+            @include breakpoint(xlarge down) {
+                order: -1;
+                transform: none;
+                padding: 0 !important;
+                position: relative;
+                left: auto;
+            }
+            @include breakpoint(small down) {
+                margin: 0 -16px;
+                &::after{
+                    content: 'Свайп в сторону для просмотра';
+                    display: block;
+                    margin-top: 15px;
+                    color: $dark-gray;
+                    font-size: 13px;
+                    letter-spacing: 0.52px;
+                    text-align: center;
+                    min-width: 440px;
+                }
+            }
+            &::before {
+                @include breakpoint(xlarge down) {
+                    content: '';
+                    position: absolute;
+                    top: 21%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 320px;
+                    width: 51%;
+                    height: 250px;
+                    background-image: url(../img/infographics/nums.svg);
+                    background-size: 100% auto;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                }
+                @include breakpoint(small down) {
+                    top: 19.5%;
+                    transform: translateX(-49%);
+                }
+                @include breakpoint(440 down) {
+                    width: 440px;
+                    height: 176px;
+                    max-width: none;
+                    background-size: contain;
+                    left: 0;
+                    transform: none;
+                }
+            }
+            img{
+                @include breakpoint(xlarge down) {
+                    display: block;
+                    max-width: 620px;
+                    margin: auto;
+                }
+                @include breakpoint(small down) {
+                    min-width: 440px;
+                }
+            }
         }
     }
 
     &_benefits{
         &.large{
             max-width: 1060px;
+            margin: auto;
         }
         padding: 44px 60px 62px;
+        @include breakpoint(small down) {
+            padding: 50px 16px 43px;
+        }
         &_content{
             margin-top: 52px;
             display: flex;
             justify-content: space-between;
             margin-bottom: 63px;
+            @include breakpoint(medium down) {
+                margin-top: 47px;
+                margin-bottom: 48px;
+                flex-direction: column;
+            }
+            @include breakpoint(small down) {
+                margin-top: 44px;
+                margin-bottom: 40px;
+                + .reveal_header{
+                    padding: 0;
+                }
+            }
         }
         &_benefit{
             width: calc(50% - 30px);
+            @include breakpoint(medium down) {
+                width: 100%;
+                margin-bottom: 56px;
+                &:last-child{
+                    margin: 0;
+                }
+                p{
+                    max-width: 405px;
+                    margin: auto;
+                }
+            }
+            @include breakpoint(small down) {
+                margin-bottom: 40px;
+                font-size: 14px;
+                letter-spacing: 0.56px;
+            }
             &_img {
                 text-align: center;
                 margin-bottom: 34px;
@@ -340,6 +643,21 @@
         }
         &_items {
             max-width: none;
+            @include breakpoint(medium down) {
+                flex-direction: column;
+                align-items: center;
+                .ico_box_offer{
+                    width: 100%;
+                    max-width: 400px;
+                }
+            }
+            @include breakpoint(small down) {
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                .ico_box_offer_icon{
+                    margin-right: 12px;
+                }
+            }
         }
     }
 
@@ -347,14 +665,39 @@
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 0;
+        @include breakpoint(small down) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 21px;
+            display: flex !important;
+            flex-direction: column;
+            height: 100vh;
+            .reveal_header{
+                text-align: left;
+                padding-left: 0;
+                padding-right: 35px;
+            }
+        }
         &_content{
             max-height: 616px;
             overflow: auto;
             margin-top: 42px;
             margin-right: -56px;
             padding-right: 56px;
+            @include breakpoint(small down) {
+                margin-top: 16px;
+                margin-right: -16px;
+                padding-right: 16px;
+                max-height: none;
+                flex: 1 1 100%;
+            }
             .kit_release{
                 margin-top: 28px;
+                @include breakpoint(small down) {
+                    margin-top: 24px;
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+                }
                 &:first-child {
                     margin: 0;
                 }
@@ -370,6 +713,10 @@
             padding: 0 60px;
             color: $medium-black;
             font-weight: 700;
+            @include breakpoint(small down) {
+                margin: 0 -16px;
+                padding: 0 16px;
+            }
             i{
                 margin-right: 14px;
             }
@@ -385,6 +732,11 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
+            @include breakpoint(small down) {
+                margin-bottom: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         &_date{
             color: $dark-gray;
@@ -393,10 +745,18 @@
             img{
                 float: left;
                 margin-right: 20px;
+                @include breakpoint(small down) {
+                    margin-right: 16px;
+                    margin-bottom: 5px;
+                    width: 150px;
+                }
             }
             p{
                 line-height: 1.33;
                 margin-bottom: 20px;
+                @include breakpoint(small down) {
+                    margin-bottom: 16px;
+                }
             }
         }
     }
@@ -406,21 +766,56 @@
             max-width: 1060px;
         }
         padding: 60px;
+        @include breakpoint(medium down) {
+            padding-top: 53px;
+            .reveal_header{
+                text-align: left;
+                padding-left: 0;
+            }
+            h3{
+                color: $medium-black;
+            }
+        }
+        @include breakpoint(small down) {
+            padding: 50px 16px 0;
+        }
         &_info{
             display: flex;
             align-items: center;
             margin-top: 13px;
             margin-bottom: 20px;
+            @include breakpoint(medium down) {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 50px;
+            }
+            @include breakpoint(small down) {
+                margin-top: 36px;
+                margin-bottom: 0;
+            }
         }
         &_text {
             width: calc(50% - 10px);
             margin-right: 20px;
+            @include breakpoint(medium down) {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 35px;
+            }
             p {
                 margin-bottom: 20px;
+                @include breakpoint(small down) {
+                    font-size: 14px;
+                    letter-spacing: 0.56px;
+                    margin-bottom: 14px;
+                }
             }
         }
         &_video{
             width: calc(50% - 10px);
+            @include breakpoint(medium down) {
+                width: 100%;
+            }
         }
         &_imgs{
             display: flex;
@@ -429,6 +824,17 @@
         }
         &_img{
             margin-top: 20px;
+            width: calc(25% - 10px);
+            @include breakpoint(medium down) {
+                width: calc(50% - 10px);
+            }
+            @include breakpoint(small down) {
+                width: 100%;
+                margin-top: 15px;
+            }
+            img{
+                width: 100%;
+            }
         }
     }
 }
@@ -458,6 +864,10 @@
 .close-button {
     transition: 300ms;
     -webkit-tap-highlight-color: transparent;
+    @include breakpoint(small down) {
+        top: 23px;
+        right: 21px;
+    }
     span {
         line-height: 0.3;
         display: block;

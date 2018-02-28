@@ -42,7 +42,7 @@
             .reveal_complete_row_sep or
             input(type="number" step="0.01" placeholder="Purchase in USD")
         .reveal_complete_row
-            input(type="checkbox" name="terms" id="terms" required)
+            input(type="checkbox" name="terms" id="terms" checked required)
             label(for="terms")
                 | I read and agree
                 | 
@@ -88,42 +88,40 @@ if page!='faq' && page!='sign_up'
                         span 1
                     .reveal_infographics_step_content
                         | Неизвестный объект попадает на пользовательское устройство без антивирусного ПО
+                .reveal_infographics_step.reveal_infographics_step--2
+                    .reveal_infographics_step_hex
+                        span 2
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App регистриует факт проникновения неизвестного объекта
                 .reveal_infographics_step.reveal_infographics_step--3
                     .reveal_infographics_step_hex
                         span 3
                     .reveal_infographics_step_content
                         | В зависимости от режима работы LevelNet Endpoint Security App либо блокирует неизвестный объект, либо отправляет его на проверку через P2P сеть
+                .reveal_infographics_step.reveal_infographics_step--4
+                    .reveal_infographics_step_hex
+                        span 4
+                    .reveal_infographics_step_content
+                        | Информация о неизвестном объекте регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
                 .reveal_infographics_bug.reveal_infographics_bug--green
+                    i.material-icons bug_report
+                .reveal_infographics_bug.reveal_infographics_bug--red
                     i.material-icons bug_report
                 .reveal_infographics_step
                     .reveal_infographics_step_hex
                         span 5
                     .reveal_infographics_step_content
                         | По результатам проверки, если объект не является вредоносным, все пользователи сети LevelNet получают разрешение на использование данного объекта
-            .reveal_infographics_img
-                img(src="./img/infographics/1.svg", alt="")
-            .reveal_infographics_steps.reveal_infographics_steps--right
-                .reveal_infographics_step.reveal_infographics_step--2
-                    .reveal_infographics_step_hex
-                        span 2
-                    .reveal_infographics_step_content
-                        | LevelNet Endpoint Security App регистриует факт проникновения неизвестного объекта
-                .reveal_infographics_step.reveal_infographics_step--4
-                    .reveal_infographics_step_hex
-                        span 4
-                    .reveal_infographics_step_content
-                        | Информация о неизвестном объекте регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
-                .reveal_infographics_bug.reveal_infographics_bug--red
-                    i.material-icons bug_report
                 .reveal_infographics_step
                     .reveal_infographics_step_hex
                         span 6
                     .reveal_infographics_step_content
                         | В случае выявления угрозы данные об объекте быстро распостраняются внутни всей сети LevelNet для запрета на его использование
+            .reveal_infographics_img
+                img(src="./img/infographics/1.svg", alt="")
 
         button.close-button(aria-label='Close', type='button', data-close)
             span(aria-hidden='true') ×
-
 
     #infographics_unable.reveal.large.reveal_infographics.reveal_infographics--unable(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
         h3.reveal_header.centered
@@ -137,19 +135,6 @@ if page!='faq' && page!='sign_up'
                         span 1
                     .reveal_infographics_step_content
                         | Новая, ранее неизвестная угроза попадает на пользовательское устройство с установленным антивирусным ПО
-                .reveal_infographics_step.reveal_infographics_step--3-1
-                    .reveal_infographics_step_hex
-                        span 3
-                    .reveal_infographics_step_content
-                        | LevelNet Endpoint Security App регистрирует факт проникновения неизвестного объекта и передает информацию о ней в P2P сеть
-                .reveal_infographics_step
-                    .reveal_infographics_step_hex
-                        span 5
-                    .reveal_infographics_step_content
-                        | По результатам проверки принимается решение о блокировке угрозы и распостранении информации о ней внутри всей сети LevelNet за счет архитектуры P2P
-            .reveal_infographics_img
-                img(src="./img/infographics/2.svg", alt="")
-            .reveal_infographics_steps.reveal_infographics_steps--right
                 .reveal_infographics_step.reveal_infographics_step--2
                     .reveal_infographics_step_hex
                         span 2
@@ -159,14 +144,25 @@ if page!='faq' && page!='sign_up'
                         b не считает
                         | 
                         | его угрозой
+                .reveal_infographics_step.reveal_infographics_step--3-1
+                    .reveal_infographics_step_hex
+                        span 3
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App регистрирует факт проникновения неизвестного объекта и передает информацию о ней в P2P сеть
                 .reveal_infographics_step.reveal_infographics_step--4
                     .reveal_infographics_step_hex
                         span 4
                     .reveal_infographics_step_content
                         | Описание угрозы регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
+                .reveal_infographics_bug.invisible
                 .reveal_infographics_bug.reveal_infographics_bug--shield
                     i.material-icons bug_report
                     i.material-icons security
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 5
+                    .reveal_infographics_step_content
+                        | По результатам проверки принимается решение о блокировке угрозы и распостранении информации о ней внутри всей сети LevelNet за счет архитектуры P2P
                 .reveal_infographics_step
                     .reveal_infographics_step_hex
                         span 6
@@ -174,6 +170,8 @@ if page!='faq' && page!='sign_up'
                         | Все пользовательские устройства 
                         br
                         | с установленным LevelNet Endpoint Security App защищены от ранее неизвестной угрозы
+            .reveal_infographics_img
+                img(src="./img/infographics/2.svg", alt="")
         button.close-button(aria-label='Close', type='button', data-close)
             span(aria-hidden='true') ×
 
@@ -189,32 +187,30 @@ if page!='faq' && page!='sign_up'
                         span 1
                     .reveal_infographics_step_content
                         | Известная угроза попадает на пользовательское устройство с установленным антивирусным ПО
-                .reveal_infographics_step.reveal_infographics_step--3-1
-                    .reveal_infographics_step_hex
-                        span 3
-                    .reveal_infographics_step_content
-                        | LevelNet Endpoint Security App фиксирует реакцию антивирусного ПО и передает информацию о ней в P2P сеть
-                .reveal_infographics_step
-                    .reveal_infographics_step_hex
-                        span 5
-                    .reveal_infographics_step_content
-                        | В случае подтверждения угрозы данные о ней быстро распостраняются внутри всей сети LevelNet за счет архитектуры P2P
-            .reveal_infographics_img
-                img(src="./img/infographics/3.svg", alt="")
-            .reveal_infographics_steps.reveal_infographics_steps--right
                 .reveal_infographics_step.reveal_infographics_step--2
                     .reveal_infographics_step_hex
                         span 2
                     .reveal_infographics_step_content
                         | Антивирусное ПО регистрирует факт появления известной угрозы
+                .reveal_infographics_step.reveal_infographics_step--3-1
+                    .reveal_infographics_step_hex
+                        span 3
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App фиксирует реакцию антивирусного ПО и передает информацию о ней в P2P сеть
                 .reveal_infographics_step.reveal_infographics_step--4
                     .reveal_infographics_step_hex
                         span 4
                     .reveal_infographics_step_content
                         | Описание угрозы регистрируется на серверах LevelNet для проверки на False Positive и защиту от атак злоумышленников
+                .reveal_infographics_bug.invisible
                 .reveal_infographics_bug.reveal_infographics_bug--shield
                     i.material-icons bug_report
                     i.material-icons security
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 5
+                    .reveal_infographics_step_content
+                        | В случае подтверждения угрозы данные о ней быстро распостраняются внутри всей сети LevelNet за счет архитектуры P2P
                 .reveal_infographics_step
                     .reveal_infographics_step_hex
                         span 6
@@ -222,6 +218,8 @@ if page!='faq' && page!='sign_up'
                         | Все пользовательские устройства
                         br
                         | с установленным LevelNet Endpoint Security App защищены от данного типа угрозы
+            .reveal_infographics_img
+                img(src="./img/infographics/3.svg", alt="")
         button.close-button(aria-label='Close', type='button', data-close)
             span(aria-hidden='true') ×
 

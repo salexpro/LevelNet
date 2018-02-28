@@ -37,6 +37,13 @@
         @include breakpoint(small down) {
             width: calc(50% - 16px);
             margin: 0 8px 16px;
+            display: none;
+            &:nth-child(-n+8) {
+                display: block;
+            }
+        }
+        img{
+            width: 100%;
         }
     }
     &_hidden{

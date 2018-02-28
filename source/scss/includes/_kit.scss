@@ -69,6 +69,14 @@
         @include breakpoint(small down) {
             font-size: 14px;
         }
+        &:hover{
+            .kit_material_icon{
+                background-color: #414041;
+                &::before, &::after{
+                    background-color: #414041;
+                }
+            }
+        }
         &[aria-expanded="true"]{
             .kit_material{
                 &_icon {

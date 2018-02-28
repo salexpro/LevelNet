@@ -1,5 +1,5 @@
 .sign_up{
-    padding: 96px 20px;
+    padding: 76px 20px 96px;
     text-align: center;
     @include breakpoint(small down) {
         padding: 60px 20px;
@@ -8,7 +8,7 @@
         max-width: 740px;
         margin: auto;
         margin-bottom: 95px;
-        padding: 62px 0 57px;
+        padding: 42px 0 50px;
         border: 1px solid $light-black;
         background-color: $medium-black;
         border-radius: $global-radius;

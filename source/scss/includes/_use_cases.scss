@@ -73,6 +73,9 @@
         background-color: rgba(32, 30, 32, 0.75);
         padding: 17px 20px;
         border-radius: $global-radius;
+        &:hover{
+            background-color: #2D2B2D;
+        }
         @include breakpoint(medium down) {
             width: 296px;
         }

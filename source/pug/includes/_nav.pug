@@ -5,7 +5,7 @@ nav.nav.is_filled
                 img(src="./img/logo.svg", alt="LevelNet")
         ul.menu.show-for-xxlarge.small-order-2
             li
-                a(href="#whitepaper") Whitepaper
+                a(href="#" download) Whitepaper
             li
                 a(href="#about") Technology
             li
@@ -22,7 +22,10 @@ nav.nav.is_filled
                 | Token Sale
         else
             button.button.hollow.thin.show-for-xxlarge.small-order-3(data-open="join")
-                | Register for Whitelist
+                if page == 'pre_ico'
+                    | Register for Token Sale
+                else
+                    | Register for Whitelist
         .nav_phone.xxlarge-order-4.small-order-5
             a(href="tel:+823123456")
                 span +82 312 34 56

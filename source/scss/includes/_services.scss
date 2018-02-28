@@ -26,6 +26,21 @@
         }
     }
     &_infographics{
+        position: relative;
+        &::after{
+            content: 'No anti-virus is offering the best protection. Each has better and worse detection rate for certain threat types and environments';
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            font-size: 14px;
+            letter-spacing: 0.56px;
+            color: #868E96;
+            display: block;
+            @include breakpoint(medium down) {
+                position: static;
+                margin-top: 10px;
+            }
+        }
         @include breakpoint(medium down) {
             margin-top: 44px;
         }
