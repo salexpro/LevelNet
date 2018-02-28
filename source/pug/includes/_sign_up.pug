@@ -5,19 +5,73 @@ section.sign_up
             h2 Sign up
         .sign_up_form_content
             input(type="email" name="email" placeholder="Enter your email" required)
-            input(type="text" name="name" placeholder="First name" required)
-            input(type="text" name="surname" placeholder="Last name" required)
+            input(type="text" name="name" placeholder="First name" pattern="[a-zA-Z]+" required)
+            input(type="text" name="surname" placeholder="Last name" pattern="[a-zA-Z]+" required)
             .sign_up_form_pass
                 input(type="password" name="password" placeholder="Password" required)
                 span.all-seeing_eye.is_hidden
                     i.material-icons remove_red_eye
             select(name="country" required)
-                option(value="" selected disabled) Choose country of residence
-                option(value="City1") City1
-                option(value="City2") City2
-                option(value="City3") City3
-            button.button.primary.short.spaced(type="submit")
-                | BUY TOKENS
+                option(value="" selected disabled) -- Choose country of residence --
+                option(value='USA') USA
+                option(value='Republic of Singapore') Republic of Singapore
+                option(value='Afghanistan') Afghanistan
+                option(value='Albania') Albania
+                option(value='Algeria') Algeria
+                option(value='Andorra') Andorra
+            .sign_up_form_purpose.hide
+                select(name="purpose" required)
+                    option(value="" selected disabled) -- Your purpose of purchase tokens --
+                    option(value='Speculation on crypto-exchanges') Speculation on crypto-exchanges
+                    option(value='Using LevelNet services and software') Using LevelNet services and software
+                    option(value='Both purposes') Both purposes
+        .sign_up_form_terms.hide
+            input#terms(type="checkbox", name="" required checked)
+            label(for="terms")
+                span
+                    | I confirm that I have read and understand the
+                    | 
+                    a(href="#" target="_blank") Terms and Conditions
+                    | 
+                    | of token sale and the
+                    | 
+                    a(href="#" download) Whitepaper
+                    |
+                    | and
+                    |
+                    a(href="#" target="_blank") Terms of Use LevelNet website
+                    |
+                    | and
+                    |
+                    a(href="#" target="_blank") Privacy Policy
+                    | and that I expressly accept all terms, conditions, obligations, affirmations, representations and warranties described in these documents and agree to be bound by them.
+            input#risk_warnings(type="checkbox", name="" required checked)
+            label(for="risk_warnings")
+                span
+                    | I confirm that i have read and understand the
+                    | 
+                    a(data-open="risk") Risk Warnings
+                    | 
+                    | and declare and certify having carried out research or taken relevant advice from specialized attorneys to ensure that no legislation or regulation applicable to my situation and my place of residence, or no position or recommendation from a competent national authority prohibits me or limits me in the purchase and the possession of tokens, and more widely in the possession of cryptocurrencies.
+            input#us_confirmation(type="checkbox", name="" required checked)
+            label(for="us_confirmation")
+                span
+                    | I confirm that I'm not a U.S. citizen resident or entity (a "U.S. ) Nor purchasing tokens on behalf of a U.S.  or registered professional investor who are permitted to purchase digital tokens by regulations of respective countries.
+            input#kyc_confirmation(type="checkbox", name="" required checked)
+            label(for="kyc_confirmation")
+                span
+                    | I confirm that i have read and understand the
+                    | 
+                    a(data-open="kyc") KYC/AML
+                    | 
+                    | and I understand that I will need to pass KYC/AML (Know Your Customer/Anti-Money Laundering) checks  upon request.
+        button.button.primary.short.spaced(type="submit")
+            | BUY TOKENS
+        .sign_up_form_engine.hide
+            p Purchase our tokens through the crowdfunding platform Startengine
+            a.button.primary.short.spaced(href="https://www.startengine.com" target="_blank")
+                | BUY ON STARTENGINE
+            img(src="./img/logo_engine.png", alt="StartEngine")
         .sign_up_form_bottom
             | Already have an account?
             | 

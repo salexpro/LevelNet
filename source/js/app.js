@@ -76,6 +76,23 @@ $('form[action]').submit(function(e){
     }
 });
 
+$('.sign_up_form [name="country"]').change(function() {
+    if($(this).val() == 'USA'){
+        $('.sign_up_form_terms').addClass('hide');
+        $('.sign_up_form_purpose').removeClass('hide');
+        $('.sign_up_form_purpose select :eq(0)').prop('selected', true)
+    } else {
+        $('.sign_up_form_purpose').addClass('hide');
+        $('.sign_up_form_engine').addClass('hide');
+        $('.sign_up_form_terms').removeClass('hide');
+        $('.sign_up_form button').removeClass('hide');
+    }
+})
+$('.sign_up_form [name="purpose"]').change(function () {
+    $('.sign_up_form_engine').removeClass('hide');
+    $('.sign_up_form button').addClass('hide');
+});
+
 $('#success').on('open.zf.reveal', function() {
     const modal = $(this);
     const descr = $('.reveal_descr', this);

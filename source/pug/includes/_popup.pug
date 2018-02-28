@@ -41,14 +41,14 @@
             input(type="number" step="0.00000001" placeholder="Purchase in ETH")
             .reveal_complete_row_sep or
             input(type="number" step="0.01" placeholder="Purchase in USD")
-        .reveal_complete_row
+        .reveal_complete_check
             input(type="checkbox" name="terms" id="terms" checked required)
             label(for="terms")
                 | I read and agree
                 | 
                 a(href="#" target="_blank") Terms of use
-            button.button.primary.spaced(type="submit")
-                | JOIN WHITELIST
+        button.button.primary.spaced(type="submit")
+            | JOIN WHITELIST
         .reveal_note
             | Just one step to your bonus +25%
     button.close-button(aria-label='Close', type='button', data-close)
@@ -324,5 +324,66 @@ if page!='faq' && page!='sign_up'
                 .reveal_event_img
                     img(src="//placehold.it/220x140", alt="")
                 - i++
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+if page == 'sign_up'
+    #risk.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | Risk Warnings
+        .reveal_sign_content
+            p Investments in early stage companies involves high risk. Purchases of Tokens/ICO’s are even higher risk.
+            p We strongly recommend that purchasers familiarize themselves with all the risks associated with Tokens/ICO’s before considering a Token/ICO purchase alongside any risk disclosures outlined in any pitches - ‘Terms of Token Sale & service'.
+            b 1. Complete loss of capital
+            ul
+                li
+                    | Participating in Tokens/ICO purchases, digital assets and other cryptocurrencies carries a very high degree of risk.
+                li
+                    | Only purchasers familiar with the risks associated with acquiring tokens, digital assets, or cryptocurrencies should consider these purchases.
+                li
+                    | No purchaser should purchase tokens, digital assets and other cryptocurrencies unless the purchaser can understand, accept, tolerate and afford total loss of all capital.
+            b 2. Valuation
+            ul
+                li
+                    | There is limited public information about the token/ICO.
+                li
+                    | The price at which the buyer is agreeing to purchase the token at may not represent current fair market valuation.
+                li
+                    | Buyers should assume that the company generally possesses material information about the company not known to the buyer or the public.
+                li
+                    | Buyers of tokens/ICO should perform their own due diligence prior to purchasing.
+            button.button.tertiary.short.icon(data-close)
+                | Got It
+                i.icon.icon--arrow
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+    #kyc.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | KYC/AML
+        p.reveal_descr
+            | (Know Your Customer/Anti-Money Laundering)
+        .reveal_sign_content
+            p 
+                | The Company use the
+                | 
+                b Anti Money Laundering (AML) Policy
+                | . Money laundering is where proceeds of crime are disguised so to give the appearance of a legitimate income.
+            p Company reserves the right to report any suspicious activities to the police or relevant authorities, if the official request with suspicion of money laundering from public authorities is received, without the client's knowledge.
+            p
+                | The Company also reserve the right to require additional information at any time to verify the client's identification and any further information that may be required to satisfy the
+                | 
+                b Money Laundering Regulations
+                | .
+            p 
+                | We also use the 
+                | 
+                b Know Your Customer Policy (KYC)
+                | . Customer Identification Program (
+                b CIP
+                | ) is the appropriate level of KYC procedure in this case, in order to implement this you required to provide Your iID Photo.
+            button.button.tertiary.short.icon(data-close)
+                | Got It
+                i.icon.icon--arrow
         button.close-button(aria-label='Close', type='button', data-close)
             span(aria-hidden='true') ×
