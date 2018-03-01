@@ -243,6 +243,36 @@ $('.reveal_infographics').on('open.zf.reveal', function() {
     scrollcenter(this);
 });
 
+// Notification
+const rnd = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+const notify = (content, timeout) => {
+    const ntf = $('.notify');
+    $('.notify_content').html(content);
+    ntf.addClass('is_visible');
+    setTimeout(() => {
+        ntf.removeClass('is_visible');
+    }, timeout * 1000);
+}
+const ntf_interval = () => {
+    setTimeout(() => {
+        notify('Investor from Texas, US<br>just joined WhiteList', 4);
+        ntf_interval();
+    }, rnd(25, 50) * 1000);
+}
+
+ntf_interval();
+
+// Join popup showing
+setTimeout(() => {
+    $('#join').foundation('open');
+}, 2 * 60 * 1000);
+
+$('.docs_item, .token_info .button, .whitepaper .button').click(() => {
+    $('#join').foundation('open');
+});
+
 // Intercom
 window.intercomSettings = {
     app_id: 'ymua2wwv'
