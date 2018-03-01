@@ -1,7 +1,7 @@
 nav.nav.is_filled
     .nav_inner
         .logo.small-order-1
-            a(href=page=='faq'||page=='sign_up'?"/":"#top")
+            a(href=page=='faq'||page=='sign_up'?"./":"#top")
                 img(src="./img/logo.svg", alt="LevelNet")
         ul.menu.show-for-xxlarge.small-order-2
             li
@@ -18,7 +18,7 @@ nav.nav.is_filled
             li
                 a(href="#faq") FAQ
         if page == 'product'
-            a.button.hollow.thin.show-for-xxlarge.small-order-3(href="/")
+            a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="/")
                 | Token Sale
         else
             button.button.hollow.thin.show-for-xxlarge.small-order-3(data-open="join")

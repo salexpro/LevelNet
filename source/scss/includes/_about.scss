@@ -285,7 +285,7 @@
                     background-size: 100%;
                 }
                 @include breakpoint(small down) {
-                    padding-top: 15px;
+                    // padding-top: 15px;
                     font-size: 14px;
                     letter-spacing: 0.56px;
                 }

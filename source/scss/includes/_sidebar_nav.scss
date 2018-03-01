@@ -6,7 +6,7 @@
     z-index: 3;
     transition: 300ms;
     overflow: hidden;
-    @include breakpoint(xxlarge down) {
+    @include breakpoint(1700 down) {
         width: 13px;
         &:hover {
             width: 187px;
@@ -16,7 +16,6 @@
         }
     }
     @include breakpoint(xlarge down) {
-        // right: 15px;
         display: none;
     }
     &_item.sidebar_nav_item {

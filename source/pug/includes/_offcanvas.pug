@@ -2,13 +2,13 @@
     .nav_mobile_logo
         img(src="./img/logo_mobile.svg", alt="LevelNet")
     if page == 'pre_ico'
-        a.button.hollow.thin.wide.clean(href="./sign_up.html")
+        a.button.primary.wide(href="./sign_up.html")
             | Buy Tokens
     else if page == 'product'
-        a.button.hollow.thin.wide.clean(href="./pre_ico.html")
+        a.button.primary.wide(href="./pre_ico.html")
             | Token Sale
     else
-        button.button.hollow.thin.wide.clean(data-open="join")
+        button.button.primary.wide(data-open="join")
             | Register for Whitelist
     ul.menu.vertical.nav_mobile_menu(data-magellan data-active-class="is_active")
         - var st_url = (page == 'faq' || page == 'sign_up') ? "/" : "";
