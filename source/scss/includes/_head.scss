@@ -15,7 +15,18 @@
         }
     }
     &--small{
-        padding-bottom: 95px;
+        padding-bottom: 55px;
+        margin-bottom: 45px;
+        .head_content_right{
+            position: static;
+        }
+        .social {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            flex-wrap: nowrap;
+        }
         @include breakpoint(medium down) {
             padding-bottom: 0;
             margin-bottom: 54px;
@@ -27,12 +38,10 @@
                     position: static;
                 }
             }
-            .social{
-                position: absolute;
+            .social {
+                bottom: auto;
                 top: calc(100% + 40px);
-                left: 50%;
                 transform: translateX(-50%);
-                flex-wrap: nowrap;
             }
         }
         @include breakpoint(small down) {
@@ -46,23 +55,38 @@
         }
     }
     &--product{
+        padding-bottom: 195px;
+        .head_content{
+            position: relative;
+        }
+        .social {
+            left: calc(8.333% + 10px);
+            top: 330px;
+            bottom: auto;
+            transform: none;
+        }
         @include breakpoint(medium down) {
             padding-bottom: 168px;
             margin-bottom: 0;
-            .head_list{
-                margin-bottom: 0;
+            .head{
+                &_content{
+                    position: static;
+                }
+                &_list {
+                    margin-bottom: 0;
+                }
             }
-            
             .form{
-                margin: auto;
-                
+                margin: auto; 
                 &_header{
                     text-align: center;
                 }
             }
             .social{
+                left: 50%;
                 top: auto;
                 bottom: 55px;
+                transform: translateX(-50%);
             }
         }
         @include breakpoint(small down) {
@@ -73,7 +97,7 @@
         }
     }
     &_content{
-        padding-top: 66px;
+        padding-top: 26px;
         @include breakpoint(medium down) {
             padding-top: 38px;
         }

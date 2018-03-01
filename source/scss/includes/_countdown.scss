@@ -55,6 +55,11 @@
                 width: 505px;
                 margin: auto;
             }
+            &_cap{
+                @include breakpoint(medium) {
+                    margin-top: 77px;
+                }
+            }
         }
         .primary{
             margin: 24px auto 7px;

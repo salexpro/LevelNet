@@ -42,14 +42,13 @@
         justify-content: space-between;
         align-items: center;
         @include breakpoint(small down) {
-            &:not(.hollow) .icon{
+            &:not(.short) .icon{
                 display: none;
             }
         }
         .icon{
             margin-left: 20px;
             transition: 300ms;
-            
         }
         &.up{
             .icon{

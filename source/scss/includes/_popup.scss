@@ -63,7 +63,7 @@
         font-size: 14px;
         text-align: center;
         letter-spacing: 0.56px;
-        margin-top: 36px;
+        margin-top: 34px;
         @include breakpoint(small down) {
             margin-top: 20px;
         }
@@ -91,35 +91,27 @@
         &_content{
             display: flex;
             flex-wrap: wrap;
-            margin: 70px 0 30px;
+            margin: 70px auto 57px;
+            max-width: 260px;
             @include breakpoint(small down) {
                 margin: 40px 0 20px;
+                max-width: none;
             }
         }
         &_item {
-            flex: 1 1 50%;
-            text-align: center;
-            margin-bottom: 40px;
-            @include breakpoint(small down) {
-                flex: 1 1 100%;
-                margin-bottom: 20px;
-                text-align: left;
-                display: flex;
-                align-items: center;
-            }
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
             &_img {
-                height: 62px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-bottom: 20px;
-                @include breakpoint(small down) {
-                    margin: 0;
-                    width: 48px;
-                    height: 48px;
-                    flex: 0 0 48px;
-                    margin-right: 16px;
-                }
+                width: 48px;
+                height: 48px;
+                flex: 0 0 48px;
+                margin-right: 16px;
             }
         }
     }
@@ -130,7 +122,7 @@
             padding-bottom: 30px;
         }
         &_form{
-            margin-top: 64px;
+            margin-top: 36px;
             font-size: 14px;
             @include breakpoint(small down) {
                 margin-top: 50px;
@@ -138,13 +130,13 @@
             > a{
                 text-decoration: underline;
                 color: $secondary_dark;
-                margin: 12px 12px 0 14px;
-                display: inline-block;
-                // float: right;
+                margin-top: 12px;
+                float: right;
                 @include breakpoint(small down) {
                     margin: auto;
                     margin-top: 10px;
                     display: table;
+                    float: none;
                 }
                 &:hover, &:focus{
                     text-decoration: none;
@@ -155,9 +147,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 32px 0 60px;
+            margin: 50px 0 0;
+            background-color: #e9ecef;
             @include breakpoint(small down) {
-                margin: 14px 0 20px;
+                margin: 14px 0 0;
                 flex-direction: column;
                 label{
                     width: 100%;
@@ -170,6 +163,17 @@
             &_sep{
                 margin: 10px 20px;
             }
+        }
+        &_check{
+            text-align: center;
+            margin: 40px 0;
+            @include breakpoint(small down) {
+                margin: 20px 0;
+            }
+        }
+        .button{
+            display: flex;
+            margin: auto;
         }
     }
 
@@ -835,6 +839,50 @@
             img{
                 width: 100%;
             }
+        }
+    }
+    
+    &_sign{
+        padding: 53px 60px 60px;
+        @include breakpoint(small down) {
+            padding: 53px 20px 40px;
+        }
+        .reveal{
+            &_header {
+                @include breakpoint(small down) {
+                    padding: 0;
+                }
+            }
+            &_descr{
+                padding-bottom: 0;
+                text-align: left;
+                margin-top: 5px;
+            }
+        }
+        &_content{
+            margin-top: 42px;
+            @include breakpoint(small down) {
+                margin-top: 30px;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        b{
+            color: $light-black;
+            font-weight: 600;
+            letter-spacing: 0.6px;
+        }
+        ul{
+            margin-top: 20px;
+        }
+        li{
+            margin-bottom: 12px;
+        }
+        .button{
+            display: flex;
+            margin: auto;
+            margin-top: 37px;
         }
     }
 }

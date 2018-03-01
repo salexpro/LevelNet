@@ -41,7 +41,7 @@
     }
     &_cases{
         max-width: 950px;
-        overflow: auto;
+        overflow-y: hidden;
         flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
         @include breakpoint(large down){
@@ -75,6 +75,9 @@
         border-radius: $global-radius;
         &:hover{
             background-color: #2D2B2D;
+            .use_cases_case_icon{
+                transform: scale(.85);
+            }
         }
         @include breakpoint(medium down) {
             width: 296px;
@@ -88,6 +91,9 @@
             justify-content: space-between;
             margin-bottom: 15px;
             height: 62px;
+        }
+        &_icon{
+            transition: transform 300ms;
         }
         &_note{
             color: $medium-gray;

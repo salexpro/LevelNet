@@ -84,9 +84,13 @@
         }
         &:hover{
             background-color: #2D2B2D;
+            .docs_item_icon{
+                transform: scale(.85);
+            }
         }
         &_icon{
             margin: auto;
+            transition: transform 300ms;
         }
     }
 }

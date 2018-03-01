@@ -22,6 +22,7 @@
 @codekit-prepend '../../node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.min';
 @codekit-prepend '../../node_modules/jquery-countdown/dist/jquery.countdown.min';
 @codekit-prepend '../../node_modules/owl.carousel/dist/owl.carousel.min';
+@codekit-prepend '../../node_modules/scrollreveal/dist/scrollreveal.min';
 */
 
 $(document).foundation();
@@ -75,6 +76,16 @@ $('form[action]').submit(function(e){
         }
     }
 });
+
+const eth_cost = 870.13;
+$('[name="eth"]').keyup(function () {
+    const usd = $(this).val() * eth_cost;
+    $('[name="usd"]').val(usd.toFixed(2));
+});
+$('[name="usd"]').keyup(function () {
+    const eth = $(this).val() / eth_cost;
+    $('[name="eth"]').val(eth.toFixed(8));
+})
 
 $('.sign_up_form [name="country"]').change(function() {
     if($(this).val() == 'USA'){

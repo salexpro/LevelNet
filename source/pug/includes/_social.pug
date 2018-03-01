@@ -2,22 +2,22 @@ mixin social(num, mod)
     - 
         var i = 0;
         var social = [
-            ['telegram', 24, 22],
-            ['reddit', 26, 22],
-            ['bitcointalk', 18, 24],
-            ['facebook', 11, 22],
-            ['twitter', 24, 19],
-            ['linkedin', 21, 21], 
-            ['instagram', 23, 23],
-            ['medium', 25, 19],
-            ['youtube', 24, 18],
-            ['github', 25, 21]
+            ['telegram',    'https://t.me/joinchat/GHTE40NTXjl5p3H27VceBw', 24, 22],
+            ['reddit',      'https://www.reddit.com/user/LevelNetwork/', 26, 22],
+            ['bitcointalk', 'https://bitcointalk.org/index.php?topic=2212642', 18, 24],
+            ['facebook',    'https://www.facebook.com/levelnetwork/', 11, 22],
+            ['twitter',     'https://twitter.com/LevelNetwork', 24, 19],
+            ['linkedin',    'https://www.linkedin.com/company/10879121/', 21, 21], 
+            ['instagram',   'https://www.instagram.com/levelnetwork/', 23, 23],
+            ['medium',      'https://medium.com/@LevelNetwork', 25, 19],
+            ['youtube',     '', 24, 18],
+            ['github',      '', 25, 21]
         ];
         var num = num ? num : social.length;
     ul.menu.social(class=mod ? "social--" + mod : "")
         while i < num
             li
-                a(href="#" target="_blank")
-                    svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][1] + " " + social[i][2] width=social[i][1] height=social[i][2])
+                a(href=social[i][1] target="_blank")
+                    svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][2] + " " + social[i][3] width=social[i][2] height=social[i][3])
                         use(fill='#fff', xlink:href='#' + social[i][0])
             - i++

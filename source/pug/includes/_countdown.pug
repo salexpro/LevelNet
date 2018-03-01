@@ -62,6 +62,11 @@ mixin countdown_course(note)
 
 mixin countdown(mod, header)
     .countdown(class=mod ? "countdown--" + mod : "")
+        if mod == 'pre_ico'
+            h3 Buy Tokens with Bonus +25%
+            a.button.primary.short.spaced(href="./sign_up.html")
+                | BUY TOKENS
+            .countdown_hr
         if header
             h4.countdown_header
                 =header
@@ -79,11 +84,7 @@ mixin countdown(mod, header)
             +counter
 
         if mod == 'pre_ico'
-            .countdown_hr
             +countdown_cap
-            h3 Buy Tokens with Bonus +25%
-            a.button.primary.short.spaced(href="./sign_up.html")
-                | BUY TOKENS
             .countdown_hr
             +countdown_course('Unsold tokens will be destroyed')
             a.button.hollow.short.icon(href="#ico" data-smooth-scroll)
