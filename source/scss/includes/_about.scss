@@ -228,14 +228,50 @@
                 justify-content: center;
                 cursor: ew-resize;
                 outline: none;
+                left: 13.3%;
                 @include breakpoint(small down) {
-                    width: 28px;
-                    height: 28px;
-                    .icon{
-                        width: 14px;
-                        height: 14px;
+                    width: 36px;
+                    height: 36px;
+                    &::before,
+                    &::after {
+                        display: none;
                     }
                 }
+                &.is_tooltip{
+                    &::before{
+                        content: 'Move the button to view more';
+                        position: absolute;
+                        left: 50%;
+                        bottom: calc(100% + 20px);
+                        transform: translateX(-50%);
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.24);
+                        background-color: $input-background-focus;
+                        width: 240px;
+                        height: 48px;
+                        border-radius: 8px;
+                        padding: 16px 20px;
+                        font-size: 14px;
+                        letter-spacing: 0.56px;
+                        color: $white;
+                        text-align: center;
+                        cursor: default;
+                        z-index: -1;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        bottom: 100%;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $input-background-focus;
+                        transform: rotate(45deg) translateX(-14px);
+                        z-index: -1;
+                    }
+                }
+            }
+            &_line{
+                width: 14%;
             }
             &_years{
                 border-top: 2px solid $medium-gray;

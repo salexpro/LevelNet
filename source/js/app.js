@@ -172,9 +172,16 @@ $('.slider').on('moved.zf.slider', (e, el) => {
         .removeClass('is_hide');
         year = '2021';
     }
-    if (year) $('.about_graph_comment_inner').removeClass('is_visible');
+    if (year) {
+        $('.about_graph_comment_inner').removeClass('is_visible');
+        $('.about_graph_timeline_arrow').removeClass('is_tooltip');
+    }
     $('.about_graph_comment--' + year).addClass('is_visible');
-})
+});
+
+$('.about_graph_timeline_arrow').hover(function() {
+    $(this).removeClass('is_tooltip');
+});
 
 // Team carousel
 $('.team_members').owlCarousel({
