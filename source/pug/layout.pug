@@ -39,3 +39,6 @@ html(lang="ru")
         include includes/_notify
         include includes/_popup
         script(src="./js/app.min.js")
+        if page == 'product'
+            script.
+                $('#welcome').foundation('open')

@@ -71,7 +71,29 @@
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×
 
-if page!='faq' && page!='sign_up'
+if page != 'product'
+#welcome.reveal.reveal_welcome(data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true")
+    .reveal_welcome_logo
+    h2.reveal_header
+        | Welcome to LevelNet
+        br
+        | Product Webpage
+    h3
+        | Join the Ultimate Cyber Security
+        br
+        | Platform on our ICO site
+    a.button.primary.spaced(href="./")
+        | JOIN ICO NOW
+    .reveal_welcome_bonus
+        | Сurrent token sale bonus
+        | 
+        b +25%
+    a.button.hollow.filled.thin(data-close)
+        | Stay on Product Webpage
+    button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+if page != 'faq' && page != 'sign_up'
     #video.reveal.large.reveal_video(data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true")
         .responsive-embed.reveal_video_container
             iframe(width='560', height='315', src='https://www.youtube.com/embed/_Th1GTJmL2Y?showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
