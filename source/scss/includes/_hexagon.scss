@@ -79,7 +79,7 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
 	position: absolute;
 	z-index: -1;
 	&_hex{
-		@include hexagon(131, $medium-black, 1.5, $light-black, null);
+		@include hexagon(131, #292729, 4, $body-background, null);
 		position: absolute;
 		&--1{
 			right: 0;

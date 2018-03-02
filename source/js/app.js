@@ -1,7 +1,8 @@
-/* global moment, intercomSettings */
+/* global sr, ScrollReveal, moment, intercomSettings */
 /* eslint no-inner-declarations: 'off' */
 /*
 @codekit-prepend '../../node_modules/jquery/dist/jquery.min';
+@codekit-prepend '../../node_modules/scrollreveal/dist/scrollreveal.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.core.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min';
@@ -24,6 +25,35 @@
 @codekit-prepend '../../node_modules/owl.carousel/dist/owl.carousel.min';
 @codekit-prepend '../../node_modules/scrollreveal/dist/scrollreveal.min';
 */
+
+// Animations
+window.sr = ScrollReveal();
+sr.reveal('.head .social li', { delay: 300, duration: 200 }, 60);
+sr.reveal('.use_cases .use_cases_cases .column', { delay: 300, duration: 200 }, 60);
+sr.reveal('.about_graph_timeline_arrow.is_tooltip', { delay: 300, duration: 250 });
+sr.reveal('.ico_box .ico_box_offer', { delay: 300, duration: 250 }, 60);
+sr.reveal('.token_distr_small .token_distr_stat_perc', { delay: 300, duration: 250 }, 100);
+sr.reveal('.roadmap_table_hint', { delay: 300, duration: 250 });
+sr.reveal('.footer .social li', { delay: 100, duration: 150 }, 60);
+
+sr.reveal('.about .hexagon--4 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.about .hexagon--3 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.whitepaper .hexagon--6 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.services .hexagon--1 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.services .hexagon--2 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.products .hexagon--4 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.ico .hexagon--3 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.token_info .hexagon--6 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.token_info .hexagon--1 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.roadmap .hexagon--3 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.roadmap .hexagon--2 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.press .hexagon--1 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.kit .hexagon--1 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.kit .hexagon--3 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.kit .hexagon--6 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.events .hexagon--1 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+sr.reveal('.faq .hexagon--5 .hexagon_hex', { delay: 250, duration: 700 }, 300);
+
 
 $(document).foundation();
 

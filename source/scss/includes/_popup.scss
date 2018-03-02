@@ -912,7 +912,8 @@
             margin-bottom: 35px;
         }
         &_bonus{
-            margin: 24px 0;
+            margin-top: 12px;
+            margin-bottom: 54px;
             color: $dark-gray;
             b{
                 color: $medium-gray;
@@ -921,6 +922,7 @@
         .hollow.hollow.filled{
             background-color: #56575a;
             border-color: #56575a;
+            color: $medium-gray;
         }
     }
 }

@@ -229,13 +229,11 @@
                 cursor: ew-resize;
                 outline: none;
                 left: 13.3%;
+                margin-top: -20px;
                 @include breakpoint(small down) {
                     width: 36px;
                     height: 36px;
-                    &::before,
-                    &::after {
-                        display: none;
-                    }
+                    margin-top: -18px;
                 }
                 &.is_tooltip{
                     &::before{
@@ -256,6 +254,14 @@
                         text-align: center;
                         cursor: default;
                         z-index: -1;
+                        @include breakpoint(small down) {
+                            left: 45px;
+                            font-size: 13px;
+                            padding: 10px 15px;
+                            height: auto;
+                            width: 135px;
+                            text-align: left;
+                        }
                     }
                     &::after{
                         content: '';
