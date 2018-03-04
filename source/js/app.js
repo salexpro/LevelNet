@@ -302,9 +302,11 @@ const ntf_interval = () => {
 ntf_interval();
 
 // Join popup showing
-setTimeout(() => {
-    $('#join').foundation('open');
-}, 2 * 60 * 1000);
+if ($(document).width() >= 640){
+    setTimeout(() => {
+        $('#join').foundation('open');
+    }, 2 * 60 * 1000);
+}
 
 $('.docs_item, .token_info .button, .whitepaper .button').click(() => {
     $('#join').foundation('open');

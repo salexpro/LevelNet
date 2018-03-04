@@ -1,22 +1,23 @@
+- var st_url = (page == 'faq' || page == 'sign_up' || page == 'sign_in') ? "./" : "";
 nav.nav.is_filled
     .nav_inner
         .logo.small-order-1
-            a(href=page=='faq'||page=='sign_up'?"./":"#top")
+            a(href=(page=='faq' || page=='sign_up' || page == 'sign_in')?"./":"#top")
                 img(src="./img/logo.svg", alt="LevelNet")
         ul.menu.show-for-xxlarge.small-order-2
             li
                 a(href="#" download) Whitepaper
             li
-                a(href="#about") Technology
+                a(href=st_url + "#about") Technology
             li
-                a(href="#team") Team
+                a(href=st_url + "#team") Team
             if page != 'product'
                 li
-                    a(href="#ico") Token Sale
+                    a(href=st_url + "#ico") Token Sale
             li
-                a(href="#press") Press
+                a(href=t_url + "#press") Press
             li
-                a(href="#faq") FAQ
+                a(href=st_url + "#faq") FAQ
         if page == 'product'
             a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="/")
                 | Token Sale

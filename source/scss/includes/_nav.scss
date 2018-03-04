@@ -93,9 +93,9 @@
         }
     }
     &_mobile{
-        &.is-closed{
-            visibility: visible;
-        }
+        // &.is-closed{
+        //     visibility: visible;
+        // }
         padding: 20px;
         &_logo{
             width: 43px;
