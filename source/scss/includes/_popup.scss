@@ -160,8 +160,17 @@
             + .reveal_complete_row{
                 margin: 0;
             }
+            &_field{
+                flex: 1 1 100%;
+                width: 100%;
+            }
             &_sep{
                 margin: 10px 20px;
+            }
+            [type="number"]{
+                appearance: textfield;
+                width: 100%;
+                padding: 0 14px;
             }
         }
         &_check{
@@ -358,6 +367,7 @@
             padding-top: 24px;
             flex-wrap: wrap;
             align-items: flex-start;
+            width: 100%;
             @include breakpoint(xlarge down) {
                 padding: 0;
                 padding-top: 40px;

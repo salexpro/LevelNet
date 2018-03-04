@@ -38,9 +38,11 @@
         a(href="#" target="_blank")
             | Create ETH Address
         .reveal_complete_row
-            input(type="number" name="eth" step="0.00000001" placeholder="Purchase in ETH")
+            .reveal_complete_row_field
+                input(type="number" name="eth" step="0.00000001" placeholder="Purchase in ETH")
             .reveal_complete_row_sep or
-            input(type="number" name="usd" step="0.01" placeholder="Purchase in USD")
+            .reveal_complete_row_field
+                input(type="number" name="usd" step="0.01" placeholder="Purchase in USD")
         .reveal_complete_check
             input(type="checkbox" name="terms" id="terms" checked required)
             label(for="terms")
