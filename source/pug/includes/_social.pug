@@ -1,23 +1,25 @@
 mixin social(num, mod)
     - 
+        var url = 'http://levelnet.co';
         var i = 0;
         var social = [
-            ['telegram',    'https://t.me/joinchat/GHTE40NTXjl5p3H27VceBw', 24, 22],
-            ['reddit',      'https://www.reddit.com/user/LevelNetwork/', 26, 22],
-            ['bitcointalk', 'https://bitcointalk.org/index.php?topic=2212642', 18, 24],
-            ['facebook',    'https://www.facebook.com/levelnetwork/', 11, 22],
-            ['twitter',     'https://twitter.com/LevelNetwork', 24, 19],
-            ['linkedin',    'https://www.linkedin.com/company/10879121/', 21, 21], 
-            ['instagram',   'https://www.instagram.com/levelnetwork/', 23, 23],
-            ['medium',      'https://medium.com/@LevelNetwork', 25, 19],
-            ['youtube',     '', 24, 18],
-            ['github',      '', 25, 21]
+            ['telegram',    'https://t.me/joinchat/GHTE40NTXjl5p3H27VceBw',    'https://telegram.me/share/url?url=' + url + '&text=LevelNet', 24, 22],
+            ['reddit',      'https://www.reddit.com/user/LevelNetwork/',       'https://www.reddit.com/submit?url=' + url, 26, 22],
+            ['bitcointalk', 'https://bitcointalk.org/index.php?topic=2212642', '', 18, 24],
+            ['facebook',    'https://www.facebook.com/levelnetwork/',          'https://www.facebook.com/sharer/sharer.php?u=' + url, 11, 22],
+            ['twitter',     'https://twitter.com/LevelNetwork',                'https://twitter.com/home?status=' + url, 24, 19],
+            ['linkedin',    'https://www.linkedin.com/company/10879121/',      'https://www.linkedin.com/shareArticle?mini=true&url=' + url + '&title=LevelNet', 21, 21], 
+            ['instagram',   'https://www.instagram.com/levelnetwork/',         '', 23, 23],
+            ['medium',      'https://medium.com/@LevelNetwork',                '', 25, 19],
+            ['youtube',     '',                                                '', 24, 18],
+            ['github',      '',                                                '', 25, 21]
         ];
         var num = num ? num : social.length;
     ul.menu.social(class=mod ? "social--" + mod : "")
         while i < num
-            li
-                a(href=social[i][1] target="_blank")
-                    svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][2] + " " + social[i][3] width=social[i][2] height=social[i][3])
-                        use(fill='#fff', xlink:href='#' + social[i][0])
+            if (mod !== 'release' && mod !== 'event') || social[i][2]
+                li
+                    a(href=(mod !== 'release' && mod !== 'event') ? social[i][1] : social[i][2] target="_blank")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][3] + " " + social[i][4] width=social[i][3] height=social[i][4])
+                            use(fill='#fff', xlink:href='#' + social[i][0])
             - i++
