@@ -1,0 +1,15 @@
+section.sign_up
+    form.sign_up_form(action="sign_up")
+        .sign_up_form_top
+            h2
+                if page == 'forgot'
+                    | Forgot password
+                else
+                    | Resend confirmation email
+        .sign_up_form_content
+            input(type="email" name="email" placeholder="Enter your email" required)
+        button.button.secondary.short.spaced(type="submit")
+            | SUBMIT
+    +social
+    +hexagon(3)
+    +hexagon(6, 5)

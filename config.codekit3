@@ -30,14 +30,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/.vscode\/settings.json": {
-		"ft": 524288,
-		"oA": 0,
-		"oAP": "\/build\/.vscode\/settings.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -70183,6 +70175,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/forgot.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/forgot.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/_about.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -70372,6 +70373,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/_resend.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_resend.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/_reviews.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -70522,6 +70532,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/product.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/resend.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/resend.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -71102,8 +71121,8 @@
 	"creationDate": 505831586,
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-gavin",
-	"lastBuiltDate": 541856772
+	"iconImageName": "\/source\/android-chrome-256x256.png",
+	"lastBuiltDate": 542036699
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -72499,7 +72518,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {

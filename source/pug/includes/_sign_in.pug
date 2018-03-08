@@ -9,6 +9,7 @@ section.sign_up
                 input(type="password" name="password" placeholder="Password" required)
                 span.all-seeing_eye.is_hidden
                     i.material-icons remove_red_eye
+            input(type="text" name="2fa" placeholder="2FA (optional)")
         button.button.primary.short.spaced(type="submit")
             | SIGN IN
         .sign_up_form_bottom 
@@ -17,12 +18,12 @@ section.sign_up
             | 
             | /
             | 
-            a(href="#")
+            a(href="./forgot.html")
                 | Forgot password?
             | 
             | /
             | 
-            a(href="#")
+            a(href="./resend.html")
                 | Resend confirmation email
     +social
     +hexagon(3)

@@ -1,5 +1,7 @@
 .footer{
     text-align: center;
+    background-color: $body-background;
+    z-index: 1;
     @include breakpoint(small down) {
         &::before{
             width: 110%;
