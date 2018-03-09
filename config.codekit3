@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Create demo folder & add fast navigation",
-		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "C5027B9F-A767-40E0-A3EA-4EF8256765F7",
 		"stepType": 2,
@@ -43,6 +43,13 @@
 		"oA": 1,
 		"oAP": "\/build\/build",
 		"oF": 0
+		},
+	"\/build.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/build.zip",
+		"oF": 1
 		},
 	"\/docs": {
 		"ft": 65536,
@@ -37038,84 +37045,84 @@
 		"oF": 1
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-float.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-float.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-float.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-float.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/js\/foundation.d.ts": {
 		"cDF": 0,
@@ -60652,64 +60659,64 @@
 		"opt": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.min.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.min.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.video.play.png": {
 		"ft": 32768,
@@ -60774,14 +60781,14 @@
 		"oF": 1
 		},
 	"\/node_modules\/owl.carousel\/docs_src\/assets\/css\/animate.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/owl.carousel\/docs_src\/assets\/css\/animate.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/docs_src\/assets\/img\/bird_blue_32.png": {
 		"ft": 32768,
@@ -63777,14 +63784,14 @@
 		"uCM": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/base.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/base.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/index.html": {
 		"cB": 0,
@@ -63955,14 +63962,14 @@
 		"oF": 1
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/prettify.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/prettify.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/prettify.js": {
 		"ft": 64,
@@ -64013,14 +64020,14 @@
 		"tS": 1
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/sandbox\/css\/styles.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/sandbox\/css\/styles.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/sandbox\/index.html": {
 		"cB": 0,
@@ -65182,14 +65189,14 @@
 		"uCM": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/default.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/default.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/default.styl": {
 		"aP": 0,
@@ -65205,14 +65212,14 @@
 		"rrU": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/ignore-base.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/ignore-base.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/ignore-base.styl": {
 		"aP": 0,
@@ -65228,14 +65235,14 @@
 		"rrU": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/three-of-four.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/three-of-four.css",
-		"oF": 1,
-		"oS": 3
+		"oF": 0,
+		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/three-of-four.styl": {
 		"aP": 0,
@@ -69790,6 +69797,16 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/scss\/zadarma.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/zadarma.css",
+		"oF": 1,
+		"oS": 0
+		},
 	"\/source\/site.webmanifest": {
 		"cB": 0,
 		"ft": 8192,
@@ -69804,7 +69821,7 @@
 		"name": "Rewrite fastnav",
 		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGZGVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1dbX2FVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFpmYXN0bmF2Lmpz0issTU5fEBlOU0NvbnN0YW50VmFsdWVFeHByZXNzaW9uo00vMNULUFFSU1RJVSNWWk5TTW9kaWZpZXJYTlNOZWdhdGVZTlNPcHRpb25zXk5TT3BlcmF0b3JUeXBlgBIIEATSKyxYWV8QG05TRXF1YWxpdHlQcmVkaWNhdGVPcGVyYXRvcqNYWjBfEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0issXF1fEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjXF4wW05TUHJlZGljYXRl0issQWCiQTDSKyxiY18QE05TQ29tcG91bmRQcmVkaWNhdGWjYl4wXxAPTlNLZXllZEFyY2hpdmVy0WZnVHJvb3SAAQAIABEAGgAjAC0AMgA3AFAAVgBdAHcAiQCQAJIAlACWAJsApgCoAKoArAC1AMkA3ADyAPQA9gD4APoBBQEPAR4BMQE9AT8BQQFDAUUBRwFUAVkBWwFdAWIBbQF2AYkBjQGaAaMBqAGqAawBrgG1Ab8BwQHDAcUB0wHYAfcB+wIAAg8CEwIbAiACNgI7AlICWQJrAm0CbwJxAnwCgQKdAqECrAK3AsACygLZAtsC3ALeAuMDAQMFAxsDIAM4AzwDSANNA1ADVQNrA28DgQOEA4kAAAAAAAACAQAAAAAAAABoAAAAAAAAAAAAAAAAAAADiw==",
 		"runOrder": 1,
-		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"uuidString": "9BB7C19C-B524-419F-9629-78E9C2914E89"
 		}
@@ -69816,7 +69833,7 @@
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/android-chrome-256x256.png",
-	"lastBuiltDate": 542295018
+	"lastBuiltDate": 542314034
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -71577,15 +71594,15 @@
 		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
-		"autoOutputAction": 2,
-		"autoOutputPathFilenamePattern": "*-min.css",
-		"autoOutputPathRelativePath": "",
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "css",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"createSourceMap": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
