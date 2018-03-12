@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Create demo folder & add fast navigation",
-		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js\nrm build.zip\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "C5027B9F-A767-40E0-A3EA-4EF8256765F7",
 		"stepType": 2,
@@ -37049,9 +37049,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-float.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-float.min.css": {
@@ -37059,9 +37059,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-float.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.css": {
@@ -37069,9 +37069,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.min.css": {
@@ -37079,9 +37079,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-prototype.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.css": {
@@ -37089,9 +37089,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.min.css": {
@@ -37099,9 +37099,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation-rtl.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation.css": {
@@ -37109,9 +37109,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/css\/foundation.min.css": {
@@ -37119,9 +37119,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/css\/foundation.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/foundation-sites\/dist\/js\/foundation.d.ts": {
@@ -60663,9 +60663,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.min.css": {
@@ -60673,9 +60673,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.carousel.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.css": {
@@ -60683,9 +60683,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.min.css": {
@@ -60693,9 +60693,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.default.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.css": {
@@ -60703,9 +60703,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.min.css": {
@@ -60713,9 +60713,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/assets\/owl.theme.green.min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/dist\/assets\/owl.video.play.png": {
@@ -60785,9 +60785,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/owl.carousel\/docs_src\/assets\/css\/animate.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/owl.carousel\/docs_src\/assets\/img\/bird_blue_32.png": {
@@ -63788,9 +63788,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/base.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/index.html": {
@@ -63966,9 +63966,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/prettify.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/coverage\/PhantomJS 2.1.1 (Mac OS X 0.0.0)\/lcov-report\/prettify.js": {
@@ -64024,9 +64024,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/scrollreveal\/.ignore\/sandbox\/css\/styles.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/scrollreveal\/.ignore\/sandbox\/index.html": {
@@ -65193,9 +65193,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/default.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/default.styl": {
@@ -65216,9 +65216,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/ignore-base.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/ignore-base.styl": {
@@ -65239,9 +65239,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/node_modules\/stylus-type-utils\/test\/cases\/three-of-four.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/node_modules\/stylus-type-utils\/test\/cases\/three-of-four.styl": {
@@ -69833,7 +69833,7 @@
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/android-chrome-256x256.png",
-	"lastBuiltDate": 542314034
+	"lastBuiltDate": 542586183
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
