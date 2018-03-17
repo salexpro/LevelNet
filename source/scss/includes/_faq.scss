@@ -229,4 +229,16 @@
             }
         }
     }
+    &--profile{
+        padding: 0;
+        .faq{
+            &_inner{
+                margin: 0;
+            }
+            &_item{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
