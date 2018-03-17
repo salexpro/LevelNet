@@ -1,0 +1,27 @@
+.profile{
+    &_bonuses{
+        &_presale{
+            text-align: center;
+            &_header{
+                margin-bottom: 30px;
+            }
+        }
+        &_header{
+            text-align: center;
+            margin-top: 67px;
+        }
+        &_table{
+            margin: 20px 0 0;
+            td{
+                padding: 23px 20px;
+                border: 1px solid $light-black;
+                &:first-child {
+                    border-left: 0;
+                }
+                &:last-child{
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}

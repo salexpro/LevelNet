@@ -112,6 +112,20 @@
                 background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphdm9jb2RlPSJodHRwczovL2F2b2NvZGUuY29tLyIgdmlld0JveD0iMCAwIDEwIDciPjxkZWZzPjxwYXRoIGQ9Ik0xMzM3LjAwMDIxLDgwMC40MTM4MmwtMS40MTQ4MywtMS40MTM5bDAuMDAwNDksLTAuMDAwNDVsLTIuODI4MjUsLTIuODI4MjVsMS40MTM4OCwtMS40MTM5bDIuODI4MjUsMi44MjgyNWwyLjgyODI1LC0yLjgyODI1bDEuNDE0NzksMS40MTM5bC0yLjgyODY3LDIuODI4N3oiIGlkPSJQYXRoLTAiLz48L2RlZnM+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMTMzMiwtNzk0KSI+PHVzZSB4bGluazpocmVmPSIjUGF0aC0wIiBmaWxsPSIjMjAxZTIwIiBmaWxsLW9wYWNpdHk9IjEiLz48L2c+PC9zdmc+);
             }
         }
+        &_labels{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        &_bonus{
+            color: $medium-black;
+        }
+        &_label{
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
     &_promo{
         max-width: 550px;

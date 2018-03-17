@@ -29,4 +29,4 @@ $(document).foundation();
 $('.select7').select7();
 
 // Countdown
-const hourX = moment.tz('2018-03-01 00:00', 'America/Sao_Paulo');
+const hourX = moment.tz('2018-04-01 00:00', 'America/Sao_Paulo');
