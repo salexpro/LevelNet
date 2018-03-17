@@ -21,9 +21,9 @@ footer.pattern.footer(data-magellan-target="footer")
                     a.button.primary.short.spaced(href="#")
                         | BUY TOKENS
                 else if page == 'product'
-                    +form('SUBSCRIBE', 'primary')
+                    +form('SUBSCRIBE', 'primary', false, false, 'join')
                 else
-                    +form('JOIN WHITELIST', 'primary')
+                    +form('JOIN WHITELIST', 'primary', false, false, 'join')
             +social
     .footer_bottom
         .row.align-middle.align-justify.footer_bottom_inner

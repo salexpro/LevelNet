@@ -1,14 +1,17 @@
 $icons: (
-    ('arr_graph', 16, 16, false),
-    ('arrow', 18, 12, false),
-    ('minus', 20, 2, false),
-    ('check', 24, 17, false),
-    ('check_gray', 23, 17, false),
-    ('angellist', 15, 21, false),
-    ('linkedin_square', 21, 21, false),
-    ('file', 22, 28, false),
-    ('download', 22, 17, false),
-    ('management', 62, 63, false)
+    ('arr_graph', 16, 16),
+    ('arrow', 18, 12),
+    ('minus', 20, 2),
+    ('check', 24, 17),
+    ('check_gray', 23, 17),
+    ('angellist', 15, 21),
+    ('linkedin_square', 21, 21),
+    ('file', 22, 28),
+    ('download', 22, 17),
+    ('management', 62, 63),
+    ('usd', 24, 24),
+    ('visa', 51, 16),
+    ('exchange', 24, 12)
 );
 
 .icon{
@@ -21,11 +24,7 @@ $icons: (
         &--#{nth($icon, 1)} {
             width: #{nth($icon, 2)}px;
             height: #{nth($icon, 3)}px;
-            @if nth($icon, 4) {
-                background-image: url('../img/icons/#{nth($icon, 4)}/#{nth($icon, 1)}.svg')
-            } @else {
-                background-image: url('../img/icons/#{nth($icon, 1)}.svg')
-            }
+            background-image: url('../img/icons/#{nth($icon, 1)}.svg')
         }
     }
 }

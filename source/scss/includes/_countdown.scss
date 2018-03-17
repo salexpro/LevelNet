@@ -65,6 +65,35 @@
             margin: 24px auto 7px;
         }
     }
+    &--profile{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 24px 80px 0;
+        height: 80px;
+        margin-bottom: 45px;
+        .countdown{
+            &_header{
+                b{
+                    color: $secondary-color;
+                }
+            }
+            &_container{
+                max-width: 330px;
+            }
+            &_digit{
+                &_num,
+                &_sep {
+                    font-size: 30px;
+                }
+                &_label{
+                    font-size: 12px;
+                    letter-spacing: 0.48px;
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
     &_top{
         display: flex;
         align-items: center;

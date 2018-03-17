@@ -78,9 +78,11 @@ $foundation-palette: (
     success: #3adb76,
     warning: #ffae00,
     alert: #cc4b37,
+    dark: #414041
 );
 $tertiary-color: get-color(tertiary);
 $secondary_dark: get-color(secondary_dark);
+$dark-color: get-color(dark);
 $light-gray: #e6e6e6;
 $medium-gray: #ced4da;
 $dark-gray: #868e96;
@@ -451,7 +453,7 @@ $input-font-size: rem-calc(15);
 $input-font-weight: $global-weight-normal;
 $input-line-height: 1.33;
 $input-background: rgba(65, 64, 65, 0.6);
-$input-background-focus: #414041;
+$input-background-focus: $dark-color;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $input-background-focus;
 $input-border-focus: 1px solid $dark-gray;
@@ -490,7 +492,7 @@ $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;

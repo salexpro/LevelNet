@@ -1,0 +1,132 @@
+.profile{
+    &_balance{
+        background-color: $white;
+        border-radius: $global-radius;
+        display: flex;
+        color: $medium-black;
+        margin-bottom: 20px;
+        &_item{
+            flex: 1 1 0px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80px;
+            border-right: 1px solid $medium-gray;
+            &:last-child{
+                border: 0;
+            }
+        }
+        &_sum {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+    }
+    &_hint{
+        @include hexagon(24, $medium-black, 2, #343a40);
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 1px;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    &_currencies{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 8px 40px;
+        [type="radio"]{
+            display: none;
+            &:checked{
+                +label {
+                    background-color: $dark-color;
+                    user-select: none;
+                }
+            }
+        }
+    }
+    &_currency.profile_currency {
+        width: 180px;
+        height: 60px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        background-color: $light-black;
+        border-radius: $global-radius;
+        margin-bottom: 20px;
+        color: $white;
+        transition: 300ms;
+        &--small{
+            height: 44px;
+        }
+        i, img{
+            margin-right: 16px;
+            &:only-child {
+                margin: auto;
+            }
+        }
+    }
+    &_exchange{
+        background-color: $white;
+        margin: 40px auto;
+        padding: 40px 24px;
+        border-radius: $global-radius;
+        max-width: 550px;
+        text-align: center;
+        [type="number"], select {
+            border-color: $medium-gray;
+            background-color: #f1f3f5;
+            color: $black;
+            &::placeholder {
+                color: rgba($medium-black, 0.5);
+            }
+        }
+        :-webkit-autofill,
+        :-webkit-autofill:hover,
+        :-webkit-autofill:focus,
+        :-webkit-autofill:active {
+            box-shadow: 0 0 0px 1000px #f1f3f5 inset;
+            -webkit-text-fill-color: $black;
+        }
+        &_tokens{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &_token{
+            display: flex;
+            max-width: 200px;
+            input{
+                flex: 0 1 120px;
+                border-right: 0 !important;
+                border-radius: $global-radius 0 0 $global-radius;
+            }
+            select{
+                flex: 0 0 80px;
+                border-left: 0;
+                border-radius: 0 $global-radius $global-radius 0;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphdm9jb2RlPSJodHRwczovL2F2b2NvZGUuY29tLyIgdmlld0JveD0iMCAwIDEwIDciPjxkZWZzPjxwYXRoIGQ9Ik0xMzM3LjAwMDIxLDgwMC40MTM4MmwtMS40MTQ4MywtMS40MTM5bDAuMDAwNDksLTAuMDAwNDVsLTIuODI4MjUsLTIuODI4MjVsMS40MTM4OCwtMS40MTM5bDIuODI4MjUsMi44MjgyNWwyLjgyODI1LC0yLjgyODI1bDEuNDE0NzksMS40MTM5bC0yLjgyODY3LDIuODI4N3oiIGlkPSJQYXRoLTAiLz48L2RlZnM+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMTMzMiwtNzk0KSI+PHVzZSB4bGluazpocmVmPSIjUGF0aC0wIiBmaWxsPSIjMjAxZTIwIiBmaWxsLW9wYWNpdHk9IjEiLz48L2c+PC9zdmc+);
+            }
+        }
+    }
+    &_promo{
+        max-width: 550px;
+        margin: auto;
+        padding: 33px 24px 40px;
+        border: 1px solid $dark-color;
+        background-color: $light-black;
+        border-radius: $global-radius;
+        &_header{
+            text-align: center;
+            margin-bottom: 26px;
+        }
+        .form{
+            max-width: 100%;
+            input{
+                margin-right: 20px;
+            }
+        }
+    }
+}

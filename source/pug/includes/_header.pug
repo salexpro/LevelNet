@@ -13,7 +13,7 @@ header#top.pattern.head(class=(page != 'main') ? "head--small" : "" class=(page 
                 li
                     h4 Thousands of virus databases in one token
             if page == 'main'
-                +form('JOIN WHITELIST', 'primary', false, 'Don\'t miss <span>bonus +25%</span> for tokens before 1.5m')
+                +form('JOIN WHITELIST', 'primary', false, 'Don\'t miss <span>bonus +25%</span> for tokens before 1.5m', 'join')
         .column.head_content_right(class=(page == 'main') ? "large-6 small-12" : "")
             if page == 'main'
                 +countdown('main')
@@ -26,4 +26,4 @@ header#top.pattern.head(class=(page != 'main') ? "head--small" : "" class=(page 
     if page == 'product'
         .row.align-center.head_subs
             .column.large-10
-                +form('SUBSCRIBE', 'primary', 'Subscribe for hot news and bonuses')
+                +form('SUBSCRIBE', 'primary', 'Subscribe for hot news and bonuses', false, 'join')

@@ -153,7 +153,7 @@ button {
     height: 20px;
     + label {
         user-select: none;
-        color: $input-background-focus;
+        color: $dark-color;
         &::before {
             content: '';
             width: 20px;
@@ -170,7 +170,7 @@ button {
             background-repeat: no-repeat;
         }
         a{
-            color: $input-background-focus;
+            color: $dark-color;
             text-decoration: underline;
             &:hover, &:focus{
                 text-decoration: none;

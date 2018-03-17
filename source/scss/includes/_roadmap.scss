@@ -71,7 +71,7 @@
             position: absolute;
             bottom: calc(100% + 88px);
             left: 12px;
-            background-color: $input-background-focus;
+            background-color: $dark-color;
             padding: 6px 8px;
             white-space: nowrap;
             border-radius: $global-radius $global-radius $global-radius 0;
@@ -91,7 +91,7 @@
                 left: 0;
                 width: 2px;
                 height: 110px;
-                background-color: $input-background-focus;
+                background-color: $dark-color;
             }
         }
         tr{

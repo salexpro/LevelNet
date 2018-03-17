@@ -15,13 +15,15 @@
         background: $medium-black;
     }
     &_inner{
-        max-width: 1375px;
         height: 84px;
         padding: 0 10px;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &:not(.row){
+            max-width: 1375px;
+        }
         @include breakpoint(small down) {
             height: 56px;
         }
@@ -58,6 +60,18 @@
                     -webkit-font-smoothing: antialiased;
                 }
             }
+        }
+    }
+    &_profile{
+        display: flex;
+        align-items: center;
+        &_hex{
+            @include hexagon(44, $dark-color, 0, none, false, true);
+            margin-right: 18px;
+        }
+        &_user{
+            color: $medium-gray;
+            font-weight: 700;
         }
     }
     &_lang{

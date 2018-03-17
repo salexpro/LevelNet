@@ -1,8 +1,8 @@
-/* global sr, ScrollReveal, moment, intercomSettings */
+/* global moment, sr, ScrollReveal, intercomSettings */
 /* eslint no-inner-declarations: 'off', no-unused-vars: 'off' */
 /*
+// Libs
 @codekit-prepend '../../node_modules/jquery/dist/jquery.min';
-@codekit-prepend '../../node_modules/scrollreveal/dist/scrollreveal.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.core.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min';
@@ -18,12 +18,16 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
-@codekit-prepend './lib/jquery-select7';
+@codekit-prepend 'lib/jquery-select7';
 @codekit-prepend '../../node_modules/moment/moment';
 @codekit-prepend '../../node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.min';
 @codekit-prepend '../../node_modules/jquery-countdown/dist/jquery.countdown.min';
 @codekit-prepend '../../node_modules/owl.carousel/dist/owl.carousel.min';
 @codekit-prepend '../../node_modules/scrollreveal/dist/scrollreveal.min';
+
+// Modules
+@codekit-append 'includes/_countdown';
+@codekit-append 'includes/_form';
 */
 
 // Animations
@@ -77,36 +81,10 @@ if($('.head').length){
     });
 }
 
-// Forms
-$('form[action]').submit(function(e){
-    e.preventDefault();
-    const wnd = $(this).closest('.reveal');
-    const action = $(this).attr('action');
-    switch (action) {
-        case 'join': {
-            if (wnd.length){
-                open_new(wnd, '#complete');
-            } else {
-                $('#complete').foundation('open');
-            }
-            break;
-        }
-        case 'send':
-        case 'complete': {
-            $('#success').data('mod', action);
-            if (wnd.length) {
-                open_new(wnd, '#success');
-            } else {
-                $('#success').foundation('open');
-            }
-            break;
-        }
-        default: {
-            break;
-        }
-    }
-});
+// Countdown
+const hourX = moment.tz('2018-03-01 00:00', 'America/Sao_Paulo');
 
+// Forms
 const eth_cost = 870.13;
 $('[name="eth"]').keyup(function () {
     const usd = $(this).val() * eth_cost;
@@ -145,17 +123,6 @@ $('#success').on('open.zf.reveal', function() {
         descr.text('Request sent successfully');
         modal.addClass('reveal_success--min');
     }
-})
-
-// Countdown
-var hourX = moment.tz('2018-03-01 00:00', 'America/Sao_Paulo');
-
-$('.countdown_container').countdown(hourX.toDate(), function(event) {
-    $(this).html(event.strftime(''
-        + '<div class="countdown_digit"><div class="countdown_digit_num">%d</div><div class="countdown_digit_label">Days</div></div><div class="countdown_sep">:</div>'
-        + '<div class="countdown_digit"><div class="countdown_digit_num">%H</div><div class="countdown_digit_label">Hours</div></div><div class="countdown_sep">:</div>'
-        + '<div class="countdown_digit"><div class="countdown_digit_num">%M</div><div class="countdown_digit_label">Minutes</div></div><div class="countdown_sep">:</div>'
-        + '<div class="countdown_digit"><div class="countdown_digit_num">%S</div><div class="countdown_digit_label">Seconds</div></div>'));
 });
 
 // Graph slider

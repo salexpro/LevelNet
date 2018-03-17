@@ -1,10 +1,10 @@
-mixin form(button, color, header, note)
+mixin form(button, color, header, note, mod, type, placeholder)
     .form
         if header
             .form_header
                 = header
-        form.form_form(action=color=='primary' ? "join" : "send")
-            input(type="email" placeholder="Enter your email" name="email" required)
+        form.form_form(action=mod)
+            input(type=type ? type : "email" placeholder=placeholder ? placeholder : "Enter your email" name="email" required)
             button.button.short.spaced(type="submit" class=color)
                 =button
             if note

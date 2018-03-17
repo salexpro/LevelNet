@@ -1,35 +1,52 @@
-- var st_url = (page == 'faq' || page == 'sign_up' || page == 'sign_in' || page == 'forgot' || page == 'resend') ? "./" : "";
+- var st_url = (page !== 'main' && page !== 'pre_ico' && page !== 'product') ? "./" : "";
 nav.nav.is_filled
-    .nav_inner
+    .nav_inner(class=parent==='profile' ? 'row' : '')
         .logo.small-order-1
-            a(href=(page=='faq' || page=='sign_up' || page == 'sign_in' || page == 'forgot' || page == 'resend')?"./":"#top")
+            a(href=st_url + "#top")
                 img(src="./img/logo.svg", alt="LevelNet")
-        ul.menu.show-for-xxlarge.small-order-2
-            li
-                a(href="#" download) Whitepaper
-            li
-                a(href=st_url + "#about") Technology
-            li
-                a(href=st_url + "#team") Team
-            if page != 'product'
+        if parent !== 'profile'
+            ul.menu.show-for-xxlarge.small-order-2
                 li
-                    a(href=st_url + "#ico") Token Sale
-            li
-                a(href=st_url + "#press") Press
-            li
-                a(href=st_url + "#faq") FAQ
-        if page == 'product'
-            a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="/")
-                | Token Sale
+                    a(href="#" download) Whitepaper
+                li
+                    a(href=st_url + "#about") Technology
+                li
+                    a(href=st_url + "#team") Team
+                if page != 'product'
+                    li
+                        a(href=st_url + "#ico") Token Sale
+                li
+                    a(href=st_url + "#press") Press
+                li
+                    a(href=st_url + "#faq") FAQ
+            if page == 'product'
+                a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="/")
+                    | Token Sale
+            else
+                button.button.hollow.filled.thin.show-for-xxlarge.small-order-3(data-open="join")
+                    if page == 'pre_ico'
+                        | Register for Token Sale
+                    else
+                        | Register for Whitelist
+            .nav_phone.xxlarge-order-4.small-order-5
+                a(href="tel:+823123456")
+                    span +82 312 34 56
         else
-            button.button.hollow.filled.thin.show-for-xxlarge.small-order-3(data-open="join")
-                if page == 'pre_ico'
-                    | Register for Token Sale
-                else
-                    | Register for Whitelist
-        .nav_phone.xxlarge-order-4.small-order-5
-            a(href="tel:+823123456")
-                span +82 312 34 56
+            ul.menu.show-for-xxlarge.small-order-2
+                li
+                    a(href="./pre_ico.html") ICO Website
+                li
+                    a(href="./profile_settings.html") Account Settings
+            .small-1.small-order-3
+            .nav_profile.small-order-3
+                .nav_profile_hex(style="background-image: url(//lorempixel.com/400/400/people)")
+                    .hex-top
+                    .hex-bottom
+                .nav_profile_user
+                    | Sviatoslav
+            ul.menu.small-order-4
+                li
+                    a(href="#") Log Out 
         .nav_lang.xxlarge-order-5.small-order-4
             select.select7.select7_dropdown.select7_remove_current
                 option(value="EN") EN

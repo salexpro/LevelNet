@@ -2,13 +2,17 @@ $sqrt2: 1.41421356237;
 $sqrt3: 1.73205080757;
 $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg/120deg rhombus
 
-@mixin hexagon($width, $color, $borderWidth, $borderColor, $shadow) {
+@mixin hexagon($width, $color, $borderWidth:0, $borderColor:none, $shadow:false, $image:false) {
     $border: 0 !default;
     $shadow: '' !default;
     $height: $width/$sqrt3;
-    $capWidth: $width/$sqrt2; // caps being the top and bottom rhombuses
+	$capWidth: $width/$sqrt2; // caps being the top and bottom rhombuses
+	$capBorderHeight: $borderWidth*2/$sqrt3; //needed to offset bg pos
     $border: solid #{$borderWidth}px #{$borderColor};
-    $capBorder: solid #{$borderWidth*$sqrt2}px #{$borderColor};
+	$capBorder: solid #{$borderWidth*$sqrt2}px #{$borderColor};
+	$coverWidth: $width - $borderWidth*2; //the cover up rectangle
+	$coverHeight: $height - $borderWidth*$scaleFactor*2;
+	$capHeight: $height - $capBorderHeight;
 	position: relative;
 	flex: 0 0 #{$width}px;
 	display: flex;
@@ -22,49 +26,117 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
 	border-left: $border;
 	border-right: $border;
 	transition: 300ms;
+	text-align: center;
 	
-	@if ($shadow != "") {
+	@if ($shadow) {
 		box-shadow: $shadow;
 	}
+	@if ($image) {
+		$bgHeight: $capHeight*2;
+		$bgHeight: $height*2 - $capBorderHeight*2;
+		$bgHeight: $height*2 -($borderWidth*2/$sqrt3)*2;
+		$bgHeight: $height*2 -($borderWidth/$sqrt3)*4;
+		background-size: auto #{$bgHeight}px;
+		background-position: center;
+		.hex-top,
+		.hex-bottom {
+			position: absolute;
+			z-index: 1;
+			width: #{$capWidth}px;
+			height: #{$capWidth}px;
+			overflow: hidden;
+			transform: scaleY(#{$scaleFactor}) rotate(-45deg);
+			background: inherit;
+			left: #{($width - $capWidth)/2 - $borderWidth}px; //offset by half the difference in
+			@if ($shadow) {
+				box-shadow: $shadow;
+			}
+			//counter transform the bg image on the caps
+			&:after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: #{$coverWidth}px;
+				height: #{$capHeight}px;
+				transform: rotate(45deg) scaleY(#{1/$scaleFactor}) translateY(#{-$height/2 + $borderWidth/2}px);
+				background: inherit; //not sure why but this 1px correction seems necessary :(
+				-webkit-transform-origin: 0 0;
+				// margin-left: 1px;
+			}
+		}
 
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		z-index: 1;
-		width: #{$capWidth}px;
-		height: #{$capWidth}px;
-		transform: scaleY(#{$scaleFactor}) rotate(-45deg);
-		background-color: $color;
-		left: #{($width - $capWidth)/2 - $borderWidth}px; //offset by half the difference in 
-		transition: 300ms;
+		//send top to top and bottom to bottom
+		.hex-top {
+			top: #{-$width/$sqrt2/2}px; //half the rhombus height
+			border-top: $capBorder;
+			border-right: $capBorder;
+			&:after {
+				background-position: center top;
+			}
+		}
 
-		@if ($shadow != "") {
-			box-shadow: $shadow;
+		.hex-bottom {
+			bottom: #{-$width/$sqrt2/2}px; //half the rhombus height
+			border-bottom: $capBorder;
+			border-left: $capBorder;
+			&:after {
+				background-position: center bottom;
+			}
+		}
+
+		//cover up extra shadows
+		&:after {
+			content: "";
+			position: absolute;
+			top: #{$borderWidth*$scaleFactor}px;
+			left: 0;
+			width: #{$coverWidth}px;
+			height: #{$coverHeight}px;
+			z-index: 2;
+			background: inherit;
+		}
+
+	} @else {
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			width: #{$capWidth}px;
+			height: #{$capWidth}px;
+			transform: scaleY(#{$scaleFactor}) rotate(-45deg);
+			background-image: inherit;
+			background-color: $color;
+			left: #{($width - $capWidth)/2 - $borderWidth}px; //offset by half the difference in 
+			transition: 300ms;
+
+			@if ($shadow) {
+				box-shadow: $shadow;
+			}
+		}
+
+		&::before {
+			top: #{-$width/$sqrt2/2}px;  //half the rhombus height
+			border-top: $capBorder;
+			border-right: $capBorder;
+		}
+
+		&::after {
+			bottom: #{-$width/$sqrt2/2}px; //half the rhombus height
+			border-bottom: $capBorder;
+			border-left: $capBorder;
 		}
 	}
-
-	&::before {
-		top: #{-$width/$sqrt2/2}px;  //half the rhombus height
-		border-top: $capBorder;
-		border-right: $capBorder;
-	}
-
-	&::after {
-		bottom: #{-$width/$sqrt2/2}px; //half the rhombus height
-		border-bottom: $capBorder;
-		border-left: $capBorder;
-	}
-
 	//cover up extra shadows
-	@if ($shadow != "") {
+	@if ($shadow) {
 		span {
 			display: block;
 			position: absolute;
 			top: #{$borderWidth*$scaleFactor}px;
 			left: 0;
-			width: #{$width - $borderWidth*2}px;
-			height: #{$height - $borderWidth*$scaleFactor*2}px;
+			width: #{$coverWidth}px;
+			height: #{$coverHeight}px;
 			z-index: 2;
 			background: inherit;
 		}
@@ -79,7 +151,7 @@ $scaleFactor: 0.57735026919; // = tan(30deg) *this smushes a square into a 60deg
 	position: absolute;
 	z-index: -1;
 	&_hex{
-		@include hexagon(131, #292729, 4, $body-background, null);
+		@include hexagon(131, #292729, 4, $body-background);
 		position: absolute;
 		&--1{
 			right: 0;

@@ -1,0 +1,35 @@
+.profile{
+    &_container{
+        border: 0;
+        padding-top: 40px;
+        padding-bottom: 75px;
+        &::before{
+            width: 30%;
+            background-position: top right;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    &_menu{
+        margin-right: 20px;
+        border: 1px solid $light-black;
+        background-color: rgba(28, 26, 28, 0.6);
+        border-radius: $global-radius;
+        font-size: 18px;
+        a{
+            padding: 18px 0;
+            margin: 0 20px;
+            border-bottom: 1px solid $light-black;
+        }
+        li{
+            &.active{
+                font-weight: 700;
+                color: $white;
+            }
+            &:last-child a {
+                border: 0;
+            }
+        }
+    }
+}

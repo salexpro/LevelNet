@@ -33,14 +33,13 @@
                 opacity: 0.8;
             }
         }
-        &.filled{
-            background-color: #414041;
-            border-color: #414041;
-            &:hover,
-            &:focus {
-                background-color: #5D5C5D;
-                border-color: #5D5C5D;
-            }
+        
+    }
+    &.dark {
+        &:hover,
+        &:focus {
+            background-color: #5D5C5D;
+            border-color: #5D5C5D;
         }
     }
     &.thin{

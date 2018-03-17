@@ -1,0 +1,14 @@
+.profile{
+    &_wallet {
+        border: 1px solid $dark-color;
+        background-color: $light-black;
+        max-width: 550px;
+        margin: auto;
+        padding: 35px 88px 40px;
+        text-align: center;
+        border-radius: $global-radius;
+        &_header{
+            margin-bottom: 26px;
+        }
+    }
+}

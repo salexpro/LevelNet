@@ -250,7 +250,7 @@
                 margin: 16px 0;
                 @include breakpoint(small down) {
                     margin: 12px 0;
-                    color: $input-background-focus;
+                    color: $dark-color;
                     font-size: 13px;
                     letter-spacing: 0.52px;
                 }
@@ -263,7 +263,7 @@
     }
 
     &_video{
-        background-color: $input-background-focus;
+        background-color: $dark-color;
         border: 0;
         padding: 0;
         @include breakpoint(small down) {
@@ -897,7 +897,7 @@
     }
 
     &_welcome{
-        background-color: $input-background-focus;
+        background-color: $dark-color;
         border: 0;
         color: $white;
         text-align: center;

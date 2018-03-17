@@ -68344,6 +68344,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/img\/icons\/exchange.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/exchange.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/icons\/features.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -68549,6 +68559,26 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/icons\/success_mark.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/icons\/usd.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/usd.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 1
+		},
+	"\/source\/img\/icons\/visa.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/icons\/visa.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -68817,6 +68847,26 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/js\/includes\/_countdown.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/includes\/_countdown.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/js\/includes\/_form.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/includes\/_form.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/js\/lib\/fastnav.js": {
 		"ft": 64,
 		"ma": 0,
@@ -68834,6 +68884,16 @@
 		"oA": 1,
 		"oAP": "\/build\/js\/lib\/jquery-select7.min.js",
 		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/js\/profile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/profile.min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -69191,6 +69251,51 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/profile\/_2fa.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_2fa.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/includes\/profile\/_menu.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_menu.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/includes\/profile\/_popup.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_popup.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/includes\/profile\/_purchase.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_purchase.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/includes\/profile\/_wallet.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_wallet.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/index.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -69209,6 +69314,15 @@
 		"oF": 1,
 		"oS": 1
 		},
+	"\/source\/pug\/layout_profile.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/layout_profile.html",
+		"oF": 1,
+		"oS": 1
+		},
 	"\/source\/pug\/pre_ico.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -69224,6 +69338,60 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/product.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_bonuses.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_bonuses.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_faq.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_faq.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_history.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_history.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_kyc.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_kyc.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_purchase.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_purchase.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/profile_referral.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_referral.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -69793,6 +69961,71 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_whitepaper.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/profile\/_2fa.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_2fa.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/profile\/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/profile\/_purchase.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_purchase.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/profile\/_wallet.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_wallet.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/profile.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/css\/profile.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
