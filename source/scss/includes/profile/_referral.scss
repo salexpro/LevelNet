@@ -1,0 +1,36 @@
+.profile{
+    &_referral{
+        &_header{
+            margin-bottom: 46px;
+            b{
+                color: $primary-color;
+            }
+        }
+        &_link{
+            display: flex;
+            margin-top: 12px;
+            input{
+                background: rgba(65, 64, 65, 0.6);
+                cursor: text;
+            }
+            .button{
+                margin-left: 20px;
+            }
+        }
+        &_steps{
+            margin: 38px 0 30px;
+        }
+        &_step{
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            &_hex{
+                @include hexagon(52, $medium-black, 2, #343a40);
+                margin-right: 23px;
+            }
+        }
+        .social{
+            margin: 12px -5px 0;
+        }
+    }
+}

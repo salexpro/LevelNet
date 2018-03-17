@@ -17,9 +17,9 @@ mixin social(num, mod)
         var num = num ? num : social.length;
     ul.menu.social(class=mod ? "social--" + mod : "")
         while i < num
-            if (mod !== 'release' && mod !== 'event') || social[i][2]
+            if (mod !== 'release' && mod !== 'event' && mod!=='profile') || social[i][2]
                 li
-                    a(href=(mod !== 'release' && mod !== 'event') ? social[i][1] : social[i][2] target="_blank")
+                    a(href=(mod !== 'release' && mod !== 'event' && mod!=='profile') ? social[i][1] : social[i][2] target="_blank")
                         svg(xmlns='http://www.w3.org/2000/svg', viewbox="0 0 " + social[i][3] + " " + social[i][4] width=social[i][3] height=social[i][4])
                             use(fill='#fff', xlink:href='#' + social[i][0])
             - i++
