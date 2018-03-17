@@ -20,6 +20,7 @@ select{
     position: relative;
     text-align: left;
     display: inline-block;
+    user-select: none;
     &_native_dropdown {
         .select7__current {
             cursor: default !important;

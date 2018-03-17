@@ -1,0 +1,36 @@
+.profile{
+    &_payments{
+        background-color: $white;
+        border-radius: $global-radius;
+        color: $medium-black;
+        margin-bottom: 75px;
+        th{
+            padding: 11px 20px;
+            font-weight: 600;
+            &:first-child{
+                text-align: left;
+            }
+            &:nth-child(even) {
+                background-color: #f1f3f5;
+            }
+        }
+        td{
+            border-top: 1px solid $medium-gray;
+            padding: 11px 20px;
+            &:not(:first-child){
+                text-align: center;
+            }
+            &:nth-child(even){
+                background-color: #f1f3f5;
+            }
+        }
+    }
+    &_transaction{
+        text-align: center;
+        padding-top: 27px;
+        margin-bottom: 70px;
+        &_header{
+            margin-bottom: 25px;
+        }
+    }
+}

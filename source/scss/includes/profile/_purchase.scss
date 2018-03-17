@@ -42,9 +42,11 @@
             &:checked{
                 +label {
                     background-color: $dark-color;
-                    user-select: none;
                 }
             }
+        }
+        label{
+            user-select: none;
         }
     }
     &_currency.profile_currency {
@@ -113,7 +115,7 @@
     }
     &_promo{
         max-width: 550px;
-        margin: auto;
+        margin: 75px auto 0;
         padding: 33px 24px 40px;
         border: 1px solid $dark-color;
         background-color: $light-black;

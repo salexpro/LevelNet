@@ -4,7 +4,6 @@
         flex-wrap: wrap;
         align-items: center;
         margin-top: 55px;
-        margin-bottom: 70px;
         &_hex{
             @include hexagon(57, $medium-black, 2, $dark-color);
             margin-right: 40px;

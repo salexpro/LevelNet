@@ -3,6 +3,7 @@
         border: 0;
         padding-top: 40px;
         padding-bottom: 75px;
+        min-height: calc(100vh - 85px);
         &::before{
             width: 30%;
             background-position: top right;
@@ -21,6 +22,10 @@
             padding: 18px 0;
             margin: 0 20px;
             border-bottom: 1px solid $light-black;
+            color: #adb5bd;
+            &:hover, &:focus{
+                color: $white;
+            }
         }
         li{
             &.active{

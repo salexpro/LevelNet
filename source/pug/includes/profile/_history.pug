@@ -1,0 +1,49 @@
+if !empty
+    table.profile_payments
+        tr
+            th Date and time
+            th Type
+            th Amount
+            th
+                | Tokens
+                br
+                | amount
+            th Bonus
+            th Currency rate
+            th
+                | Transaction
+                br
+                | ID
+        tr
+            td 2018-Feb-27, 17:45
+            td
+            td
+            td 10 LVL
+            td
+            td 1 LVL = 1 USD
+            td
+        tr
+            td 2018-Feb-25, 12:08
+            td
+            td
+            td 0.05 LVL
+            td
+            td 1 LVL = 1 USD
+            td
+        tr
+            td 2018-Feb-22, 09:12
+            td
+            td 
+            td 15.05 LVL
+            td
+            td 1 LVL = 1 USD
+            td
+else
+    .profile_transaction
+        h4.profile_transaction_header
+            | No transactions yet
+        a.button.secondary.spaced(href="#")
+            | BUY TOKENS WITH +25%
+
+include _wallet
+include _2fa
