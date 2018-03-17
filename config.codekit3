@@ -69287,6 +69287,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/profile\/_kyc.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_kyc.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/profile\/_menu.pug": {
 		"cB": 0,
 		"cOD": 0,
@@ -70049,6 +70058,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/scss\/includes\/profile\/_kyc.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_kyc.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/includes\/profile\/_layout.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -70141,7 +70163,7 @@
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/android-chrome-256x256.png",
-	"lastBuiltDate": 543019693
+	"lastBuiltDate": 543020685
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
