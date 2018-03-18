@@ -68857,6 +68857,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/js\/includes\/_eye.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/includes\/_eye.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/js\/includes\/_form.js": {
 		"ft": 64,
 		"ma": 1,
@@ -69332,6 +69342,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/profile\/_settings.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_settings.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/profile\/_wallet.pug": {
 		"cB": 0,
 		"cOD": 0,
@@ -69448,6 +69467,15 @@
 		"oAP": "\/build\/profile_referral.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/source\/pug\/profile_settings.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_settings.html",
+		"oF": 0,
+		"oS": 1
 		},
 	"\/source\/pug\/resend.pug": {
 		"cB": 0,
@@ -70110,6 +70138,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/scss\/includes\/profile\/_settings.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_settings.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/includes\/profile\/_wallet.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -70163,7 +70204,7 @@
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/android-chrome-256x256.png",
-	"lastBuiltDate": 543021877
+	"lastBuiltDate": 543028019
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

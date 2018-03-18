@@ -64,6 +64,7 @@ $contrast-warnings: false;
 @import 'includes/profile/layout';
 @import 'includes/profile/wallet';
 @import 'includes/profile/2fa';
+@import 'includes/sign_up';
 
 // Sections
 @import 'includes/nav';
@@ -73,3 +74,4 @@ $contrast-warnings: false;
 @import 'includes/profile/referral';
 @import 'includes/profile/kyc';
 @import 'includes/faq';
+@import 'includes/profile/settings';

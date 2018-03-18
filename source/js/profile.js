@@ -22,6 +22,7 @@
 // Modules
 @codekit-append 'includes/_countdown';
 @codekit-append 'includes/_form';
+@codekit-append 'includes/_eye';
 */
 
 $(document).foundation();
