@@ -1,23 +1,98 @@
 .profile{
     &_2fa{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 55px;
-        &_hex{
-            @include hexagon(57, $medium-black, 2, $dark-color);
-            margin-right: 40px;
-            font-size: 36px;
-            font-weight: 100;
-        }
-        &_text{
-            a{
-                text-decoration: underline;
+        &_attention{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 55px;
+            &_hex{
+                @include hexagon(57, $medium-black, 2, $dark-color);
+                margin-right: 40px;
+                font-size: 36px;
+                font-weight: 100;
+            }
+            &_text{
+                a{
+                    text-decoration: underline;
+                }
+            }
+            &_bottom{
+                padding-left: 97px;
+                margin-top: 23px;
             }
         }
-        &_bottom{
-            padding-left: 97px;
-            margin-top: 23px;
+        &_key{
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+        &_qr{
+            height: 265px;
+            background-color: $white;
+            border-radius: $global-radius;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_print{
+            background-color: $white;
+            border-radius: $global-radius;
+            height: 100%;
+            max-height: 265px;
+            padding: 24px 28px;
+            color: $medium-black;
+            text-align: center;
+            &_copy{
+                position: relative;
+                margin: 25px 0;
+                input{
+                    background-color: #f1f3f5 !important;
+                    border: 0 !important;
+                    color: $medium-black;
+                    text-align: center;
+                    font-size: 20px;
+                    letter-spacing: 0.8px;
+                    cursor: text;
+                }
+                button{
+                    color: $medium-gray;
+                    position: absolute;
+                    top: 10px;
+                    right: 12px;
+                    cursor: pointer;
+                    transition: 300ms;
+                    &:hover, &:focus{
+                        color: $dark-gray;
+                    }
+                }
+            }
+            &_descr{
+                font-size: 14px;
+                letter-spacing: 0.56px;
+                margin-top: 24px;
+            }
+        }
+        &_form{
+            padding-right: 20px;
+            .profile_settings_info_item{
+                &:first-child{
+                    margin: 0;
+                }
+            }
+            [readonly]{
+                background-color: rgba(65, 64, 65, 0.6);
+                cursor: text;
+                &:focus{
+                    background-color: $dark-color;
+                }
+            }
+            .button{
+                margin-top: 40px;
+            }
+        }
+        &_info{
+            p{
+                padding-top: 19px;
+            }
         }
     }
 }

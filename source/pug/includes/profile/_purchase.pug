@@ -78,7 +78,7 @@ form(action="purchase")
         button.button.short.primary.spaced
             | PURCHASE
 include _wallet
-include _2fa
+include _2fa_attention
 .profile_promo
     h4.profile_promo_header Put in your promo-code to get LVL tokens
     +form('GET TOKENS', 'dark', false, false, 'promo', 'text', 'Your Promo-code')

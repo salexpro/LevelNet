@@ -1,15 +1,37 @@
-.profile_2fa
-    .profile_2fa_hex
-        span !
-    .profile_2fa_text
-        | The security of your tokens, transactions, wallets and passwords are your responsibility.
-        br
-        | Please setup
-        | 
-        a(href="#") Two-Factor Authentication
-        | 
-        | for more security.
-    .profile_2fa_bottom
-        a.button.hollow.icon(href="#")
-            | Enable Two-Factor Authentication
-            i.icon.icon--arrow
+h2 Two-Factor Authentication
+.row.profile_2fa_key
+    .column.large-4
+        .profile_2fa_qr
+            img(src="data:image/png;base64,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", alt="")
+    .column.large-8
+        .profile_2fa_print
+            h3 Please write down your authentication key:
+            .profile_2fa_print_copy
+                input(type="text" value="JJCTGQTDJZAXISTIKJ2VI4TJKA" readonly)
+                button.material-icons
+                    | content_copy
+            button.button.primary.short.spaced
+                | PRINT KEY
+            .profile_2fa_print_descr
+                | Do not save the QR code in any digital form. The QR code must be printedon paper and saved in a secure place, where only you can access it.
+.row
+    .column.large-7
+        form.profile_2fa_form(action="2fa")
+            label.profile_settings_info_item
+                h4.profile_settings_info_label
+                    | Your Authentication Key
+                input(type="text" value="JJCTGQTDJZAXISTIKJ2VI4TJKA" readonly)
+            label.profile_settings_info_item
+                h4.profile_settings_info_label
+                    | Insert Your 6-Digit Authentication Code:
+                input(type="text")
+            button.button.wide.primary.icon
+                | Enable two-factor authentication
+                i.icon.icon--arrow
+    .column.large-5.profile_2fa_info
+        .profile_2fa_attention_hex
+            span !
+        p Always write down your authentication key! You will not be able to log in to your account in case you lose your mobile device.
+        p If you are having problems with our system rejecting your authentication code, check your mobile device's clock.
+        p It must be synchronized perfectly. Your device will generate a new code every 30 seconds.
+        

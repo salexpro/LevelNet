@@ -69270,6 +69270,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/source\/pug\/includes\/profile\/_2fa_attention.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_2fa_attention.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/source\/pug\/includes\/profile\/_bonus.pug": {
 		"cB": 0,
 		"cOD": 0,
@@ -69404,6 +69413,15 @@
 		"oAP": "\/build\/product.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/source\/pug\/profile_2fa.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/profile_2fa.html",
+		"oF": 0,
+		"oS": 1
 		},
 	"\/source\/pug\/profile_bonuses.pug": {
 		"cB": 0,
@@ -70204,7 +70222,7 @@
 	"displayValue": "LevelNet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/android-chrome-256x256.png",
-	"lastBuiltDate": 543028019
+	"lastBuiltDate": 543119551
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
