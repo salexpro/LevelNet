@@ -1,13 +1,13 @@
 include _wallet
 include _2fa_attention
-.profile_settings_info
+#info.profile_settings_info
     h2.profile_settings_info_header
         | Your personal info
     form(action="settings")
         label.profile_settings_info_item
             .profile_settings_info_label
                 | Name
-            input(type="text" name="name" value="Bill Gates" required)
+            input(type="text" name="name" value="Bill Gates" maxlength="100" required)
         label.profile_settings_info_item
             .profile_settings_info_label
                 | Email
@@ -15,7 +15,7 @@ include _2fa_attention
         label.profile_settings_info_item
             .profile_settings_info_label
                 | Phone
-            input(type="tel" name="phone" value="(949) 555-33-99" required)
+            input(type="tel" name="phone" value="(949) 555-33-99")
         label.profile_settings_info_item
             .profile_settings_info_label
                 | Your Ethereum wallet. Must support ERC-20
@@ -28,6 +28,6 @@ include _2fa_attention
             .sign_up_form_pass
                 input(type="password" name="password" value="_xxx_LEVELNET_xxx_" required)
                 span.all-seeing_eye.is_hidden
-                        i.material-icons remove_red_eye
+                    i.material-icons remove_red_eye
         button.button.secondary.spaced
             | SAVE CHANGES

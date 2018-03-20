@@ -62,3 +62,41 @@
             | CHECK WALLET
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×
+
+#fail.reveal.reveal_fail(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h3.reveal_header.reveal_fail_header
+        | Sorry, this Promo-Code no longer works
+    button.button.short.primary.spaced
+        | GET HELP
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#confirm.reveal.reveal_password(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h3.reveal_header
+        | Confirm changes with your password
+    form(action="confirm")
+        .profile_settings_info_item.sign_up_form_pass
+            input(type="password" name="password" placeholder="Your password" required)
+            span.all-seeing_eye.is_hidden
+                i.material-icons remove_red_eye
+        button.button.short.primary.spaced
+            | CONFIRM
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#change.reveal.reveal_password(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h3.reveal_header
+        | Confirm password change
+    form(action="change")
+        .profile_settings_info_item.sign_up_form_pass
+            input(type="password" name="password" placeholder="Old password" required)
+            span.all-seeing_eye.is_hidden
+                i.material-icons remove_red_eye
+        .profile_settings_info_item.sign_up_form_pass
+            input(type="password" name="password" placeholder="New password" required)
+            span.all-seeing_eye.is_hidden
+                i.material-icons remove_red_eye
+        button.button.short.primary.spaced
+            | CONFIRM
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×

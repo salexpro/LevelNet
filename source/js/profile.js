@@ -12,6 +12,7 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
 @codekit-prepend './lib/jquery-select7';
@@ -34,7 +35,7 @@ $('.select7').select7();
 const hourX = moment.tz('2018-04-01 00:00', 'America/Sao_Paulo');
 
 // Copy to clipboard
-new ClipboardJS('.profile_2fa_print_copy button');
+new ClipboardJS('[data-clipboard-target]');
 
 // Purchase token 
 const purchase_token = (token, wallet) => {

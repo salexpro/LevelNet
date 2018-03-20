@@ -212,6 +212,38 @@
             }
         }
     }
+
+    &_fail{
+        text-align: center;
+        padding-bottom: 50px;
+        &_header{
+            padding: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &_password {
+        text-align: center;
+        padding-bottom: 50px;
+        input, [type="password"] {
+            border-color: $medium-gray;
+            background-color: #f1f3f5;
+            color: $black;
+            &::placeholder {
+                color: rgba($medium-black, 0.5);
+            }
+        }
+        :-webkit-autofill,
+        :-webkit-autofill:hover,
+        :-webkit-autofill:focus,
+        :-webkit-autofill:active {
+            box-shadow: 0 0 0px 1000px #f1f3f5 inset;
+            -webkit-text-fill-color: $black;
+        }
+        .button{
+            margin-top: 30px;
+        }
+    }
 }
 
 .fade-in.mui-enter {

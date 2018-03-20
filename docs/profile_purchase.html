@@ -24,7 +24,7 @@
         <div class="nav_inner row">
           <div class="logo small-order-1"><a href="./#top"><img src="./img/logo.svg" alt="LevelNet"></a></div>
           <ul class="menu show-for-xxlarge small-order-2">
-            <li><a href="./pre_ico.html">ICO Website</a></li>
+            <li><a href="./">ICO Website</a></li>
             <li><a href="./profile_settings.html">Account Settings</a></li>
           </ul>
           <div class="small-1 small-order-3"></div>
@@ -245,7 +245,7 @@
               <button class="button short primary spaced">PURCHASE</button>
             </form>
             <div class="profile_wallet">
-              <p class="profile_wallet_header">Please provide us with your Ethereum wallet address to simplify token distribution.</p><a class="button short dark spaced" href="./profile_settings.html">ADD WALLET</a>
+              <p class="profile_wallet_header">Please provide us with your Ethereum wallet address to simplify token distribution.</p><a class="button short dark spaced" href="./profile_settings.html#info">ADD WALLET</a>
             </div>
             <div class="profile_2fa_attention">
               <div class="profile_2fa_attention_hex"><span>!</span></div>
@@ -326,6 +326,34 @@
       <h2 class="reveal_header">Thank you for purchase!</h2>
       <p class="reveal_descr reveal_descr--bold">20LVL sent to your wallet</p>
       <div class="reveal_success_content"><img src="./img/icons/appreciations.svg" alt="Thank you"><a class="button short primary spaced" href="./profile_purchase.html">CHECK WALLET</a></div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_fail" id="fail" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h3 class="reveal_header reveal_fail_header">Sorry, this Promo-Code no longer works</h3>
+      <button class="button short primary spaced">GET HELP</button>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_password" id="confirm" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h3 class="reveal_header">Confirm changes with your password</h3>
+      <form action="confirm">
+        <div class="profile_settings_info_item sign_up_form_pass">
+          <input type="password" name="password" placeholder="Your password" required><span class="all-seeing_eye is_hidden"><i class="material-icons">remove_red_eye</i></span>
+        </div>
+        <button class="button short primary spaced">CONFIRM</button>
+      </form>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_password" id="change" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h3 class="reveal_header">Confirm password change</h3>
+      <form action="change">
+        <div class="profile_settings_info_item sign_up_form_pass">
+          <input type="password" name="password" placeholder="Old password" required><span class="all-seeing_eye is_hidden"><i class="material-icons">remove_red_eye</i></span>
+        </div>
+        <div class="profile_settings_info_item sign_up_form_pass">
+          <input type="password" name="password" placeholder="New password" required><span class="all-seeing_eye is_hidden"><i class="material-icons">remove_red_eye</i></span>
+        </div>
+        <button class="button short primary spaced">CONFIRM</button>
+      </form>
       <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
     <script src="./js/profile.min.js"></script>

@@ -27,6 +27,22 @@ $('form[action]').submit(function (e) {
             $('#thank').foundation('open');
             break;
         }
+        case 'promo': {
+            if (Math.round(Math.random())){
+                $('#thank').foundation('open');
+            } else {
+                $('#fail').foundation('open');
+            }
+            break;
+        }
+        case 'settings': {
+            if (Math.round(Math.random())) {
+                $('#confirm').foundation('open');
+            } else {
+                $('#change').foundation('open');
+            }
+            break;
+        }
         default: {
             break;
         }
