@@ -69,6 +69,10 @@
                 font-size: 14px;
                 letter-spacing: 0.56px;
                 margin-top: 24px;
+                a{
+                    color: $medium-black;
+                    text-decoration: underline;
+                }
             }
         }
         &_form{

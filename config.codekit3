@@ -6112,6 +6112,98 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/node_modules\/clipboard\/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/composer.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/clipboard\/contributing.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/contributing.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/clipboard\/dist\/clipboard.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/dist\/clipboard.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/clipboard\/dist\/clipboard.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/dist\/clipboard.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/clipboard\/package.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/package.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/clipboard\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/clipboard\/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/readme.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/clipboard\/webpack.config.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/clipboard\/webpack.config.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/node_modules\/co\/History.md": {
 		"cB": 0,
 		"cS": 0,
@@ -21666,6 +21758,127 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/node_modules\/delegate\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/.editorconfig",
+		"oF": 1
+		},
+	"\/node_modules\/delegate\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/.travis.yml",
+		"oF": 1
+		},
+	"\/node_modules\/delegate\/demo\/delegate.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/demo\/delegate.html",
+		"oF": 1
+		},
+	"\/node_modules\/delegate\/demo\/multiple.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/demo\/multiple.html",
+		"oF": 1
+		},
+	"\/node_modules\/delegate\/demo\/undelegate.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/demo\/undelegate.html",
+		"oF": 1
+		},
+	"\/node_modules\/delegate\/dist\/delegate.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/dist\/delegate.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/delegate\/karma.conf.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/karma.conf.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/delegate\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/delegate\/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/readme.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/delegate\/src\/closest.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/src\/closest.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/delegate\/src\/delegate.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/src\/delegate.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/delegate\/test\/closest.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/test\/closest.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/delegate\/test\/delegate.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/delegate\/test\/delegate.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/node_modules\/doctrine\/CHANGELOG.md": {
 		"cB": 0,
@@ -41747,6 +41960,156 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/node_modules\/good-listener\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/.editorconfig",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/.npmignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/.npmignore",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/.travis.yml",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/bower.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/good-listener\/demo\/destroy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/demo\/destroy.html",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/demo\/multiple.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/demo\/multiple.html",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/demo\/node.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/demo\/node.html",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/demo\/nodelist.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/demo\/nodelist.html",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/demo\/selector.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/demo\/selector.html",
+		"oF": 1
+		},
+	"\/node_modules\/good-listener\/dist\/good-listener.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/dist\/good-listener.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/good-listener\/karma.conf.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/karma.conf.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/good-listener\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/good-listener\/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/readme.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/good-listener\/src\/is.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/src\/is.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/good-listener\/src\/listen.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/src\/listen.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/good-listener\/test\/is.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/test\/is.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/good-listener\/test\/listen.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/good-listener\/test\/listen.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/node_modules\/graceful-fs\/fs.js": {
 		"ft": 64,
@@ -64253,6 +64616,143 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/node_modules\/select\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/.editorconfig",
+		"oF": 1
+		},
+	"\/node_modules\/select\/.npmignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/.npmignore",
+		"oF": 1
+		},
+	"\/node_modules\/select\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/.travis.yml",
+		"oF": 1
+		},
+	"\/node_modules\/select\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/bower.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/select\/demo\/contenteditable.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/contenteditable.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/demo\/dropdown.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/dropdown.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/demo\/editable.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/editable.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/demo\/multiple.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/multiple.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/demo\/nested.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/nested.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/demo\/non-editable.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/demo\/non-editable.html",
+		"oF": 1
+		},
+	"\/node_modules\/select\/dist\/select.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/dist\/select.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/select\/karma.conf.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/karma.conf.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/select\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/select\/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/readme.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/select\/src\/select.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/src\/select.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/select\/test\/select.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/select\/test\/select.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/node_modules\/shelljs\/bin\/shjs": {
 		"cB": 0,
 		"ft": 8192,
@@ -66935,6 +67435,113 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/build\/node_modules\/through\/test\/index.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/tiny-emitter\/.npmignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/.npmignore",
+		"oF": 1
+		},
+	"\/node_modules\/tiny-emitter\/dist\/tinyemitter.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/dist\/tinyemitter.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/tiny-emitter\/dist\/tinyemitter.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/dist\/tinyemitter.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/tiny-emitter\/index.d.ts": {
+		"cDF": 0,
+		"ft": 128,
+		"jxM": 0,
+		"ma": 0,
+		"mi": 0,
+		"moR": 0,
+		"moT": 0,
+		"nIA": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/index.d.ts",
+		"oF": 1,
+		"pCE": 0,
+		"rC": 0,
+		"sIE": 0,
+		"tEC": 0
+		},
+	"\/node_modules\/tiny-emitter\/index.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/index.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/tiny-emitter\/instance.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/instance.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/tiny-emitter\/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/LICENSE",
+		"oF": 1
+		},
+	"\/node_modules\/tiny-emitter\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/node_modules\/tiny-emitter\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/README.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/node_modules\/tiny-emitter\/test\/index.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/tiny-emitter\/test\/index.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 1
@@ -70126,6 +70733,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/includes\/css\/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/includes\/profile\/_popup.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/includes\/css\/_popup.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

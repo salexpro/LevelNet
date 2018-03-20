@@ -37,17 +37,6 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 30px 8px 40px;
-        [type="radio"]{
-            display: none;
-            &:checked{
-                +label {
-                    background-color: $dark-color;
-                }
-            }
-        }
-        label{
-            user-select: none;
-        }
     }
     &_currency.profile_currency {
         width: 180px;
@@ -60,6 +49,11 @@
         margin-bottom: 20px;
         color: $white;
         transition: 300ms;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: $dark-color;
+        }
         &--small{
             height: 44px;
         }
@@ -67,6 +61,35 @@
             margin-right: 16px;
             &:only-child {
                 margin: auto;
+            }
+        }
+    }
+    &_send{
+        height: 290px;
+        background-color: $white;
+        color: $medium-black;
+        border-radius: $global-radius;
+        padding: 30px 40px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 45px;
+        &_header{
+            flex: 1 1 100%;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        &_qr{
+            padding: 0 20px;
+            img{
+                max-width: 160px;
+            }
+        }
+        &_wallet{
+            flex: 1 1 calc(100% - 200px);
+            text-align: center;
+            padding-left: 40px;
+            .profile_2fa_print_copy{
+                margin: 0 0 35px;
             }
         }
     }
