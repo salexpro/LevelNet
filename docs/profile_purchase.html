@@ -173,72 +173,79 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-center">Choose your payment currency<a class="profile_hint" href=""><span>?</span></a></h2>
-            <form action="purchase">
-              <div class="profile_currencies">
-                <div class="column shrink">
-                  <input id="curr_btc" type="radio" name="curr" value="btc">
-                  <label class="profile_currency" for="curr_btc"><img src="data:image/png;base64,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" alt="Bitcoin">
-                    <div class="profile_currency_label">Bitcoin</div>
-                  </label>
+            <h2 class="text-center">Choose your payment currency<a class="profile_hint" data-open="method"><span>?</span></a></h2>
+            <div class="profile_currencies">
+              <div class="column shrink">
+                <button class="profile_currency" data-token="BTC" data-wallet="1LMN6re5eZmzpnph9fuztDnBYftwYrfryX" data-descr=""><img src="data:image/png;base64,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" alt="Bitcoin">
+                  <div class="profile_currency_label">Bitcoin</div>
+                </button>
+              </div>
+              <div class="column shrink">
+                <button class="profile_currency" data-token="LTC" data-wallet="" data-descr=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAGF0lEQVRYR41XX0xTVxg/t/+LFWpth4BAFEnTTSxoS2EhEGLIogjTERGD+rAlvmwPy7IXt5clyxJftj3sccylbOJCGC6IOInVudlaKU4TZEYsljWhCC20s1wsLXiX342nub3cAl/SkPac832/7/t+3+8cGI7j5AzDrJJNmsvlKjIYDJUKhaI2HA6XrK6ukry8vGWtVutlWfahw+H4m2EYbjPuOI6TMZvZODMzYxobGzsTi8WOLy0tOV6+fElWVlaIUqkkDMOQVCpFOI4jOTk5RK1Wh0wm0+8ajcbZ0NDw50b+1wXw9OlTdSAQ+CoUCn3IsqwGAWlQOEZwoQEEgCWTSf5no9HosVgsn1dUVPyRDUhWAE+ePKnzeDw9LMsWq9VqZMZnuZ5hXQhqaWmJoEW7d+/++vDhw59KnZUEcPPmzTa/39/36tUrotVqJWMiGA1IgSG4uCrwEY1GyZ49e4ZbW1vfETtbA2B8fPz9Gzdu/IDA+MCB2GQyGaHZ0TW5XM7vl6oSQEUiEbJz586H7e3tVUJ/GQBmZ2ffvnjxojs3N5eoVKq0M3FpX7x4QaqqqpAVDxABAOj27du8bwAUcwR7nj9/TioqKoYOHTrUTEGkAXAcp3E6nTMsy+q3bt0qmQktO8uypLOzk+j1+nQy09PTpK+vj/8NwYRtoZvwGyrR3Nx81mKxfM+DpIsej+dbt9v9cX5+Pn9Y2F9hXxOJBNHpdOTkyZMZ/R4aGiKTk5PQhDQoceWwgBFGu44ePZprMpniPIC5uTnd1atX/0ulUjLKdjGZqFcQqrKykjQ0NKQDLS8vk+7ubv47zsOyVQDtWVhYIDab7VxdXd15HsC9e/c+8Hq9Xdu2bVt31OA0FouRI0eOkLKysjSAYDBIXC4XrxEYOwpeqgI4BL5s377d397eXs4DGBwc/DUYDL63ZcuWdeccIgPV6+joyCg1KgBgg4ODfHCFQrHGjxAMiIvPgQMHzDyAnp4eP8uyZWC+2OhBlG5+fh6jRNra2tbse/bsGRkYGCAGgyFrEkJegch2u/00Mzo6anz8+PF0MplUrYc8Ho+T0tJS0tTUlO6zMBJa8OjRI4I2bsbgz2q1fsFcuHChWCaT/cu8bpy4b/Q7xqelpYWUl5dn+Ef5x8bG+A/2CpMQ+hJPFdqp0+m+5QHI5fKgFGrKZGxGC06dOsUTTWijo6PkypUrfHXQQinlFOoA1QhcWCaT6RtmcnIy7+7duzOJREIrdk5RYzNkdv/+/cRsNqeVDo6vXbtG/H4/T8ps2kHHUjgdaIHdbv+MJ2Fvb+8/0WjUotFoJGcYBzH/JSUlEJB0AUCkrq4u/voVExgVAyihKgorAUGqrq5u4wFcv37dOTExcQZ3QDaDeBw8eBBant6yuLhIJiYmMt4IdBF6AF4AnJjcWIM5HI4CHoDP53vX6/X+JgZAOYC/QHzs2DGyY8eOzZCcFxun00lQVUiv0F5PlK+lpaWaB8BxHHPp0qWFWCymhxiJ73kwHeAgQJu18fFxMjw8DMXLOIKWQE9qa2tP19TU/Jy+jO7fv//RrVu3vjOZTBkHAAalhvSiBWC5+M6nfRbeH263mwCE8HLCOrLX6/Xhzs7ONxAo4z1w+fLlh1NTU1aj0ZgOhEMISick27NMrB+QbHHpMc54S5w4caK+sLDwrzUAWJYt6O7unl5ZWWFwr9OZBggQBw7EJsVy7AHxAEDIo7m5OVJfX3++pqbmHPWz5kkWDodt/f39nlQqpUTfpTKWumqzcQMAARxjvG/fvp+amprOCPdKPkrn5+ff6u/vdyUSiXy8jrK9DTYiJM5hejCKe/fuPd/Y2JjOPGsF6EIgENA/ePDAGQqFWumDU4psQhBCHiBrCFVOTk7cbreftVqtv0gB3vA/I5/P1xEIBD6JRqN2cIL2VvwER3CsIzD4olar46WlpT8WFxd/aTabI1lbtFEZ6frIyEh9JBI5HovFGlOp1JvJZJJBQEgunRKlUhnWaDQjRUVFAwUFBb27du2KbeSf4f9BZJi1j/91Tt65c6dQqVQWqlSq/MXFRZXBYAjH4/FZhUIxZbPZUhsFpesQwP8BGHxKpYlv9D8AAAAASUVORK5CYII=" alt="Litecoin">
+                  <div class="profile_currency_label">Litecoin</div>
+                </button>
+              </div>
+              <div class="column shrink">
+                <button class="profile_currency" data-token="ETH" data-wallet="" data-descr=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAdCAYAAACnmDyCAAAEaUlEQVRIS52UfUhrdRjHn+PZ5tzL0atiXpb+EURoDaJwMzCchDOwF0KxS4ZBIBcCnVNrkddYrkClWxJmEP4T3bref6x7d9l82/3DkHt1SXDZ5nXm5py7zpfCs7kztzPP4jk1mV6n1YHzx3l+z/P5fZ+3Q8A5z9DQkNpsNmttNpvpLFfiPNDIyMi9qakptd1uLwkEAhuZ/M8ENTQ01Gm12gmr1Qoul+ue2+1+4X+BRkdH/2RZ9oLZbAa/3w+RSKTZ4/H8eBoso6K+vr6rFEV1CoVCsFgs4PV6IScnh1lcXMwHgNhJ2Kkgk8lUJpfLXRzHQXZ2Ng9yu91QVFQENE1/73A4Wv4VqL+/f1EkEj2HzinQysoK5ObmgkAgwDQrNzY25tNhjygymUytMpns28PDQ8jKyjoGksvlPCiZTPoXFhZKM4KMRiNFUdQex3H8BSdBFEUBQRA8LBgMXvF6vZ+lYMcU9fT0/KxQKF5nGIY/xyAMxho5HA4+tdRDkiRwHHfRbrcHed/UQW1t7UtNTU0zoVAIpWOHQCqVQjgchvHxcdjd3QVMjWVZBPBqAWDBbrerj4EGBweDFEU9hhCRSAQ7Ozt8y7HITqeTDywsLOThqAaBaNve3n7L4/Fc5xV1dHQMaDSaDzY3N/GAD8aXpmk+EG0Ixg7iN6Yok8lALBZDPB7fn5+fv0C0t7c/r1Qqf/V4PLgGsL6+DtFolA9AR7zV5/PB3t4e4HAmEomj1DHVgoICiMVi14iurq7fXC7Xs+iMaaW1mC82ppECYcqpB4E4IngZxhA1NTVPeb3ej/Ly8lrQiMFHLT0DhH747u/v+5LJpJ4YGBh43GAwbFRVVT3BMMwPJElW4pyk2p9JEcuybDwe/zAajX7B+zY3N79dX1/f6Xa7NUajMaRSqV5hGOZrqVRaipB0EBYbU+I47huapt9DgFar/TQU2nuSz2N4ePimWCx+LRKJvK/T6T5Hm0qlMh4cHHwsl8sJ/IVgsTmO+4UkyXdomvZWVlaWyeXSGwCEcmnpwd8gfHp7ex0lJSVPsywbSCQSbTqd7idUrFarzaurXmU4TF+OxWITGo1GAMBdI4isN1FtIPCwemlpafYIpNfr88vKyrYZhiGxexKJZDYcDl/u7u5+kLqsuvrFPoFAeIVlWQLr6PF4P1lbWzMem2z8aGtrqy8vL7+Nu4YwrIlEIrlqtVrv+3xr/Tk54ouHhxw/T0IhOTs9faf61KVFY2tr61cVFRVtuHM4jLhzMzPTsLq6ClKpDIRCAcTjbJym6QKn07mfEfRP8e9zHKfEfcLZQhDuHf4JMKWVld9f9vv9k0cDl7796UaDwVCqUCh8aENVNtsM4AoVFhbAwUH8y7m5uc50/0dqlH7Y2NjYUldX9x2qmpqahEAgAAIB6bx7d/6Zk5AzQXhoMpmuFxcXX5qcnACfbw2CwW2F3+9/+J9BGDA2NvbHrVs38222O5e2trZunAY5VxE66PX6V5eXl9+wWCzvZoKg/S+POzILqHI5RgAAAABJRU5ErkJggg==" alt="Ethereum">
+                  <div class="profile_currency_label">Ethereum</div>
+                </button>
+              </div>
+              <div class="column shrink">
+                <button class="profile_currency" data-token="BCH" data-wallet="" data-descr=""><img src="data:image/png;base64,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" alt="BitcoinCash">
+                  <div class="profile_currency_label">BitcoinCash</div>
+                </button>
+              </div>
+              <div class="column shrink">
+                <button class="profile_currency profile_currency--small"><i class="icon icon--usd"></i>
+                  <div class="profile_currency_label">USD</div>
+                </button>
+              </div>
+              <div class="column shrink">
+                <button class="profile_currency profile_currency--small"><i class="icon icon--visa"></i></button>
+              </div>
+            </div>
+            <div class="hide profile_send">
+              <h3 class="profile_send_header">
+                Send
+                 <span>BTC</span> 
+                to this address to purchase LVL tokens:
+              </h3>
+              <div class="profile_send_qr"><img src="data:image/png;base64,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" alt=""></div>
+              <div class="profile_send_wallet">
+                <div class="profile_2fa_print_copy">
+                  <input type="text" id="wallet" value="1LMN6re5eZmzpnph9fuztDnBYftwYrfryX" readonly>
+                  <button class="material-icons" data-clipboard-target="#wallet">content_copy</button>
                 </div>
-                <div class="column shrink">
-                  <input id="curr_ltc" type="radio" name="curr" value="ltc">
-                  <label class="profile_currency" for="curr_ltc"><img src="data:image/png;base64,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" alt="Litecoin">
-                    <div class="profile_currency_label">Litecoin</div>
-                  </label>
-                </div>
-                <div class="column shrink">
-                  <input id="curr_eth" type="radio" name="curr" value="eth">
-                  <label class="profile_currency" for="curr_eth"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAdCAYAAACnmDyCAAAEaUlEQVRIS52UfUhrdRjHn+PZ5tzL0atiXpb+EURoDaJwMzCchDOwF0KxS4ZBIBcCnVNrkddYrkClWxJmEP4T3bref6x7d9l82/3DkHt1SXDZ5nXm5py7zpfCs7kztzPP4jk1mV6n1YHzx3l+z/P5fZ+3Q8A5z9DQkNpsNmttNpvpLFfiPNDIyMi9qakptd1uLwkEAhuZ/M8ENTQ01Gm12gmr1Qoul+ue2+1+4X+BRkdH/2RZ9oLZbAa/3w+RSKTZ4/H8eBoso6K+vr6rFEV1CoVCsFgs4PV6IScnh1lcXMwHgNhJ2Kkgk8lUJpfLXRzHQXZ2Ng9yu91QVFQENE1/73A4Wv4VqL+/f1EkEj2HzinQysoK5ObmgkAgwDQrNzY25tNhjygymUytMpns28PDQ8jKyjoGksvlPCiZTPoXFhZKM4KMRiNFUdQex3H8BSdBFEUBQRA8LBgMXvF6vZ+lYMcU9fT0/KxQKF5nGIY/xyAMxho5HA4+tdRDkiRwHHfRbrcHed/UQW1t7UtNTU0zoVAIpWOHQCqVQjgchvHxcdjd3QVMjWVZBPBqAWDBbrerj4EGBweDFEU9hhCRSAQ7Ozt8y7HITqeTDywsLOThqAaBaNve3n7L4/Fc5xV1dHQMaDSaDzY3N/GAD8aXpmk+EG0Ixg7iN6Yok8lALBZDPB7fn5+fv0C0t7c/r1Qqf/V4PLgGsL6+DtFolA9AR7zV5/PB3t4e4HAmEomj1DHVgoICiMVi14iurq7fXC7Xs+iMaaW1mC82ppECYcqpB4E4IngZxhA1NTVPeb3ej/Ly8lrQiMFHLT0DhH747u/v+5LJpJ4YGBh43GAwbFRVVT3BMMwPJElW4pyk2p9JEcuybDwe/zAajX7B+zY3N79dX1/f6Xa7NUajMaRSqV5hGOZrqVRaipB0EBYbU+I47huapt9DgFar/TQU2nuSz2N4ePimWCx+LRKJvK/T6T5Hm0qlMh4cHHwsl8sJ/IVgsTmO+4UkyXdomvZWVlaWyeXSGwCEcmnpwd8gfHp7ex0lJSVPsywbSCQSbTqd7idUrFarzaurXmU4TF+OxWITGo1GAMBdI4isN1FtIPCwemlpafYIpNfr88vKyrYZhiGxexKJZDYcDl/u7u5+kLqsuvrFPoFAeIVlWQLr6PF4P1lbWzMem2z8aGtrqy8vL7+Nu4YwrIlEIrlqtVrv+3xr/Tk54ouHhxw/T0IhOTs9faf61KVFY2tr61cVFRVtuHM4jLhzMzPTsLq6ClKpDIRCAcTjbJym6QKn07mfEfRP8e9zHKfEfcLZQhDuHf4JMKWVld9f9vv9k0cDl7796UaDwVCqUCh8aENVNtsM4AoVFhbAwUH8y7m5uc50/0dqlH7Y2NjYUldX9x2qmpqahEAgAAIB6bx7d/6Zk5AzQXhoMpmuFxcXX5qcnACfbw2CwW2F3+9/+J9BGDA2NvbHrVs38222O5e2trZunAY5VxE66PX6V5eXl9+wWCzvZoKg/S+POzILqHI5RgAAAABJRU5ErkJggg==" alt="Ethereum">
-                    <div class="profile_currency_label">Ethereum</div>
-                  </label>
-                </div>
-                <div class="column shrink">
-                  <input id="curr_bch" type="radio" name="curr" value="bch">
-                  <label class="profile_currency" for="curr_bch"><img src="data:image/png;base64,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" alt="BitcoinCash">
-                    <div class="profile_currency_label">BitcoinCash</div>
-                  </label>
-                </div>
-                <div class="column shrink">
-                  <input id="curr_usd" type="radio" name="curr" value="usd">
-                  <label class="profile_currency profile_currency--small" for="curr_usd"><i class="icon icon--usd"></i>
-                    <div class="profile_currency_label">USD</div>
-                  </label>
-                </div>
-                <div class="column shrink">
-                  <input id="curr_visa" type="radio" name="curr" value="visa">
-                  <label class="profile_currency profile_currency--small" for="curr_visa"><i class="icon icon--visa"></i></label>
+                <div class="profile_2fa_print_descr">The exact number of tokens depends<br>on the exchange rate at the moment of purchase.<br><br><br><a href="#">How to transfer bitcoins to the wallet</a></div>
+              </div>
+            </div>
+            <h2 class="text-center">Plan your LVL tokens purchase</h2>
+            <h4 class="text-center">Minimum purchase 200 LVL</h4>
+            <form class="profile_exchange" action="purchase">
+              <div class="profile_exchange_tokens">
+                <div class="profile_exchange_token">
+                  <input type="number" name="from_sum" placeholder="0,156" step="0.00000001" required>
+                  <select name="from_curr">
+                    <option value="BTC">BTC</option>
+                    <option value="LTC">LTC</option>
+                    <option value="ETH">ETH</option>
+                  </select>
+                </div><i class="icon icon--exchange"></i>
+                <div class="profile_exchange_token">
+                  <input type="number" name="to_sum" placeholder="200" step="0.01" required>
+                  <select name="to_curr">
+                    <option value="LVL">LVL</option>
+                  </select>
                 </div>
               </div>
-              <h2 class="text-center">Plan your LVL tokens purchase</h2>
-              <h4 class="text-center">Minimum purchase 200 LVL</h4>
-              <div class="profile_exchange">
-                <div class="profile_exchange_tokens">
-                  <div class="profile_exchange_token">
-                    <input type="number" name="from_sum" placeholder="0,156" step="0.00000001" required>
-                    <select name="from_curr">
-                      <option value="BTC">BTC</option>
-                      <option value="LTC">LTC</option>
-                      <option value="ETH">ETH</option>
-                    </select>
-                  </div><i class="icon icon--exchange"></i>
-                  <div class="profile_exchange_token">
-                    <input type="number" name="to_sum" placeholder="200" step="0.01" required>
-                    <select name="to_curr">
-                      <option value="LVL">LVL</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="profile_exchange_labels">
-                  <div class="profile_exchange_bonus">With current bonus +25%</div>
-                  <div class="profile_exchange_label">250 LVL</div>
-                </div>
-                <button class="button short primary spaced">PURCHASE</button>
+              <div class="profile_exchange_labels">
+                <div class="profile_exchange_bonus">With current bonus +25%</div>
+                <div class="profile_exchange_label">250 LVL</div>
               </div>
+              <button class="button short primary spaced">PURCHASE</button>
             </form>
             <div class="profile_wallet">
-              <p class="profile_wallet_header">Please provide us with your Ethereum wallet address to simplify token distribution.</p><a class="button short dark spaced" href="#">ADD WALLET</a>
+              <p class="profile_wallet_header">Please provide us with your Ethereum wallet address to simplify token distribution.</p><a class="button short dark spaced" href="./profile_settings.html">ADD WALLET</a>
             </div>
             <div class="profile_2fa_attention">
               <div class="profile_2fa_attention_hex"><span>!</span></div>
@@ -262,6 +269,44 @@
         </div>
       </div>
     </main>
+    <div class="reveal reveal_method" id="method" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h3 class="reveal_header reveal_method_header">
+        <div class="reveal_header_hex"><span>?</span></div>Payments Method Times and Speeds
+      </h3>
+      <table class="reveal_method_table">
+        <tr>
+          <th>Payment method</th>
+          <th>Confirmations</th>
+          <th>Speed</th>
+        </tr>
+        <tr>
+          <td>Ether</td>
+          <td>6</td>
+          <td>2 min</td>
+        </tr>
+        <tr>
+          <td>Bitcoin</td>
+          <td>2</td>
+          <td>30 min</td>
+        </tr>
+        <tr>
+          <td>Litecoin</td>
+          <td>6</td>
+          <td>2 min</td>
+        </tr>
+        <tr>
+          <td>BitcoinCash</td>
+          <td>2</td>
+          <td>30 min</td>
+        </tr>
+        <tr>
+          <td>USD/fiat</td>
+          <td>wire<br>(by StartEngine)</td>
+          <td>1-2 days</td>
+        </tr>
+      </table>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
     <script src="./js/profile.min.js"></script>
   </body>
 </html>

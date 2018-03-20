@@ -7,8 +7,8 @@ h2 Two-Factor Authentication
         .profile_2fa_print
             h3 Please write down your authentication key:
             .profile_2fa_print_copy
-                input(type="text" value="JJCTGQTDJZAXISTIKJ2VI4TJKA" readonly)
-                button.material-icons
+                input(type="text" id="key" value="JJCTGQTDJZAXISTIKJ2VI4TJKA" readonly)
+                button.material-icons(data-clipboard-target="#key")
                     | content_copy
             button.button.primary.short.spaced
                 | PRINT KEY
