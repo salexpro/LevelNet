@@ -24,6 +24,7 @@ $('form[action]').submit(function (e) {
         }
         case 'purchase': {
             purchase_token($('[name="from_curr"]', this).val(), '1LMN6re5eZmzpnph9fuztDnBYftwYrfryX');
+            $('#thank').foundation('open');
             break;
         }
         default: {

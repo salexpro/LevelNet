@@ -35,7 +35,6 @@
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×
 
-
 #startengine.reveal.reveal_startengine(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
     h2.reveal_header.reveal_startengine_header
         | Buy LVL tokens on StartEngine
@@ -49,5 +48,17 @@
             h4 Special prices for LVL buyers
     a.button.short.primary.spaced(href="https://www.startengine.com/levelnet" target="_blank")
         | BUY TOKENS
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#thank.reveal.reveal_success(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h2.reveal_header
+        | Thank you for purchase!
+    p.reveal_descr.reveal_descr--bold
+        | 20LVL sent to your wallet
+    .reveal_success_content
+        img(src="./img/icons/appreciations.svg", alt="Thank you")
+        a.button.short.primary.spaced(href="./profile_purchase.html")
+            | CHECK WALLET
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×
