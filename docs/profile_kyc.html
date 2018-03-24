@@ -27,15 +27,15 @@
             <li><a href="./">ICO Website</a></li>
             <li><a href="./profile_settings.html">Account Settings</a></li>
           </ul>
-          <div class="small-1 small-order-3"></div>
-          <div class="nav_profile small-order-3">
+          <div class="small-1 show-for-xxlarge small-order-3"></div>
+          <div class="nav_profile show-for-medium small-order-5 xxlarge-order-3">
             <div class="nav_profile_hex" style="background-image: url(https://placehold.it/200?text=S);">
               <div class="hex-top"></div>
               <div class="hex-bottom"></div>
             </div>
             <div class="nav_profile_user">Sviatoslav</div>
           </div>
-          <ul class="menu small-order-4">
+          <ul class="menu show-for-xxlarge small-order-4">
             <li><a href="./">Log Out </a></li>
           </ul>
           <div class="nav_lang xxlarge-order-5 small-order-4">
@@ -115,7 +115,7 @@
       </svg>
       <div class="pattern profile_container">
         <div class="row profile_inner">
-          <aside class="column large-3">
+          <aside class="column show-for-xxlarge large-3">
             <nav class="profile_menu">
               <ul class="menu vertical">
                 <li><a href="./profile_purchase.html">Purchase</a></li>
@@ -127,7 +127,7 @@
               </ul>
             </nav>
           </aside>
-          <article class="column large-9 profile_kyc">
+          <article class="column xlarge-12 xxlarge-9 profile_kyc">
             <p>We use the Anti Money Laundering (AML) Policy. Money laundering is where proceed of crime are disguised so to give the appearance of a legitimate income.</p>
             <p>The Company reserves the right to report any suspicious activities to the police or relevant authorities, if the official request with suspicion of money laundering from public authorities is received, without the client’s knowledge.</p>
             <p>The Company also reserves the right to require additional information at any time to verify the client’s identification and any further information that may be required to satisfy the Money Laundering Regulations.</p>
@@ -136,6 +136,23 @@
         </div>
       </div>
     </main>
+    <div class="off-canvas position-right nav_mobile" id="menu" data-off-canvas data-transition="overlap" data-auto-focus="false">
+      <div class="nav_mobile_logo"><img src="./img/logo_mobile.svg" alt="LevelNet"></div>
+      <ul class="menu vertical nav_mobile_menu nav_mobile_menu--large">
+        <li><a href="./profile_purchase.html">Purchase</a></li>
+        <li><a href="./profile_history.html">Payment History</a></li>
+        <li><a href="./profile_bonuses.html">Bonuses</a></li>
+        <li><a href="./profile_referral.html">Referral Program</a></li>
+        <li class="active"><a href="./profile_kyc.html">KYC/AML</a></li>
+        <li><a href="./profile_faq.html">FAQ</a></li>
+        <li><a href="./">ICO Website</a></li>
+      </ul>
+      <ul class="menu vertical nav_mobile_menu nav_mobile_menu--bottom">
+        <li><a href="./profile_settings.html">Account Settings</a></li>
+        <li><a href="./">Log Out</a></li>
+      </ul>
+      <button class="close-button small" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
     <div class="reveal reveal_method" id="method" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
       <h3 class="reveal_header reveal_method_header">
         <div class="reveal_header_hex"><span>?</span></div>Payments Method Times and Speeds

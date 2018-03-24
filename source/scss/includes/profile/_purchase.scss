@@ -5,6 +5,29 @@
         display: flex;
         color: $medium-black;
         margin-bottom: 20px;
+        @include breakpoint(small down) {
+            position: relative;
+            flex-direction: column;
+            height: 80px;
+            margin: 0 -16px;
+            margin-bottom: 24px;
+            border-radius: 0;
+            transition: 300ms;
+            overflow: hidden;
+            &:hover{
+                height: 320px;
+                &::after{
+                    transform: rotate(180deg);
+                }
+            }
+            &::after {
+                content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAyMCAxMiI+PGRlZnM+PHBhdGggaWQ9IndxZ2xhIiBkPSJNMjc2IDEwMy40MWwtMS40MS0xLjQxLTguNDktOC40OSAxLjQxLTEuNCA4LjQ5IDguNDggOC40OS04LjQ5IDEuNCAxLjQxLTguNDggOC40OXoiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2NiAtOTIpIj48dXNlIGZpbGw9IiM0MTQwNDEiIHhsaW5rOmhyZWY9IiN3cWdsYSIvPjwvZz48L2c+PC9zdmc+);
+                position: absolute;
+                bottom: 30px;
+                right: 34px;
+                transition: 300ms;
+            }
+        }
         &_item{
             flex: 1 1 0px;
             padding-left: 20px;
@@ -13,6 +36,12 @@
             justify-content: center;
             height: 80px;
             border-right: 1px solid $medium-gray;
+            @include breakpoint(medium down) {
+                padding-left: 16px;
+            }
+            @include breakpoint(small down) {
+                min-height: 80px;
+            }
             &:last-child{
                 border: 0;
             }
@@ -31,15 +60,36 @@
         padding-left: 1px;
         margin-left: 20px;
         vertical-align: middle;
+        @include breakpoint(small down) {
+            position: absolute;
+            top: 4px;
+            right: 0;
+        }
     }
     &_currencies{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin: 30px 8px 40px;
+        @include breakpoint(xlarge down) {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include breakpoint(medium down) {
+            max-width: 768px;
+        }
+        @include breakpoint(small down) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &_header{
+            text-align: center;
+            position: relative;
+        }
     }
     &_currency.profile_currency {
-        width: 180px;
+        width: 100%;
         height: 60px;
         padding: 0 16px;
         display: flex;
@@ -50,12 +100,18 @@
         color: $white;
         transition: 300ms;
         cursor: pointer;
+        @include breakpoint(small down) {
+            margin-bottom: 8px;
+        }
         &:hover,
         &:focus {
             background-color: $dark-color;
         }
         &--small{
             height: 44px;
+            @include breakpoint(medium down) {
+                justify-content: center;
+            }
         }
         i, img{
             margin-right: 16px;
@@ -73,13 +129,47 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 45px;
+        @include breakpoint(medium down) {
+            padding: 30px 24px 40px;
+        }
+        @include breakpoint(small down) {
+            padding: 34px 16px 40px;
+            height: auto;
+            margin-left: -16px;
+            margin-right: -16px;
+            margin-bottom: 40px;
+            border-radius: 0;
+        }
         &_header{
             flex: 1 1 100%;
             margin-bottom: 35px;
             text-align: center;
+            color: $medium-black;
+            position: relative;
+            @include breakpoint(medium down) {
+                text-align: left;
+            }
+            @include breakpoint(small down) {
+                text-align: center;
+            }
+            .close-button{
+                font-size: 36px;
+                top: 7px;
+                right: 0;
+                @include breakpoint(small down) {
+                    top: -16px;
+                    right: -2px;
+                }
+            }
         }
         &_qr{
             padding: 0 20px;
+            @include breakpoint(medium down) {
+                padding: 0;
+            }
+            @include breakpoint(small down) {
+                display: none;
+            }
             img{
                 max-width: 160px;
             }
@@ -88,6 +178,12 @@
             flex: 1 1 calc(100% - 200px);
             text-align: center;
             padding-left: 40px;
+            @include breakpoint(medium down) {
+                padding-left: 24px;
+            }
+            @include breakpoint(small down) {
+                padding: 0;
+            }
             .profile_2fa_print_copy{
                 margin: 0 0 35px;
             }
@@ -100,6 +196,15 @@
         border-radius: $global-radius;
         max-width: 550px;
         text-align: center;
+        @include breakpoint(medium down) {
+            max-width: none;
+            margin-bottom: 60px;
+        }
+        @include breakpoint(small down) {
+            margin: 36px -16px 40px;
+            border-radius: 0;
+            padding: 40px 16px;
+        }
         [type="number"], select {
             border-color: $medium-gray;
             background-color: #f1f3f5;
@@ -119,12 +224,28 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @include breakpoint(medium down) {
+                max-width: 555px;
+                margin: auto;
+            }
+            @include breakpoint(small down) {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+                .icon{
+                    margin: 13px auto;
+                    transform: rotate(90deg);
+                }
+            }
         }
         &_token{
             display: flex;
             max-width: 200px;
+            @include breakpoint(small down) {
+                max-width: 100%;
+            }
             input{
-                flex: 0 1 120px;
+                min-width: 120px;
                 border-right: 0 !important;
                 border-radius: $global-radius 0 0 $global-radius;
             }
@@ -140,6 +261,10 @@
             align-items: baseline;
             justify-content: space-between;
             margin: 20px 0;
+            @include breakpoint(medium down) {
+                max-width: 555px;
+                margin: 20px auto;
+            }
         }
         &_bonus{
             color: $medium-black;
@@ -157,9 +282,21 @@
         border: 1px solid $dark-color;
         background-color: $light-black;
         border-radius: $global-radius;
+        @include breakpoint(medium down) {
+            margin-top: 58px;
+            max-width: 100%;
+        }
+        @include breakpoint(small down) {
+            margin-top: 40px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
         &_header{
             text-align: center;
             margin-bottom: 26px;
+            @include breakpoint(small down) {
+                margin-bottom: 20px;
+            }
         }
         .form{
             max-width: 100%;

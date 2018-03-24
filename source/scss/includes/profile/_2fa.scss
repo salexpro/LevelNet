@@ -5,13 +5,34 @@
             flex-wrap: wrap;
             align-items: center;
             margin-top: 55px;
+            @include breakpoint(small down) {
+                margin-top: 38px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+            }
             &_hex{
                 @include hexagon(57, $medium-black, 2, $dark-color);
                 margin-right: 40px;
                 font-size: 36px;
                 font-weight: 100;
+                @include breakpoint(small down) {
+                    flex: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
             &_text{
+                width: calc(100% - 97px);
+                @include breakpoint(medium down) {
+                    br{
+                        display: none;
+                    }
+                }
+                @include breakpoint(small down) {
+                    width: 100%;
+                    margin-top: 20px;
+                }
                 a{
                     text-decoration: underline;
                 }
@@ -19,6 +40,15 @@
             &_bottom{
                 padding-left: 97px;
                 margin-top: 23px;
+                @include breakpoint(small down) {
+                    padding: 0;
+                    .button{
+                        justify-content: center;
+                        text-align: center;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
             }
         }
         &_key{
@@ -56,10 +86,13 @@
                 button{
                     color: $medium-gray;
                     position: absolute;
-                    top: 10px;
-                    right: 12px;
+                    width: 42px;
+                    height: 42px;
+                    top: 0;
+                    right: 0;
                     cursor: pointer;
                     transition: 300ms;
+                    background: linear-gradient(to left, #f1f3f5 85%, transparent);
                     &:hover, &:focus{
                         color: $dark-gray;
                     }
@@ -69,6 +102,11 @@
                 font-size: 14px;
                 letter-spacing: 0.56px;
                 margin-top: 24px;
+                @include breakpoint(small down) {
+                    br:last-of-type{
+                        display: none;
+                    }
+                }
                 a{
                     color: $medium-black;
                     text-decoration: underline;

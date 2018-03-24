@@ -73,14 +73,39 @@
         height: 80px;
         margin-bottom: 45px;
         background-color: rgba(28, 26, 28, 0.6);
+        @include breakpoint(medium down) {
+            padding: 24px 26px 0;
+        }
+        @include breakpoint(800 down) {
+            align-items: center;
+            padding-top: 0;
+        }
+        @include breakpoint(small down) {
+            flex-direction: column;
+            height: auto;
+            margin: 0 -16px;
+            margin-bottom: 33px;
+            padding: 16px 10px;
+            border-radius: 0;
+        }
         .countdown{
             &_header{
+                @include breakpoint(800 down) {
+                    padding-right: 20px;
+                }
+                @include breakpoint(small down) {
+                    padding: 0;
+                    margin-bottom: 16px;
+                }
                 b{
                     color: $secondary-color;
                 }
             }
             &_container{
                 max-width: 330px;
+                @include breakpoint(medium down) {
+                    margin: 0;
+                }
             }
             &_digit{
                 &_num,

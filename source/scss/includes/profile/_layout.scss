@@ -1,9 +1,14 @@
 .profile{
     &_container{
         border: 0;
-        padding-top: 40px;
-        padding-bottom: 75px;
+        padding: 40px 30px 75px;
         min-height: calc(100vh - 85px);
+        @include breakpoint(medium down) {
+            padding-bottom: 63px;
+        }
+        @include breakpoint(small down) {
+            padding: 0 6px 40px;
+        }
         &::before{
             width: 30%;
             background-position: top right;

@@ -14,7 +14,8 @@ html(lang="ru")
             .pattern.profile_container
                 .row.profile_inner
                     include includes/profile/_menu
-                    article.column.large-9(class="profile_" + page)
+                    article.column.xlarge-12.xxlarge-9(class="profile_" + page)
                         block content
+        include includes/profile/_offcanvas
         include includes/profile/_popup
         script(src="./js/profile.min.js")

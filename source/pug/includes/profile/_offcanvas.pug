@@ -1,0 +1,25 @@
+#menu.off-canvas.position-right.nav_mobile(data-off-canvas data-transition="overlap" data-auto-focus="false")
+    .nav_mobile_logo
+        img(src="./img/logo_mobile.svg", alt="LevelNet")
+    ul.menu.vertical.nav_mobile_menu.nav_mobile_menu--large
+        li(class=page==='purchase' ? 'active' : '')
+            a(href="./profile_purchase.html") Purchase
+        li(class=page==='history' ? 'active' : '')
+            a(href="./profile_history.html") Payment History
+        li(class=page==='bonuses' ? 'active' : '')
+            a(href="./profile_bonuses.html") Bonuses
+        li(class=page==='referral' ? 'active' : '')
+            a(href="./profile_referral.html") Referral Program
+        li(class=page==='kyc' ? 'active' : '')
+            a(href="./profile_kyc.html") KYC/AML
+        li(class=page==='faq' ? 'active' : '')
+            a(href="./profile_faq.html") FAQ
+        li
+            a(href="./") ICO Website
+    ul.menu.vertical.nav_mobile_menu.nav_mobile_menu--bottom
+        li(class=page==='settings' ? 'active' : '')
+            a(href="./profile_settings.html") Account Settings
+        li
+            a(href="./") Log Out
+    button.close-button.small(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×

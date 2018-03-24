@@ -10,11 +10,12 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min';
-@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
-@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.toggler.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min';
-@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min';
 @codekit-prepend './lib/jquery-select7';
 @codekit-prepend '../../node_modules/moment/moment';
 @codekit-prepend '../../node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.min';
@@ -39,7 +40,7 @@ new ClipboardJS('[data-clipboard-target]');
 
 // Purchase token 
 const purchase_token = (token, wallet) => {
-    $('.profile_send_header span').text(token);
+    $('.profile_send_header>span').text(token);
     $('.profile_send_wallet [type="text"]').val(wallet);
     $('.profile_send').removeClass('hide');
 }

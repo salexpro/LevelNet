@@ -68,10 +68,16 @@
         &_hex{
             @include hexagon(44, $dark-color, 0, none, false, true);
             margin-right: 18px;
+            @include breakpoint(xlarge down) {
+                margin-right: 0;
+            }
         }
         &_user{
             color: $medium-gray;
             font-weight: 700;
+            @include breakpoint(xlarge down) {
+                display: none;
+            }
         }
     }
     &_lang{
@@ -117,6 +123,32 @@
         }
         &_menu{
             margin-top: 35px;
+            &--large{
+                font-size: 18px;
+                margin-top: 60px;
+                margin-bottom: 35px;
+                margin-left: 10px;
+                li.active{
+                    font-weight: 600;
+                }
+                a{
+                    color: #adb5bd;
+                }
+            }
+            &--bottom{
+                font-size: 18px;
+                margin: 0;
+                padding-top: 30px;
+                border-top: 1px solid $dark-color;
+                margin: 0 -20px;
+                padding-left: 30px;
+                li.active {
+                    font-weight: 600;
+                }
+                a {
+                    color: #adb5bd;
+                }
+            }
             a{
                 padding: 0;
                 display: flex;
