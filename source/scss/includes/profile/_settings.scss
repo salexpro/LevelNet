@@ -3,6 +3,9 @@
         &_info{
             max-width: 550px;
             margin: 52px auto 0;
+            @include breakpoint(small down) {
+                margin-top: 36px;
+            }
             &_header{
                 text-align: center;
             }
@@ -15,12 +18,22 @@
                 color: $white;
                 line-height: 24px;
                 margin-bottom: 12px;
+                @include breakpoint(small down) {
+                    font-size: 14px;
+                    line-height: 1.2;
+                }
                 .profile_hint{
                     vertical-align: top;
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
             }
             .button{
                 margin-top: 40px;
+                @include breakpoint(small down) {
+                    width: 100%;
+                }
             }
         }
     }
