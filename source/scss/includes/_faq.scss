@@ -236,8 +236,14 @@
                 margin: 0;
             }
             &_item{
-                margin: 0;
-                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+        .accordion-item {
+            &:first-child {
+                .faq_item {
+                    margin-top: 0;
+                }
             }
         }
     }
