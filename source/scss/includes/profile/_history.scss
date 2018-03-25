@@ -3,7 +3,34 @@
         background-color: $white;
         border-radius: $global-radius;
         color: $medium-black;
-        margin-bottom: 75px;
+        min-width: 835px;
+        &_shadow {
+            position: relative;
+            &::after {
+                @include breakpoint(915 down) {
+                    content: '';
+                    background-image: linear-gradient(to right, rgba(32, 30, 32, 0) 0%, rgba(32, 30, 32, 0.13) 32%, rgba(32, 30, 32, 0.8) 100%);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 183px;
+                }
+            }
+            @include breakpoint(875 down) {
+                margin-right: -40px;
+            }
+            @include breakpoint(small down) {
+                margin-right: -16px;
+            }
+        }
+        &_overflow{
+            overflow: auto;
+            margin-bottom: 75px;
+            @include breakpoint(medium down) {
+                margin-bottom: 25px;
+            }
+        }
         th{
             padding: 11px 20px;
             font-weight: 600;
@@ -31,6 +58,11 @@
         margin-bottom: 70px;
         &_header{
             margin-bottom: 25px;
+        }
+        .button.button{
+            @include breakpoint(small down) {
+                width: auto;
+            }
         }
     }
 }

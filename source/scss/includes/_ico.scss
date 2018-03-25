@@ -173,9 +173,9 @@
             }
         }
         &_hex{
-            @include hexagon(118, $white, 2, $medium-gray, null);
+            @include hexagon(118, $white, 2, $medium-gray);
             @include breakpoint(small down) {
-                @include hexagon(90, $white, 2, $medium-gray, null);
+                @include hexagon(90, $white, 2, $medium-gray);
             }
             &_percent{
                 font-size: 24px;
