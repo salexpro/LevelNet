@@ -5,10 +5,16 @@
             &_header{
                 margin-bottom: 30px;
             }
+            .button.button{
+                width: auto;
+            }
         }
         &_header{
             text-align: center;
             margin-top: 67px;
+            @include breakpoint(medium down) {
+                margin-top: 56px;
+            }
         }
         &_table{
             margin: 20px 0 0;

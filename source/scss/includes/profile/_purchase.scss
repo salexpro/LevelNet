@@ -5,6 +5,12 @@
         display: flex;
         color: $medium-black;
         margin-bottom: 20px;
+        &.is_open {
+            height: 320px;
+            .profile_balance_arrow::after {
+                transform: rotate(180deg);
+            }
+        }
         @include breakpoint(small down) {
             position: relative;
             flex-direction: column;
@@ -13,19 +19,27 @@
             margin-bottom: 24px;
             border-radius: 0;
             transition: 300ms;
-            overflow: hidden;
-            &:hover, &:focus{
-                height: 320px;
-                &::after{
-                    transform: rotate(180deg);
-                }
-            }
-            &::after {
-                content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAyMCAxMiI+PGRlZnM+PHBhdGggaWQ9IndxZ2xhIiBkPSJNMjc2IDEwMy40MWwtMS40MS0xLjQxLTguNDktOC40OSAxLjQxLTEuNCA4LjQ5IDguNDggOC40OS04LjQ5IDEuNCAxLjQxLTguNDggOC40OXoiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2NiAtOTIpIj48dXNlIGZpbGw9IiM0MTQwNDEiIHhsaW5rOmhyZWY9IiN3cWdsYSIvPjwvZz48L2c+PC9zdmc+);
+            overflow: hidden;   
+        }
+        &_arrow {
+            @include breakpoint(small down) {
                 position: absolute;
-                bottom: 30px;
-                right: 34px;
-                transition: 300ms;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                -webkit-tap-highlight-color:transparent;
+                &:after{
+                    content: '';
+                    width: 20px;
+                    height: 12px;
+                    position: absolute;
+                    right: 34px;
+                    bottom: 30px;
+                    transition: 300ms;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAyMCAxMiI+PGRlZnM+PHBhdGggaWQ9IndxZ2xhIiBkPSJNMjc2IDEwMy40MWwtMS40MS0xLjQxLTguNDktOC40OSAxLjQxLTEuNCA4LjQ5IDguNDggOC40OS04LjQ5IDEuNCAxLjQxLTguNDggOC40OXoiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2NiAtOTIpIj48dXNlIGZpbGw9IiM0MTQwNDEiIHhsaW5rOmhyZWY9IiN3cWdsYSIvPjwvZz48L2c+PC9zdmc+);
+                }
             }
         }
         &_item{

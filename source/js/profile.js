@@ -52,3 +52,7 @@ $('.profile_currency').click(function() {
         $('#startengine').foundation('open');
     }
 });
+
+$('.profile_balance_arrow').click(function() {
+    $('.profile_balance').toggleClass('is_open');
+});
