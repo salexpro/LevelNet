@@ -1,11 +1,11 @@
-h2 Share the Referral link with friends
+h2.profile_referral_header--big Share the Referral link with friends
 h4.profile_referral_header
     | and get
     | 
     b 5%
     | 
     | for every LVL token they buy
-h4 Your link
+h4.profile_referral_header--small Your link
 .profile_referral_link
     input(type="url" id="link" value="https://ico.darenta.io/?ref=81ae0550f7dce75bcd368e93" readonly)
     button.button.short.primary.spaced(data-clipboard-target="#link")
@@ -27,5 +27,6 @@ ul.menu.vertical.profile_referral_steps
         .profile_referral_step_label
             | If any of them sign up with this link, they will be added to your referral program.
     
-h4 Share the project
+h4.profile_referral_header--share
+    | Share the project
 +social(6, 'profile')

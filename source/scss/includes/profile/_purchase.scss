@@ -1,4 +1,9 @@
 .profile{
+    &_purchase{
+        @include breakpoint(small down) {
+            margin-top: -40px;
+        }
+    }
     &_balance{
         background-color: $white;
         border-radius: $global-radius;
