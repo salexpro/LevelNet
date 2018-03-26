@@ -22,6 +22,12 @@ nav.nav.is_filled
             if page == 'product'
                 a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="/")
                     | Token Sale
+            else if page === 'sign_up'
+                a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="./sign_in.html")
+                    | Sign in
+            else if page === 'sign_in'
+                a.button.hollow.filled.thin.show-for-xxlarge.small-order-3(href="./sign_up.html")
+                    | Sign up
             else
                 button.button.hollow.filled.thin.show-for-xxlarge.small-order-3(data-open="join")
                     if page == 'pre_ico'
