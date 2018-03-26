@@ -3,34 +3,35 @@
         .reveal_header_hex
             span ?
         | Payments Method Times and Speeds
-    table.reveal_method_table
-        tr
-            th Payment method
-            th Confirmations
-            th Speed
-        tr
-            td Ether
-            td 6
-            td 2 min
-        tr
-            td Bitcoin
-            td 2
-            td 30 min
-        tr
-            td Litecoin
-            td 6
-            td 2 min
-        tr
-            td BitcoinCash
-            td 2
-            td 30 min
-        tr
-            td USD/fiat
-            td
-                | wire
-                br
-                | (by StartEngine)
-            td 1-2 days
+    .reveal_method_table_overflow
+        table.reveal_method_table
+            tr
+                th Payment method
+                th Confirmations
+                th Speed
+            tr
+                td Ether
+                td 6
+                td 2 min
+            tr
+                td Bitcoin
+                td 2
+                td 30 min
+            tr
+                td Litecoin
+                td 6
+                td 2 min
+            tr
+                td BitcoinCash
+                td 2
+                td 30 min
+            tr
+                td USD/fiat
+                td
+                    | wire
+                    br
+                    | (by StartEngine)
+                td 1-2 days
 
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×

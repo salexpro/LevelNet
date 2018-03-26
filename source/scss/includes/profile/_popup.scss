@@ -47,6 +47,9 @@
             color: #adb5bd;
             font-weight: 100;
             margin-right: 14px;
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
     }
 
@@ -85,6 +88,9 @@
 
     &_method{
         padding: 30px 50px 50px;
+        @include breakpoint(small down) {
+            padding: 50px 20px 40px;
+        }
         &_header{
             padding: 0;
             display: flex;
@@ -92,6 +98,9 @@
         }
         &_table{
             margin-top: 32px;
+            &_overflow {
+                overflow: auto;
+            }
             th{
                 font-weight: 600;
                 padding: 20px;
@@ -120,6 +129,9 @@
         border: 0;
         color: $white;
         text-align: center;
+        @include breakpoint(small down) {
+            padding: 50px 20px 40px;
+        }
         &_header{
             color: $white;
             padding: 0;
@@ -127,6 +139,7 @@
         }
         &_list{
             margin: 45px 0;
+            text-align: left;
             li{
                 display: flex;
                 align-items: center;
