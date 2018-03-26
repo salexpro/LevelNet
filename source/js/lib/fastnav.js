@@ -11,4 +11,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['index', 'pre_ico', 'product', 'sign_up', 'sign_in', 'forgot', 'resend', 'profile_purchase', 'profile_history', 'profile_history_empty']);
+pageWidget(['index', 'pre_ico', 'product', 'sign_up', 'sign_in', 'forgot', 'resend', 'profile_purchase', 'profile_history', 'profile_history_empty', 'profile_bonuses', 'profile_referral', 'profile_kyc', 'profile_faq', 'profile_settings', 'profile_2fa', '404']);

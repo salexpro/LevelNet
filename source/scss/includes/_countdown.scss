@@ -206,6 +206,10 @@
         border-radius: $global-radius;
         margin: 55px auto;
         display: flex;
+        &--profile{
+            margin-right: 80px;
+            max-width: none;
+        }
         @include breakpoint(medium down) {
             margin-right: 76px;
         }
