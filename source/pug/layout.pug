@@ -10,7 +10,7 @@ doctype html
 html(lang="ru")
     include includes/_head
     body
-        main.off-canvas-content.wrap(data-off-canvas-content class=(page=='faq' || page=='sign_up' || page == 'sign_in' || page == 'forgot' || page == 'resend')?"wrap--headless":"")
+        main.off-canvas-content.wrap(data-off-canvas-content class=(page=='faq' || page=='sign_up' || page == 'sign_in' || page == 'forgot' || page == 'resend' || page == '404')?"wrap--headless":"")
             include includes/_nav
             block header
                 include includes/_header

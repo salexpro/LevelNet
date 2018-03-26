@@ -78,13 +78,13 @@
     font-style: normal;
 }
 
-// @font-face {
-//     font-family: 'EurofontExtendedC';
-//     src: url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff2') format('woff2'),
-//         url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff') format('woff');
-//     font-weight: bold;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'EurofontExtendedC';
+    src: url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff2') format('woff2'),
+        url('../fonts/EurofontExtendedC/EurofontExtendedC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 ::-webkit-scrollbar {
     width: 5px;

@@ -41,10 +41,10 @@
                 }
             }
             &_bottom{
-                padding-left: 97px;
+                // padding-left: 97px;
                 margin-top: 23px;
                 @include breakpoint(small down) {
-                    padding: 0;
+                    // padding: 0;
                     .button{
                         justify-content: center;
                         text-align: center;

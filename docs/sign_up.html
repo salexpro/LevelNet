@@ -150,7 +150,7 @@
                 <a href="#" target="_blank">Terms of Use LevelNet website</a>
                 and
                 <a href="#" target="_blank">Privacy Policy</a>and that I expressly accept all terms, conditions, obligations, affirmations, representations and warranties described in these documents and agree to be bound by them.</span></label>
-            <input id="risk_warnings" type="checkbox" name="" required checked>
+            <input id="risk_warnings" type="checkbox" name="" required>
             <label for="risk_warnings"><span>
                 I confirm that i have read and understand the
                  <a data-open="risk">Risk Warnings</a> 
@@ -163,7 +163,7 @@
                  <a data-open="kyc">KYC/AML</a> 
                 and I understand that I will need to pass KYC/AML (Know Your Customer/Anti-Money Laundering) checks  upon request.</span></label>
           </div>
-          <button class="button primary short spaced" type="submit">BUY TOKENS</button>
+          <button class="button primary short spaced" type="submit">SIGN IN</button>
           <div class="sign_up_form_engine hide">
             <p>Purchase our tokens through the crowdfunding platform Startengine</p><a class="button primary short spaced" href="https://www.startengine.com" target="_blank">BUY ON STARTENGINE</a><img src="./img/logo_engine.png" alt="StartEngine">
           </div>
@@ -255,10 +255,6 @@
         <li><a href="./#documents"><span class="nav_mobile_menu_hex"></span><span class="nav_mobile_menu_label">Documents</span></a></li>
       </ul>
       <button class="close-button small" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
-    </div>
-    <div class="notify">
-      <div class="notify_img"><img src="./img/icons/success_mark.svg" alt=""></div>
-      <div class="notify_content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodoligula.</div>
     </div>
     <div class="reveal reveal_join" id="join" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
       <h3 class="reveal_header centered">Join LevelNet now<br>and get bonus +25% before 1.5m</h3>
@@ -376,6 +372,18 @@
         </p>
         <button class="button tertiary short icon" data-close>Got It<i class="icon icon--arrow"></i></button>
       </div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success" id="confirmation" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Done</h2>
+      <p class="reveal_descr reveal_descr--bold">Confirmation email has been sent
+      </p>
+      <div class="reveal_success_content"><img src="./img/icons/appreciations.svg" alt="Done"></div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success reveal_success--error" id="not_found" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Error</h2>
+      <p class="reveal_descr reveal_descr--bold">The Recipient's Email Address Was Not Found</p>
       <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
     <script src="./js/app.min.js"></script>

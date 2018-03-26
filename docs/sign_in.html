@@ -121,7 +121,7 @@
             </div>
             <input type="text" name="2fa" placeholder="2FA (optional)">
           </div>
-          <button class="button primary short spaced" type="submit">SIGN IN</button>
+          <button class="button primary short spaced" type="submit">SIGN UP</button>
           <div class="sign_up_form_bottom"> <a href="./sign_up.html">Register</a> 
             /
              <a href="./forgot.html">Forgot password?</a> 
@@ -213,10 +213,6 @@
       </ul>
       <button class="close-button small" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <div class="notify">
-      <div class="notify_img"><img src="./img/icons/success_mark.svg" alt=""></div>
-      <div class="notify_content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodoligula.</div>
-    </div>
     <div class="reveal reveal_join" id="join" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
       <h3 class="reveal_header centered">Join LevelNet now<br>and get bonus +25% before 1.5m</h3>
       <div class="reveal_join_content">
@@ -292,6 +288,18 @@
         Сurrent token sale bonus
          <b>+25%</b>
       </div><a class="button hollow filled thin" data-close>Stay on Product Webpage</a>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success" id="confirmation" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Done</h2>
+      <p class="reveal_descr reveal_descr--bold">Confirmation email has been sent
+      </p>
+      <div class="reveal_success_content"><img src="./img/icons/appreciations.svg" alt="Done"></div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success reveal_success--error" id="not_found" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Error</h2>
+      <p class="reveal_descr reveal_descr--bold">The Recipient's Email Address Was Not Found</p>
       <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
     <script src="./js/app.min.js"></script>

@@ -1,5 +1,6 @@
-.notify
-    .notify_img
-        img(src="./img/icons/success_mark.svg", alt="")
-    .notify_content
-        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodoligula.
+if page !== 'sign_in' && page !== 'sign_up' && page !== 'forgot'
+    .notify
+        .notify_img
+            img(src="./img/icons/success_mark.svg", alt="")
+        .notify_content
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodoligula.

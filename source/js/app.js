@@ -264,7 +264,7 @@ const ntf_interval = () => {
 ntf_interval();
 
 // Join popup showing
-if ($(document).width() >= 640){
+if ($(document).width() >= 640 && !$('.sign_up').length){
     setTimeout(() => {
         $('#join').foundation('open');
     }, 2 * 60 * 1000);

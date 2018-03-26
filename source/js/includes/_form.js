@@ -22,6 +22,23 @@ $('form[action]').submit(function (e) {
             }
             break;
         }
+        case 'sign_in':
+        case 'sign_up': {
+            if (Math.round(Math.random())) {
+                $('#confirmation').foundation('open');
+            } else {
+                $('#not_found').foundation('open');
+            }
+            break;
+        }
+        case 'forgot': {
+            if (Math.round(Math.random())) {
+                $('#confirmation').foundation('open');
+            } else {
+                $('#not_found').foundation('open');
+            }
+            break;
+        }
         case 'purchase': {
             purchase_token($('[name="from_curr"]', this).val(), '1LMN6re5eZmzpnph9fuztDnBYftwYrfryX');
             $('#thank').foundation('open');

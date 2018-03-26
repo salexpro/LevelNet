@@ -23,6 +23,13 @@
                 border: 1px solid $light-black;
                 &:first-child {
                     border-left: 0;
+                    width: 34%;
+                    @include breakpoint(medium down) {
+                        width: 62%;
+                    }
+                    @include breakpoint(small down) {
+                        width: 72%;
+                    }
                 }
                 &:last-child{
                     border-right: 0;

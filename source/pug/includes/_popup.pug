@@ -1,80 +1,79 @@
-if parent !== 'profile'
-    #join.reveal.reveal_join(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-        h3.reveal_header.centered
-            | Join LevelNet now
-            br
-            | and get bonus +25% before 1.5m
-        .reveal_join_content
-            figure.reveal_join_item
-                .reveal_join_item_img
-                    img(src="./img/icons/launch.svg", alt="Get ICO start notifications")
-                figcaption.reveal_join_item_label
-                    | Get ICO start notifications
-            figure.reveal_join_item
-                .reveal_join_item_img
-                    img(src="./img/icons/dialog.svg", alt="Communicate directly with developers team")
-                figcaption.reveal_join_item_label
-                    | Communicate directly with developers team
-            figure.reveal_join_item
-                .reveal_join_item_img
-                    img(src="./img/icons/revenue.svg", alt="Get high priority updates")
-                figcaption.reveal_join_item_label
-                    | Get high priority updates
-            figure.reveal_join_item
-                .reveal_join_item_img
-                    img(src="./img/icons/mailing.svg", alt="Recieve VIP news")
-                figcaption.reveal_join_item_label
-                    | Recieve VIP news
-        +form('JOIN WHITELIST', 'primary', false, false, 'join')
-        button.close-button(aria-label='Close', type='button', data-close)
-            span(aria-hidden='true') ×
+#join.reveal.reveal_join(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h3.reveal_header.centered
+        | Join LevelNet now
+        br
+        | and get bonus +25% before 1.5m
+    .reveal_join_content
+        figure.reveal_join_item
+            .reveal_join_item_img
+                img(src="./img/icons/launch.svg", alt="Get ICO start notifications")
+            figcaption.reveal_join_item_label
+                | Get ICO start notifications
+        figure.reveal_join_item
+            .reveal_join_item_img
+                img(src="./img/icons/dialog.svg", alt="Communicate directly with developers team")
+            figcaption.reveal_join_item_label
+                | Communicate directly with developers team
+        figure.reveal_join_item
+            .reveal_join_item_img
+                img(src="./img/icons/revenue.svg", alt="Get high priority updates")
+            figcaption.reveal_join_item_label
+                | Get high priority updates
+        figure.reveal_join_item
+            .reveal_join_item_img
+                img(src="./img/icons/mailing.svg", alt="Recieve VIP news")
+            figcaption.reveal_join_item_label
+                | Recieve VIP news
+    +form('JOIN WHITELIST', 'primary', false, false, 'join')
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
 
-    #complete.reveal.reveal_complete(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-        h3.reveal_header.centered
-            | Thank you for apply!
-        p.reveal_descr
-            | To complete whitelist registration please provide
-        form.reveal_complete_form(action="complete")
-            input(type="text" placeholder="Your ETH Address" required)
-            a(href="#" target="_blank")
-                | Create ETH Address
-            .reveal_complete_row
-                .reveal_complete_row_field
-                    input(type="number" name="eth" step="0.00000001" placeholder="Purchase in ETH")
-                .reveal_complete_row_sep or
-                .reveal_complete_row_field
-                    input(type="number" name="usd" step="0.01" placeholder="Purchase in USD")
-            .reveal_complete_check
-                input(type="checkbox" name="terms" id="terms" checked required)
-                label(for="terms")
-                    | I read and agree
-                    | 
-                    a(href="#" target="_blank") Terms of use
-            button.button.primary.spaced(type="submit")
-                | JOIN WHITELIST
-            .reveal_note
-                | Just one step to your bonus +25%
-        button.close-button(aria-label='Close', type='button', data-close)
-            span(aria-hidden='true') ×
+#complete.reveal.reveal_complete(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h3.reveal_header.centered
+        | Thank you for apply!
+    p.reveal_descr
+        | To complete whitelist registration please provide
+    form.reveal_complete_form(action="complete")
+        input(type="text" placeholder="Your ETH Address" required)
+        a(href="#" target="_blank")
+            | Create ETH Address
+        .reveal_complete_row
+            .reveal_complete_row_field
+                input(type="number" name="eth" step="0.00000001" placeholder="Purchase in ETH")
+            .reveal_complete_row_sep or
+            .reveal_complete_row_field
+                input(type="number" name="usd" step="0.01" placeholder="Purchase in USD")
+        .reveal_complete_check
+            input(type="checkbox" name="terms" id="terms" checked required)
+            label(for="terms")
+                | I read and agree
+                | 
+                a(href="#" target="_blank") Terms of use
+        button.button.primary.spaced(type="submit")
+            | JOIN WHITELIST
+        .reveal_note
+            | Just one step to your bonus +25%
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
 
-    #success.reveal.reveal_success(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-        h2.reveal_header Thank you
-        p.reveal_descr.reveal_descr--bold
-            | You’ve been added to our whitelist
-        .reveal_success_content
-            img(src="./img/icons/appreciations.svg", alt="Thank you")
-        .reveal_success_bottom
-            ul.menu.vertical
-                li
-                    i.material-icons error
-                    | Please move our first email to the Primary tab in Your mailbox not to miss an invitation for ICO.
-                li
-                    i.material-icons error
-                    | We do not send any kind of contribution address by email. If you receive any emails mentioning a contribution address it is a SCAM.
-        button.close-button(aria-label='Close', type='button', data-close)
-            span(aria-hidden='true') ×
+#success.reveal.reveal_success(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h2.reveal_header Thank you
+    p.reveal_descr.reveal_descr--bold
+        | You’ve been added to our whitelist
+    .reveal_success_content
+        img(src="./img/icons/appreciations.svg", alt="Thank you")
+    .reveal_success_bottom
+        ul.menu.vertical
+            li
+                i.material-icons error
+                | Please move our first email to the Primary tab in Your mailbox not to miss an invitation for ICO.
+            li
+                i.material-icons error
+                | We do not send any kind of contribution address by email. If you receive any emails mentioning a contribution address it is a SCAM.
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
 
-    if page != 'product'
+if page != 'product'
     #welcome.reveal.reveal_welcome(data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true")
         .reveal_welcome_logo
         h2.reveal_header
@@ -96,321 +95,338 @@ if parent !== 'profile'
         button.close-button(aria-label='Close', type='button', data-close)
                 span(aria-hidden='true') ×
 
-    if page != 'faq' && page != 'sign_up' && page != 'sign_in' && page != 'forgot' && page != 'resend'
-        #video.reveal.large.reveal_video(data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true")
-            .responsive-embed.reveal_video_container
-                iframe(width='560', height='315', src='https://www.youtube.com/embed/_Th1GTJmL2Y?showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
+if page != 'faq' && page != 'sign_up' && page != 'sign_in' && page != 'forgot' && page != 'resend' && page !== '404'
+    #video.reveal.large.reveal_video(data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true")
+        .responsive-embed.reveal_video_container
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/_Th1GTJmL2Y?showinfo=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
 
-        #infographics_wo.reveal.large.reveal_infographics.reveal_infographics--wo(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.centered
-                | Использование LevelNet Endpoint Security App без установленного антивирусного ПО
-            .reveal_infographics_content
-                .reveal_infographics_steps
-                    .reveal_infographics_step.reveal_infographics_step--1
-                        .reveal_infographics_step_hex
-                            span 1
-                        .reveal_infographics_step_content
-                            | Неизвестный объект попадает на пользовательское устройство без антивирусного ПО
-                    .reveal_infographics_step.reveal_infographics_step--2
-                        .reveal_infographics_step_hex
-                            span 2
-                        .reveal_infographics_step_content
-                            | LevelNet Endpoint Security App регистриует факт проникновения неизвестного объекта
-                    .reveal_infographics_step.reveal_infographics_step--3
-                        .reveal_infographics_step_hex
-                            span 3
-                        .reveal_infographics_step_content
-                            | В зависимости от режима работы LevelNet Endpoint Security App либо блокирует неизвестный объект, либо отправляет его на проверку через P2P сеть
-                    .reveal_infographics_step.reveal_infographics_step--4
-                        .reveal_infographics_step_hex
-                            span 4
-                        .reveal_infographics_step_content
-                            | Информация о неизвестном объекте регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
-                    .reveal_infographics_bug.reveal_infographics_bug--green
-                        i.material-icons bug_report
-                    .reveal_infographics_bug.reveal_infographics_bug--red
-                        i.material-icons bug_report
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 5
-                        .reveal_infographics_step_content
-                            | По результатам проверки, если объект не является вредоносным, все пользователи сети LevelNet получают разрешение на использование данного объекта
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 6
-                        .reveal_infographics_step_content
-                            | В случае выявления угрозы данные об объекте быстро распостраняются внутни всей сети LevelNet для запрета на его использование
-                .reveal_infographics_img
-                    img(src="./img/infographics/1.svg", alt="")
+    #infographics_wo.reveal.large.reveal_infographics.reveal_infographics--wo(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.centered
+            | Использование LevelNet Endpoint Security App без установленного антивирусного ПО
+        .reveal_infographics_content
+            .reveal_infographics_steps
+                .reveal_infographics_step.reveal_infographics_step--1
+                    .reveal_infographics_step_hex
+                        span 1
+                    .reveal_infographics_step_content
+                        | Неизвестный объект попадает на пользовательское устройство без антивирусного ПО
+                .reveal_infographics_step.reveal_infographics_step--2
+                    .reveal_infographics_step_hex
+                        span 2
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App регистриует факт проникновения неизвестного объекта
+                .reveal_infographics_step.reveal_infographics_step--3
+                    .reveal_infographics_step_hex
+                        span 3
+                    .reveal_infographics_step_content
+                        | В зависимости от режима работы LevelNet Endpoint Security App либо блокирует неизвестный объект, либо отправляет его на проверку через P2P сеть
+                .reveal_infographics_step.reveal_infographics_step--4
+                    .reveal_infographics_step_hex
+                        span 4
+                    .reveal_infographics_step_content
+                        | Информация о неизвестном объекте регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
+                .reveal_infographics_bug.reveal_infographics_bug--green
+                    i.material-icons bug_report
+                .reveal_infographics_bug.reveal_infographics_bug--red
+                    i.material-icons bug_report
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 5
+                    .reveal_infographics_step_content
+                        | По результатам проверки, если объект не является вредоносным, все пользователи сети LevelNet получают разрешение на использование данного объекта
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 6
+                    .reveal_infographics_step_content
+                        | В случае выявления угрозы данные об объекте быстро распостраняются внутни всей сети LevelNet для запрета на его использование
+            .reveal_infographics_img
+                img(src="./img/infographics/1.svg", alt="")
 
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
 
-        #infographics_unable.reveal.large.reveal_infographics.reveal_infographics--unable(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.centered
-                | Использование LevelNet Endpoint Security App с установленным
-                br
-                | антивирусным ПО, невосприимчивым к новой угрозе
-            .reveal_infographics_content
-                .reveal_infographics_steps
-                    .reveal_infographics_step.reveal_infographics_step--1
-                        .reveal_infographics_step_hex
-                            span 1
-                        .reveal_infographics_step_content
-                            | Новая, ранее неизвестная угроза попадает на пользовательское устройство с установленным антивирусным ПО
-                    .reveal_infographics_step.reveal_infographics_step--2
-                        .reveal_infographics_step_hex
-                            span 2
-                        .reveal_infographics_step_content
-                            | Антивирусное ПО разрешает использование вредоносного объекта т.к. 
-                            | 
-                            b не считает
-                            | 
-                            | его угрозой
-                    .reveal_infographics_step.reveal_infographics_step--3-1
-                        .reveal_infographics_step_hex
-                            span 3
-                        .reveal_infographics_step_content
-                            | LevelNet Endpoint Security App регистрирует факт проникновения неизвестного объекта и передает информацию о ней в P2P сеть
-                    .reveal_infographics_step.reveal_infographics_step--4
-                        .reveal_infographics_step_hex
-                            span 4
-                        .reveal_infographics_step_content
-                            | Описание угрозы регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
-                    .reveal_infographics_bug.invisible
-                    .reveal_infographics_bug.reveal_infographics_bug--shield
-                        i.material-icons bug_report
-                        i.material-icons security
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 5
-                        .reveal_infographics_step_content
-                            | По результатам проверки принимается решение о блокировке угрозы и распостранении информации о ней внутри всей сети LevelNet за счет архитектуры P2P
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 6
-                        .reveal_infographics_step_content
-                            | Все пользовательские устройства 
-                            br
-                            | с установленным LevelNet Endpoint Security App защищены от ранее неизвестной угрозы
-                .reveal_infographics_img
-                    img(src="./img/infographics/2.svg", alt="")
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-
-        #infographics_able.reveal.large.reveal_infographics.reveal_infographics--able(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.centered
-                | Использование LevelNet Endpoint Security App с установленным
-                br
-                | антивирусным ПО, способным обнаружить угрозу
-            .reveal_infographics_content
-                .reveal_infographics_steps
-                    .reveal_infographics_step.reveal_infographics_step--1
-                        .reveal_infographics_step_hex
-                            span 1
-                        .reveal_infographics_step_content
-                            | Известная угроза попадает на пользовательское устройство с установленным антивирусным ПО
-                    .reveal_infographics_step.reveal_infographics_step--2
-                        .reveal_infographics_step_hex
-                            span 2
-                        .reveal_infographics_step_content
-                            | Антивирусное ПО регистрирует факт появления известной угрозы
-                    .reveal_infographics_step.reveal_infographics_step--3-1
-                        .reveal_infographics_step_hex
-                            span 3
-                        .reveal_infographics_step_content
-                            | LevelNet Endpoint Security App фиксирует реакцию антивирусного ПО и передает информацию о ней в P2P сеть
-                    .reveal_infographics_step.reveal_infographics_step--4
-                        .reveal_infographics_step_hex
-                            span 4
-                        .reveal_infographics_step_content
-                            | Описание угрозы регистрируется на серверах LevelNet для проверки на False Positive и защиту от атак злоумышленников
-                    .reveal_infographics_bug.invisible
-                    .reveal_infographics_bug.reveal_infographics_bug--shield
-                        i.material-icons bug_report
-                        i.material-icons security
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 5
-                        .reveal_infographics_step_content
-                            | В случае подтверждения угрозы данные о ней быстро распостраняются внутри всей сети LevelNet за счет архитектуры P2P
-                    .reveal_infographics_step
-                        .reveal_infographics_step_hex
-                            span 6
-                        .reveal_infographics_step_content
-                            | Все пользовательские устройства
-                            br
-                            | с установленным LevelNet Endpoint Security App защищены от данного типа угрозы
-                .reveal_infographics_img
-                    img(src="./img/infographics/3.svg", alt="")
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-
-        #benefits.reveal.large.reveal_benefits(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h2.reveal_header.reveal_header--left
-                | Get 99% Attack Prevented
-            .reveal_benefits_content
-                .reveal_benefits_benefit
-                    .reveal_benefits_benefit_img
-                        img(src="./img/benefits/1.svg", alt="")
-                    p
-                        | Major antivirus industry player is routinely scoring no better than
+    #infographics_unable.reveal.large.reveal_infographics.reveal_infographics--unable(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.centered
+            | Использование LevelNet Endpoint Security App с установленным
+            br
+            | антивирусным ПО, невосприимчивым к новой угрозе
+        .reveal_infographics_content
+            .reveal_infographics_steps
+                .reveal_infographics_step.reveal_infographics_step--1
+                    .reveal_infographics_step_hex
+                        span 1
+                    .reveal_infographics_step_content
+                        | Новая, ранее неизвестная угроза попадает на пользовательское устройство с установленным антивирусным ПО
+                .reveal_infographics_step.reveal_infographics_step--2
+                    .reveal_infographics_step_hex
+                        span 2
+                    .reveal_infographics_step_content
+                        | Антивирусное ПО разрешает использование вредоносного объекта т.к. 
                         | 
-                        b 80%
+                        b не считает
                         | 
-                        | reactive combined with a
-                        | 
-                        b 70%
-                        | 
-                        | proactive
-                .reveal_benefits_benefit
-                    .reveal_benefits_benefit_img
-                        img(src="./img/benefits/2.svg", alt="")
-                    p
-                        | LevelNet Platform gathers data from each end-user device during an attack. It's make protection effective up to
-                        | 
-                        b 99%
-            h3.reveal_header.reveal_header--left
-                | Your Benefits With LevelNet
-            .ico_box_offers.reveal_benefits_items
-                +ico_offer('Chech files with reputation service without uploading into Cloud - <b>MORE SAFETY</b>')
-                +ico_offer('Detecting threats before your antivirus getting know about them')
-                +ico_offer('Data Security <b>BUDGET REDUCE</b> by using only one solution')
-                +ico_offer('Centralised file and reputation monitoring inside the corporate network - <b>DATA CONFIDENTIALITY</b>')
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
+                        | его угрозой
+                .reveal_infographics_step.reveal_infographics_step--3-1
+                    .reveal_infographics_step_hex
+                        span 3
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App регистрирует факт проникновения неизвестного объекта и передает информацию о ней в P2P сеть
+                .reveal_infographics_step.reveal_infographics_step--4
+                    .reveal_infographics_step_hex
+                        span 4
+                    .reveal_infographics_step_content
+                        | Описание угрозы регистрируется на серверах LevelNet для проверки на Falce Positive и защиту от атак злоумышленников
+                .reveal_infographics_bug.invisible
+                .reveal_infographics_bug.reveal_infographics_bug--shield
+                    i.material-icons bug_report
+                    i.material-icons security
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 5
+                    .reveal_infographics_step_content
+                        | По результатам проверки принимается решение о блокировке угрозы и распостранении информации о ней внутри всей сети LevelNet за счет архитектуры P2P
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 6
+                    .reveal_infographics_step_content
+                        | Все пользовательские устройства 
+                        br
+                        | с установленным LevelNet Endpoint Security App защищены от ранее неизвестной угрозы
+            .reveal_infographics_img
+                img(src="./img/infographics/2.svg", alt="")
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
 
-        #releases.reveal.reveal_releases(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.reveal_header--left
-                | Releases
-            .reveal_releases_content
-                - var k = 0;
-                    while k < 14
-                        +release('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.', 'November 14, 2017', 1)
-                        - k++
-            .reveal_releases_bottom
-                a(href="#" download)
-                    i.icon.icon--download
-                    | Download PDF
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
+    #infographics_able.reveal.large.reveal_infographics.reveal_infographics--able(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.centered
+            | Использование LevelNet Endpoint Security App с установленным
+            br
+            | антивирусным ПО, способным обнаружить угрозу
+        .reveal_infographics_content
+            .reveal_infographics_steps
+                .reveal_infographics_step.reveal_infographics_step--1
+                    .reveal_infographics_step_hex
+                        span 1
+                    .reveal_infographics_step_content
+                        | Известная угроза попадает на пользовательское устройство с установленным антивирусным ПО
+                .reveal_infographics_step.reveal_infographics_step--2
+                    .reveal_infographics_step_hex
+                        span 2
+                    .reveal_infographics_step_content
+                        | Антивирусное ПО регистрирует факт появления известной угрозы
+                .reveal_infographics_step.reveal_infographics_step--3-1
+                    .reveal_infographics_step_hex
+                        span 3
+                    .reveal_infographics_step_content
+                        | LevelNet Endpoint Security App фиксирует реакцию антивирусного ПО и передает информацию о ней в P2P сеть
+                .reveal_infographics_step.reveal_infographics_step--4
+                    .reveal_infographics_step_hex
+                        span 4
+                    .reveal_infographics_step_content
+                        | Описание угрозы регистрируется на серверах LevelNet для проверки на False Positive и защиту от атак злоумышленников
+                .reveal_infographics_bug.invisible
+                .reveal_infographics_bug.reveal_infographics_bug--shield
+                    i.material-icons bug_report
+                    i.material-icons security
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 5
+                    .reveal_infographics_step_content
+                        | В случае подтверждения угрозы данные о ней быстро распостраняются внутри всей сети LevelNet за счет архитектуры P2P
+                .reveal_infographics_step
+                    .reveal_infographics_step_hex
+                        span 6
+                    .reveal_infographics_step_content
+                        | Все пользовательские устройства
+                        br
+                        | с установленным LevelNet Endpoint Security App защищены от данного типа угрозы
+            .reveal_infographics_img
+                img(src="./img/infographics/3.svg", alt="")
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
 
-        #release.reveal.large.reveal_releases.reveal_release(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.reveal_header--left
-                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-            .reveal_releases_content
-                .reveal_release_top
-                    .reveal_release_date
-                        | November 14, 2017
-                    +social(6, 'release')
-                .reveal_release_content
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    img(src="//placehold.it/294", alt="")
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-                    p
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
-            .reveal_releases_bottom
-                a(href="#" download)
-                    i.icon.icon--download
-                    | Download PDF
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-
-        #event.reveal.large.reveal_event(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h2.reveal_header.reveal_header--left
-                | TechCrunch Disrupt SF 2017
-            h3 San Francisco, Sept 18-20, 2017
-            .reveal_event_info
-                .reveal_event_text
-                    p TechCrunch Disrupt is the world’s leading authority in debuting revolutionary startups, introducing game-changing technologies and discussing what’s top of mind for the tech industry’s key innovators.
-                    p
-                        | LevelNet presented out Platform and gathered 130 prospects in
-                        | 
-                        a(href="#") Telegraph community.
-                    p We had a pitch on main scene and stand on the Startup Alley.
-                    +social(7, 'event')
-                .reveal_event_video
-                    +video
-            .reveal_event_imgs
-                - var i = 0;
-                while i < 8
-                    .reveal_event_img
-                        img(src="//placehold.it/220x140", alt="")
-                    - i++
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-
-    if page == 'sign_up'
-        #risk.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.reveal_header--left
-                | Risk Warnings
-            .reveal_sign_content
-                p Investments in early stage companies involves high risk. Purchases of Tokens/ICO’s are even higher risk.
-                p We strongly recommend that purchasers familiarize themselves with all the risks associated with Tokens/ICO’s before considering a Token/ICO purchase alongside any risk disclosures outlined in any pitches - ‘Terms of Token Sale & service'.
-                b 1. Complete loss of capital
-                ul
-                    li
-                        | Participating in Tokens/ICO purchases, digital assets and other cryptocurrencies carries a very high degree of risk.
-                    li
-                        | Only purchasers familiar with the risks associated with acquiring tokens, digital assets, or cryptocurrencies should consider these purchases.
-                    li
-                        | No purchaser should purchase tokens, digital assets and other cryptocurrencies unless the purchaser can understand, accept, tolerate and afford total loss of all capital.
-                b 2. Valuation
-                ul
-                    li
-                        | There is limited public information about the token/ICO.
-                    li
-                        | The price at which the buyer is agreeing to purchase the token at may not represent current fair market valuation.
-                    li
-                        | Buyers should assume that the company generally possesses material information about the company not known to the buyer or the public.
-                    li
-                        | Buyers of tokens/ICO should perform their own due diligence prior to purchasing.
-                button.button.tertiary.short.icon(data-close)
-                    | Got It
-                    i.icon.icon--arrow
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-
-        #kyc.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
-            h3.reveal_header.reveal_header--left
-                | KYC/AML
-            p.reveal_descr
-                | (Know Your Customer/Anti-Money Laundering)
-            .reveal_sign_content
-                p 
-                    | The Company use the
-                    | 
-                    b Anti Money Laundering (AML) Policy
-                    | . Money laundering is where proceeds of crime are disguised so to give the appearance of a legitimate income.
-                p Company reserves the right to report any suspicious activities to the police or relevant authorities, if the official request with suspicion of money laundering from public authorities is received, without the client's knowledge.
+    #benefits.reveal.large.reveal_benefits(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h2.reveal_header.reveal_header--left
+            | Get 99% Attack Prevented
+        .reveal_benefits_content
+            .reveal_benefits_benefit
+                .reveal_benefits_benefit_img
+                    img(src="./img/benefits/1.svg", alt="")
                 p
-                    | The Company also reserve the right to require additional information at any time to verify the client's identification and any further information that may be required to satisfy the
+                    | Major antivirus industry player is routinely scoring no better than
                     | 
-                    b Money Laundering Regulations
-                    | .
-                p 
-                    | We also use the 
+                    b 80%
                     | 
-                    b Know Your Customer Policy (KYC)
-                    | . Customer Identification Program (
-                    b CIP
-                    | ) is the appropriate level of KYC procedure in this case, in order to implement this you required to provide Your iID Photo.
-                button.button.tertiary.short.icon(data-close)
-                    | Got It
-                    i.icon.icon--arrow
-            button.close-button(aria-label='Close', type='button', data-close)
-                span(aria-hidden='true') ×
-else
-    
+                    | reactive combined with a
+                    | 
+                    b 70%
+                    | 
+                    | proactive
+            .reveal_benefits_benefit
+                .reveal_benefits_benefit_img
+                    img(src="./img/benefits/2.svg", alt="")
+                p
+                    | LevelNet Platform gathers data from each end-user device during an attack. It's make protection effective up to
+                    | 
+                    b 99%
+        h3.reveal_header.reveal_header--left
+            | Your Benefits With LevelNet
+        .ico_box_offers.reveal_benefits_items
+            +ico_offer('Chech files with reputation service without uploading into Cloud - <b>MORE SAFETY</b>')
+            +ico_offer('Detecting threats before your antivirus getting know about them')
+            +ico_offer('Data Security <b>BUDGET REDUCE</b> by using only one solution')
+            +ico_offer('Centralised file and reputation monitoring inside the corporate network - <b>DATA CONFIDENTIALITY</b>')
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+    #releases.reveal.reveal_releases(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | Releases
+        .reveal_releases_content
+            - var k = 0;
+                while k < 14
+                    +release('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.', 'November 14, 2017', 1)
+                    - k++
+        .reveal_releases_bottom
+            a(href="#" download)
+                i.icon.icon--download
+                | Download PDF
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+    #release.reveal.large.reveal_releases.reveal_release(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        .reveal_releases_content
+            .reveal_release_top
+                .reveal_release_date
+                    | November 14, 2017
+                +social(6, 'release')
+            .reveal_release_content
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                img(src="//placehold.it/294", alt="")
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt consectetur lectus ac porta. Quisque volutpat, lorem id placerat pulvinar, nibh erat malesuada metus, ut eleifend nunc lectus eget risus. Proin neque libero, blandit sit amet elit eget, commodo lacinia quam.
+        .reveal_releases_bottom
+            a(href="#" download)
+                i.icon.icon--download
+                | Download PDF
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+    #event.reveal.large.reveal_event(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h2.reveal_header.reveal_header--left
+            | TechCrunch Disrupt SF 2017
+        h3 San Francisco, Sept 18-20, 2017
+        .reveal_event_info
+            .reveal_event_text
+                p TechCrunch Disrupt is the world’s leading authority in debuting revolutionary startups, introducing game-changing technologies and discussing what’s top of mind for the tech industry’s key innovators.
+                p
+                    | LevelNet presented out Platform and gathered 130 prospects in
+                    | 
+                    a(href="#") Telegraph community.
+                p We had a pitch on main scene and stand on the Startup Alley.
+                +social(7, 'event')
+            .reveal_event_video
+                +video
+        .reveal_event_imgs
+            - var i = 0;
+            while i < 8
+                .reveal_event_img
+                    img(src="//placehold.it/220x140", alt="")
+                - i++
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+if page == 'sign_up'
+    #risk.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | Risk Warnings
+        .reveal_sign_content
+            p Investments in early stage companies involves high risk. Purchases of Tokens/ICO’s are even higher risk.
+            p We strongly recommend that purchasers familiarize themselves with all the risks associated with Tokens/ICO’s before considering a Token/ICO purchase alongside any risk disclosures outlined in any pitches - ‘Terms of Token Sale & service'.
+            b 1. Complete loss of capital
+            ul
+                li
+                    | Participating in Tokens/ICO purchases, digital assets and other cryptocurrencies carries a very high degree of risk.
+                li
+                    | Only purchasers familiar with the risks associated with acquiring tokens, digital assets, or cryptocurrencies should consider these purchases.
+                li
+                    | No purchaser should purchase tokens, digital assets and other cryptocurrencies unless the purchaser can understand, accept, tolerate and afford total loss of all capital.
+            b 2. Valuation
+            ul
+                li
+                    | There is limited public information about the token/ICO.
+                li
+                    | The price at which the buyer is agreeing to purchase the token at may not represent current fair market valuation.
+                li
+                    | Buyers should assume that the company generally possesses material information about the company not known to the buyer or the public.
+                li
+                    | Buyers of tokens/ICO should perform their own due diligence prior to purchasing.
+            button.button.tertiary.short.icon(data-close)
+                | Got It
+                i.icon.icon--arrow
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+    #kyc.reveal.reveal_sign(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h3.reveal_header.reveal_header--left
+            | KYC/AML
+        p.reveal_descr
+            | (Know Your Customer/Anti-Money Laundering)
+        .reveal_sign_content
+            p 
+                | The Company use the
+                | 
+                b Anti Money Laundering (AML) Policy
+                | . Money laundering is where proceeds of crime are disguised so to give the appearance of a legitimate income.
+            p Company reserves the right to report any suspicious activities to the police or relevant authorities, if the official request with suspicion of money laundering from public authorities is received, without the client's knowledge.
+            p
+                | The Company also reserve the right to require additional information at any time to verify the client's identification and any further information that may be required to satisfy the
+                | 
+                b Money Laundering Regulations
+                | .
+            p 
+                | We also use the 
+                | 
+                b Know Your Customer Policy (KYC)
+                | . Customer Identification Program (
+                b CIP
+                | ) is the appropriate level of KYC procedure in this case, in order to implement this you required to provide Your iID Photo.
+            button.button.tertiary.short.icon(data-close)
+                | Got It
+                i.icon.icon--arrow
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+
+if page === 'sign_in' || page === 'sign_up' || page === 'forgot' || page === 'resend'
+    #confirmation.reveal.reveal_success(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h2.reveal_header Done
+        p.reveal_descr.reveal_descr--bold
+            if page === 'forgot' || page === 'resend'
+                | A password change link has been sent to your email address
+            else
+                | Confirmation email has been sent
+        .reveal_success_content
+            img(src="./img/icons/appreciations.svg", alt="Done")
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×
+    #not_found.reveal.reveal_success.reveal_success--error(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+        h2.reveal_header Error
+        p.reveal_descr.reveal_descr--bold
+            | The Recipient's Email Address Was Not Found
+        button.close-button(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×

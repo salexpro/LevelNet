@@ -1,5 +1,5 @@
 section.sign_up
-    form.sign_up_form(action="sign_up")
+    form.sign_up_form(action="forgot")
         .sign_up_form_top
             h2
                 if page == 'forgot'
@@ -10,6 +10,10 @@ section.sign_up
             input(type="email" name="email" placeholder="Enter your email" required)
         button.button.secondary.short.spaced(type="submit")
             | SUBMIT
+    a.sign_up_back(href="./sign_in.html")
+        .sign_up_back_hex
+            span
+        | Go back
     +social
     +hexagon(3)
     +hexagon(6, 5)

@@ -191,6 +191,10 @@
         @include breakpoint(small down) {
             padding-top: 50px;
         }
+        &--error {
+            min-height: 250px;
+            overflow: hidden;
+        }
         &::before{
             @extend .ico_box--hex::before;
             width: 129px;

@@ -2,12 +2,15 @@
     &_settings{
         &_info{
             max-width: 550px;
-            margin: 52px auto 0;
+            margin: 52px 0 0;
+            @include breakpoint(medium down) {
+                max-width: none;
+            }
             @include breakpoint(small down) {
                 margin-top: 36px;
             }
             &_header{
-                text-align: center;
+                // text-align: center;
             }
             &_item{
                 margin-top: 25px;

@@ -110,7 +110,7 @@
         </defs>
       </svg>
       <section class="sign_up">
-        <form class="sign_up_form" action="sign_up">
+        <form class="sign_up_form" action="forgot">
           <div class="sign_up_form_top">
             <h2>Forgot password
             </h2>
@@ -119,7 +119,8 @@
             <input type="email" name="email" placeholder="Enter your email" required>
           </div>
           <button class="button secondary short spaced" type="submit">SUBMIT</button>
-        </form>
+        </form><a class="sign_up_back" href="./sign_in.html">
+          <div class="sign_up_back_hex"><span></span></div>Go back</a>
         <ul class="menu social">
           <li><a href="https://t.me/joinchat/GHTE40NTXjl5p3H27VceBw" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 22" width="24" height="22">
@@ -206,10 +207,6 @@
       </ul>
       <button class="close-button small" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <div class="notify">
-      <div class="notify_img"><img src="./img/icons/success_mark.svg" alt=""></div>
-      <div class="notify_content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodoligula.</div>
-    </div>
     <div class="reveal reveal_join" id="join" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
       <h3 class="reveal_header centered">Join LevelNet now<br>and get bonus +25% before 1.5m</h3>
       <div class="reveal_join_content">
@@ -285,6 +282,18 @@
         Сurrent token sale bonus
          <b>+25%</b>
       </div><a class="button hollow filled thin" data-close>Stay on Product Webpage</a>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success" id="confirmation" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Done</h2>
+      <p class="reveal_descr reveal_descr--bold">A password change link has been sent to your email address
+      </p>
+      <div class="reveal_success_content"><img src="./img/icons/appreciations.svg" alt="Done"></div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal reveal_success reveal_success--error" id="not_found" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <h2 class="reveal_header">Error</h2>
+      <p class="reveal_descr reveal_descr--bold">The Recipient's Email Address Was Not Found</p>
       <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
     <script src="./js/app.min.js"></script>
