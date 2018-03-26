@@ -1,4 +1,4 @@
-/* global moment, ClipboardJS */
+/* global Foundation, moment, ClipboardJS */
 /* eslint no-inner-declarations: 'off', no-unused-vars: 'off' */
 /*
 // Libs
@@ -43,6 +43,8 @@ const purchase_token = (token, wallet) => {
     $('.profile_send_header>span').text(token);
     $('.profile_send_wallet [type="text"]').val(wallet);
     $('.profile_send').removeClass('hide');
+    if (Foundation.MediaQuery.current === 'small')
+        $('html,body').animate({scrollTop:$('.profile_send').offset().top - 80}, 500);
 }
 $('.profile_currency').click(function() {
     if (!$(this).hasClass('profile_currency--small')) {

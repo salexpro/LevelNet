@@ -15,7 +15,7 @@ include _2fa_attention
         label.profile_settings_info_item
             h4.profile_settings_info_label
                 | Phone
-            input(type="tel" name="phone" value="(949) 555-33-99")
+            input(type="tel" name="phone" value="(949) 555-33-99" pattern="^[0-9\-\+\s\(\) ]*$")
         label.profile_settings_info_item
             h4.profile_settings_info_label
                 | Your Ethereum wallet. Must support ERC-20
