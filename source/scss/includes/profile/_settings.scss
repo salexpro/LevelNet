@@ -13,17 +13,13 @@
                 margin-top: 25px;
             }
             &_label{
-                font-size: 20px;
-                letter-spacing: 0.8px;
                 color: $white;
-                line-height: 24px;
                 margin-bottom: 12px;
                 @include breakpoint(small down) {
                     font-size: 14px;
-                    line-height: 1.2;
                 }
                 .profile_hint{
-                    vertical-align: top;
+                    vertical-align: baseline;
                     @include breakpoint(small down) {
                         display: none;
                     }
