@@ -468,7 +468,7 @@
             @include line(0, 3, 200, 117);
             @include line(1, 4, 300, 109);
             &_hex{
-                @include hexagon(46, $secondary-color, 0, false, false);
+                @include hexagon(46, $secondary-color, 0);
                 color: $white;
                 font-size: 20px;
                 font-weight: 700;

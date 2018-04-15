@@ -14,31 +14,34 @@
             box-shadow: none;
         }
     }
-    &-next{
-        @include hexagon(44, $medium-black, 2, $dark-gray, null);
-        position: absolute;
-        top: calc(50% - 12px);
-        left: calc(100% + 36px);
-        transition: 300ms;
-        &.disabled{
-            opacity: .3;
-        }
-        @include breakpoint(xlarge down){
-            width: auto;
-            border: 0;
-            left: calc(100% + 10px);
-            &::before, &::after{
-                display: none;
+    &-carousel .owl-nav button.owl{
+        &-next{
+            @include hexagon(44, $medium-black, 2, $dark-gray);
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(100% + 36px);
+            transition: 300ms;
+            border-radius: 0;
+            &.disabled{
+                opacity: .3;
+            }
+            @include breakpoint(xlarge down){
+                width: auto;
+                border: 0;
+                left: calc(100% + 10px);
+                &::before, &::after{
+                    display: none;
+                }
             }
         }
-    }
-    &-prev {
-        @extend .owl-next;
-        left: auto;
-        right: calc(100% + 36px);
-        transform: scale(-1, 1);
-        @include breakpoint(xlarge down) {
-            right: calc(100% + 10px);
+        &-prev {
+            @extend .owl-next;
+            left: auto;
+            right: calc(100% + 36px);
+            transform: scale(-1, 1);
+            @include breakpoint(xlarge down) {
+                right: calc(100% + 10px);
+            }
         }
     }
     &-dots{

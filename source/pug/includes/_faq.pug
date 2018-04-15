@@ -8,7 +8,7 @@ mixin faq_item(quest, answ)
         .accordion-content.faq_item_answer(data-tab-content)
             =answ
 
-section#faq.faq(data-magellan-target="faq" class=(page==='faq'&&!parent)?"faq--light":"" + parent ? "faq--profile" : "")
+section#faq.faq(data-magellan-target="faq" class=(page==='faq' && !parent) ? "faq--light" : parent ? "faq--profile" : "")
     .row
         if !parent
             if page == 'faq'

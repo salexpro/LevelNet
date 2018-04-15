@@ -151,7 +151,7 @@
                 margin-top: 13px;
             }
             &_icon{
-                @include hexagon(51, #f8f9fa, 2, $medium-gray, null);
+                @include hexagon(51, #f8f9fa, 2, $medium-gray);
                 margin-right: 20px;
             }
         }

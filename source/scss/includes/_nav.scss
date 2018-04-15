@@ -169,7 +169,7 @@
                 }
             }
             &_hex{
-                @include hexagon(13, #575b60, 0, false, false)
+                @include hexagon(13, #575b60, 0)
             }
             &_label{
                 font-size: 14px;

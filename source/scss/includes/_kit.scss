@@ -94,7 +94,7 @@
             }
         }
         &_icon{
-            @include hexagon(66, $medium-black, 2, #343a40, null);
+            @include hexagon(66, $medium-black, 2, #343a40);
             margin-right: 24px;
             transition: 300ms;
             &::before, &::after{

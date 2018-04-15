@@ -43,7 +43,7 @@
         }
     }
     &_hex {
-        @include hexagon(13, transparent, 2, $dark-gray, null);
+        @include hexagon(13, transparent, 2, $dark-gray);
     }
     ul > a {
         display: none;
