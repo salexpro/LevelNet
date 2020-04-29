@@ -19,7 +19,7 @@
   "dependencies": {
     "clipboard": "^2.0.0",
     "foundation-sites": "^6.4.4-rc1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-countdown": "^2.2.0",
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.14",
